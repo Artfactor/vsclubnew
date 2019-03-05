@@ -1,0 +1,83 @@
+.read-more-popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.read-more-show {
+  display: flex;
+}
+
+.read-more-sidebar {
+  width: 23.7%;
+  background: #033953;
+  opacity: .5; 
+}
+
+.read-more-content {
+  position: relative;
+  width: 76.3%;
+  background: #033953;
+  color: #fff;
+
+  .close-read-more {
+    content: "";
+    position: absolute;
+    right: 40px; 
+    top: 31px;
+    transition: transform .3s;
+
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+
+  .read-more-title {
+    font-family: 'Georgia';
+    font-size: 4vw;
+    font-weight: normal;
+    padding: 83px 286px 0px 82px;
+    margin: 0; 
+  }
+
+  .read-more-text {
+    font-family: 'Gotham Pro';
+    font-size: 1.3vw;
+    font-weight: lighter;
+    padding: 48px 286px 0px 82px;
+    margin: 0;
+    line-height: 34px;
+  }
+
+  .read-more-accentuation {
+    position: relative;
+    font-family: 'Georgia';
+    font-size: 1.8vw;
+    font-weight: normal;
+    padding: 34px 286px 0px 82px;
+    margin: 0;
+    font-style: italic;
+
+    &:before {
+      content: "";
+      position: absolute;
+      border-top: 1px solid #C9CED8;
+      width: calc(100% - 286px);
+      top: 20px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid #C9CED8;
+      width: calc(100% - 286px);
+      bottom: -20px;
+      left: 82px;
+    }
+  }
+}
+

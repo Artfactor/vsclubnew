@@ -1,0 +1,156 @@
+.top-header {
+  height: 71px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    opacity: .18;
+    bottom: 0;
+  }
+}
+
+.top-header-menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.top-header-menu-item {
+
+  &:last-child {
+    margin-right: 38px;
+	}
+}
+
+.top-header-menu-link {
+  text-decoration: none;
+  color: #C9CED8;
+  font-family: Gotham Pro;
+  font-size: 21px;
+  display: inline-block;
+	padding: 26px 33px 21px 10px;
+  transition: all .3s;
+
+  &:hover, &:active {
+    color: #DC143C;
+    background: #01334E;
+  }
+}
+
+.selection-city {
+	position: relative;
+
+	&:hover .city-list {
+		opacity: 1;
+		left: 0;
+	}
+
+	.city-list {
+		opacity: 0;
+		list-style: none;
+		padding: 21px 34px 25px 79px;
+		background: rgba(1, 51, 78, 0.74);
+		position: absolute;
+		top: 71px;
+		left: -2000px;
+		width: 212px;
+		height: 209px;
+		z-index: 1;
+		transition: opacity .3s;
+		margin: 0;
+
+		.city-list-item-link {
+			display: block;
+			font-family: 'Gotham Pro';
+			text-decoration: none;
+			line-height: 34px;
+			font-size: 24px;
+			font-weight: lighter;
+			color: #fff;
+			position: relative;
+			transition: color .5s;
+
+			&:hover {
+				color: #DC143C;
+			} 
+
+			&:first-child {
+				margin-top: 30px;
+			}
+
+			&:first-child:before {
+				content: "";
+	   		position: absolute;
+	   		width: 43.24px;
+	   		height: 43.24px;
+				background: url(../img/moscow.svg) no-repeat;
+				left: -55px;
+				top: -6px;
+				background-size: 100%;
+			}
+
+			&:nth-child(2) {
+				margin-top: 27px;
+			}
+
+			&:nth-child(2):before {
+				content: "";
+	   		position: absolute;
+	   		width: 43.24px;
+	   		height: 43.24px;
+				background: url(../img/spb.svg) no-repeat;
+				left: -55px;
+				top: -6px;
+				background-size: 100%;
+			}
+
+			&:last-child {
+				margin-top: 27px;
+			}
+
+			&:last-child:before {
+				content: "";
+	   		position: absolute;
+	   		width: 43.24px;
+	   		height: 43.24px;
+	   		background: url(../img/saratov.svg) no-repeat;
+				left: -55px;
+				top: -6px;
+				background-size: 100%;
+			}
+		}
+	}
+}
+
+.top-header-mobile {
+	display: none; 
+	justify-content: space-between; 
+	height: 68px;
+
+	.burger-nav {
+		background: url(../img/burger-mobile.svg) no-repeat;
+		margin-left: 35px;
+	}
+
+	.top-logo-mobile {
+		background: url(../img/logo_white.svg) no-repeat;
+	}
+
+	.start-date-mobile {
+		font-family: 'Rage Italic LET';
+		font-size: 20px;
+		color: #fff;
+	}
+
+	.login-mobile {
+		font-family: 'Gotham Pro';
+		font-size: 16px;
+		color: #fff;
+		margin-right: 31px;
+	}
+
+
+}

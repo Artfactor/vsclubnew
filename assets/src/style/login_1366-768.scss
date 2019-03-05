@@ -1,0 +1,12 @@
+@media (max-width: 1366px) {
+
+	.login-popup {
+		top: 61px;
+		height: calc(100% - 61px);
+
+		.close-login {
+			right: 25px;
+	    top: 16px;
+		}
+	}
+}

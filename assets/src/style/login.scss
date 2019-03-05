@@ -1,0 +1,135 @@
+.login-popup {
+	display: none;
+	width: 592px;
+	height: calc(100% - 71px);
+	background: #033953;
+	position: absolute;
+	right: 0;
+	top: 71px;
+
+  &:before {
+		content: "";
+		position: absolute;
+		left: 20px;
+		top: 0;
+		background: url(../img-svg/gal.svg);
+		width: 81px;
+		height: 228px;
+	}
+	
+	.close-login {
+		content: "";
+		position: absolute;
+		right: 27px;
+		top: -50px;
+		background: url(../img/close-read-more.svg) no-repeat;
+		transition: transform .3s;
+
+		&:hover {
+			transform: scale(1.3);
+		}
+	}
+
+	.login-title {
+		text-transform: capitalize;
+		font-family: 'Georgia';
+		font-size: 52px;
+		line-height: 53px;
+		font-weight: normal;
+		color: #fff;
+		padding: 82px 115px 24px 133px;
+		margin: 0;
+	}
+
+	.login-comment {
+		font-family: Gotham Pro;
+		font-size: 18px;
+		line-height: 14px;
+		color: #C9CED8;
+		padding: 0 183px 0 133px;
+		margin: 0;
+	}
+}
+
+.show {
+	display: block;
+} 
+
+.login-form {
+	padding: 25px 66px 39px 130px;
+
+	.form-input {
+		margin: 0;
+		.form-login-text {
+			font-family: Gotham Pro;
+			line-height: normal;
+			font-size: 18px;
+			color: #C9CED8;
+			width: 377px;
+			height: 58px;
+			background: #2A586F;
+			padding-left: 19px;
+			border: none;
+			margin-bottom: 40px;
+		}
+	}
+
+	.form-checkbox {
+		margin: 0;
+		margin-bottom: 23px;
+	}
+	
+	.form-login-checkbox {
+		width: 35px;
+		height: 33px;
+		border: 1px solid #B7C0C9;
+		background: transparent;
+		margin: 0;
+		cursor: pointer;
+	}
+
+	.form-checkbox-text {
+		font-family: Gotham Pro;
+		line-height: normal;
+		font-size: 18px;
+		color: #C9CED8;
+		position: relative;
+    top: -10px;
+		padding-left: 10px;
+		cursor: pointer;
+	}
+
+	.login-button {
+		padding: 21px 53px 19px 53px;
+		background: #FFFFFF;
+		border-radius: 29px;
+		border: none;
+		font-family: Gotham Pro;
+		line-height: normal;
+		font-size: 18px;
+		color: #314A5D;
+		font-weight: 500;
+		cursor: pointer;
+		outline: none;
+	}
+
+	.registration-text {
+		margin: 40px 0 16px 0;
+		padding-left: 0;
+	}
+
+	.registration-button {
+		padding: 19px 39px;
+		background: transparent;
+		border-radius: 29px;
+		border: 1px solid #fff;;
+		font-family: Gotham Pro;
+		line-height: normal;
+		font-size: 18px;
+		color: #fff;
+		font-weight: 500;
+		cursor: pointer;
+		outline: none;
+
+	}
+}

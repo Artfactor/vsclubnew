@@ -1,0 +1,279 @@
+
+$white: #fff;
+body {
+	font-family: Gotham Pro;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+}
+div {
+	box-sizing: border-box;
+}
+
+.row {
+	display: flex;
+}
+
+.main__section {
+	overflow: hidden;
+}
+
+.wrap-main {
+    height: 100vh;
+}
+.content-part {
+    overflow: hidden;
+}
+.main-slider-bg .slick-prev {
+	width: 7px;
+    height: 20px;
+    background: url('../img/main-slider-arrow.svg') no-repeat;
+    display: block;
+    border: 0;
+    outline: 0;
+    font-size: 0;
+    position: absolute;
+    background-size: cover;
+    top: 50%;
+    transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.section__third {
+	width: 100%;
+	height: 100vh;
+}
+.main__beclient {
+	width: 50%;
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.main__beclient-man {
+	background-image: url("../img/man-bg.jpg");
+	text-align: right;
+	padding-right: 110px;
+	padding-top: 246px;
+}
+.main__beclient-woman {
+	background-image: url("../img/woman-bg.jpg");
+	text-align: left;
+	padding-left: 110px;
+	padding-top: 266px;
+}
+
+.beclient__title {
+	font-family: Georgia;
+	font-style: normal;
+	font-weight: bold;
+	line-height: normal;
+	font-size: 68px;
+	color: $white;
+	margin-bottom: 76px;
+	
+	span {
+		display: block;
+		font-size: 28px;
+		margin-bottom: 14px;
+	}
+}
+.beclient__links {
+	margin-bottom: 53px;
+}
+.beclient__item {
+
+	margin-bottom: 34px;
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	a {
+		text-decoration: none;
+		color: $white;
+		font-size: 26px;
+	}
+}
+.button__beclient {
+	background: #FFFFFF;
+	border-radius: 100px;
+	border: 0;
+	display: inline-block;
+	text-decoration: none;
+	font-family: Gotham Pro;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 14px;
+	padding: 20px 48px;
+	color: #304C60;
+	position: relative;
+	
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+	}
+}
+.button__beclient-man:after {
+	background: url("../img/index-galstuk.png") no-repeat;
+	width: 36px;
+	height: 103px;
+	left: 0;
+	top: -28px;
+}
+.button__beclient-woman:after {
+	background: url("../img/index-tuflya.png") no-repeat;
+	width: 65px;
+	height: 60px;
+    right: -30px;
+    top: -4px;
+}
+
+.section__fourth {
+	width: 100%;
+	height: 100vh;
+	padding-left: 20%;
+	background-size: cover;
+	background: url("../img/index-4-bg.jpg") no-repeat;
+}
+.main__about {
+	width: 32%;
+	height: 100vh;
+	background: linear-gradient(279.97deg, #283C4B 2.59%, rgba(49, 74, 93, 0) 113.74%);
+	background-blend-mode: multiply;
+	color: $white;
+	position: relative;
+	right: -1px;
+	padding: 214px 79px 30px 79px;
+	
+	.button__beclient {
+		margin-bottom: 71px;
+		padding-left: 68px;
+	}
+	.button__beclient-woman:after {
+		right: auto;
+		left: 0;
+	}
+}
+.main__desc {
+	width: 68%;
+	height: 100vh;
+	padding: 214px 54px 30px 85px;
+	background: #314A5D;
+	color: $white;
+}
+.main__desc-title {
+	font-size: 36px;
+	color: #FFFFFF;
+	font-family: Georgia;
+	margin-bottom: 30px;
+}
+.main__about-title {
+	line-height: 123px;
+	font-size: 72px;
+	margin-bottom: 68px;
+	color: $white;
+	font-family: Georgia;
+}
+
+.section__fifth {
+	background-size: cover;
+	background: url("../img/index-5-bg.jpg") no-repeat;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+.main__contacts {
+	position: absolute;
+	left: 20%;
+	top: 0;
+	height: 100%;
+	width: 31%;
+	padding: 45px 67px 48px 60px;
+	background: #033953;
+	color: $white;
+	
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+	
+}
+.main__contactsrow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 16px;
+}
+.main__contacts-title {
+	font-family: Georgia;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 123px;
+	font-size: 72px;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+}
+.main__contacts-subtitle {
+	font-weight: bold;
+	line-height: 23px;
+	font-size: 16px;
+	color: #FFFFFF;
+	margin-bottom: 18px;
+}
+.main__contacts-item {
+	padding: 25px 0;
+}
+.main__contacts-item + .main__contacts-item {
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.main__contacts-phone {
+	font-weight: bold;
+	line-height: 34px;
+	font-size: 24px;
+	margin-bottom: 15px;
+	color: #FFFFFF;
+}
+.main__contacts-name {
+	font-weight: normal;
+	line-height: 23px;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+.button__border {
+	display: block;
+	font-size: 16px;
+	color: #779FDB;
+	border: 1px solid #84A4D0;
+	box-sizing: border-box;
+	padding: 12px 40px;
+}
+.main__contactsrow-img {
+
+}
+
+.main__grid {
+	display: flex;
+}
+
+.main__grid-col:nth-child(1) {
+	width: 40%
+}
+.main__grid-col:nth-child(2) {
+	width: 20%;
+}
+.main__grid-col:nth-child(3) {
+	width: 40%
+}
+
+.main__grid-cell {
+
+	width: 100%;
+	overflow: hidden;
+	
+	img {
+		min-width: 100%;
+		height: 100%;
+	}
+}
