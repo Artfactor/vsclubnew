@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="fonts/Rage_Italic_Let/stylesheet.css">
 	<link rel="stylesheet" href="fonts/Georgia/stylesheet.css"> -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
 	
 	<script
 	  src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -29,11 +30,16 @@
 	<script src="https://cdn.jsdelivr.net/npm/readmore-js@2.2.1/readmore.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
 	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
 	
 	<script src="js/main.js"></script>
 </head>
 <body>      
 
+<div id="fullpage">
+
+<div class="section">
 <div class="wrap-main">
 	<!-- SIDEBAR - START -->
 	<aside class="side-panel">
@@ -72,7 +78,7 @@
 						<a class="city-list-item-link" href="#">Саратов</a>
 					</ul>
 				</li>
-				<li class="top-header-menu-item"><a class="top-header-menu-link" id="login" href="#">Вход</a></li>
+				<li class="top-header-menu-item"><a class="top-header-menu-link login" id="" href="#">Вход</a></li>
 			</nav>
 		</header>
 		<!-- HEADER - END -->
@@ -116,24 +122,6 @@
 		<div class="screen-bg2"></div>
 		<!-- Second screen - END -->
 
-		<!-- LOGIN - START -->
-		<div class="login-popup">
-				<a href="#" class="close-login">
-					<img src="img/close-read-more.svg" alt="">
-				</a>
-				<h2 class="login-title">для клиентов клуба</h2>
-				<p class="login-comment">Доступ к полной базе данных</p>
-				<form action="" method="POST" class="login-form">
-					<p class="form-input"><input type="login" name="login" placeholder="Логин" class="form-login-text" required></p>
-					<p class="form-input"><input type="password" name="password" placeholder="Пароль" class="form-login-text" required></p>
-					<p class="form-checkbox"><input type="checkbox" id="checkbox" class="form-login-checkbox">
-					<label for="checkbox" class="form-checkbox-text">Запомнить пароль</label></p>
-					<button type="submit" class="login-button">Войти</button>
-					<p class="registration-text form-checkbox-text">Если вы не являетесь клиентом клуба</p>
-					<button type="submit" class="registration-button">Регистрация</button>
-				</form>
-			</div>
-			<!-- LOGIN - END -->
 	</div>
 	<!-- CONTENT - END -->
 
@@ -255,8 +243,20 @@
 		</div>
 	<!-- MOBILE MENU - END --> 
 </div>
+</div>
 
-<div class="main__section section__second">
+<div class="section main__section section__second">
+	<div class="header">
+		<div class="header__logo header__logo-city"><img src="img/saratov-light.svg" alt="" title=""><span>Саратов</span></div>
+		<div class="header__menu">
+			<div class="header__menu__item"><a href="#">О клубе</a></div>
+			<div class="header__menu__item"><a href="#">Для мужчин</a></div>
+			<div class="header__menu__item"><a href="#">Для девушек</a></div>
+			<div class="header__menu__item"><a href="#">Контакты</a></div>
+			<div class="header__menu__item"><a href="#">Выбрать город</a></div>
+			<div class="header__menu__item"><a href="#" class="login">Вход</a></div>
+		</div>
+	</div>
 	<!-- <div class="main__grid">
 		<div class="main__grid-col">
 			<div class="main__grid-cell"></div>
@@ -271,23 +271,50 @@
 			<div class="main__grid-cell"></div>
 		</div>
 	</div> -->
+	
+	<div class="main__grid main__grid-animate">
+		<div class="main__grid-col">
+			<div class="main__grid-cell"></div>
+			<div class="main__grid-cell"></div>
+		</div>
+		<div class="main__grid-col">
+			<div class="main__grid-cell"></div>
+			<div class="main__grid-cell"></div>
+		</div>
+		<div class="main__grid-col">
+			<div class="main__grid-cell"></div>
+			<div class="main__grid-cell"></div>
+		</div>
+	</div>
+	
 	<div class="main__grid">
 		<div class="main__grid-col">
-			<div class="main__grid-cell"><img src="img/index-girl-1.jpg"></div>
-			<div class="main__grid-cell"><img src="img/index-girl-2.jpg"></div>
+			<div class="main__grid-cell" data-order="2"><img src="img/5074 Жанна (1).jpeg"><div class="main__grid-desc"><div class="main__grid-title">Вероника</div><div class="main__grid-id">№ 8795431</div><div class="main__grid-list"><ul><li>23 / 175 / 55</li><li>Не замужем</li><li>Детей нет</li></ul></div></div></div>
+			<div class="main__grid-cell" data-order="6"><img src="img/5074 Жанна.jpeg"><div class="main__grid-desc"><div class="main__grid-title">Вероника</div><div class="main__grid-id">№ 8795431</div><div class="main__grid-list"><ul><li>23 / 175 / 55</li><li>Не замужем</li><li>Детей нет</li></ul></div></div></div>
 		</div>
 		<div class="main__grid-col">
-			<div class="main__grid-cell"><img src="img/index-girl-3.jpg"></div>
-			<div class="main__grid-cell"><img src="img/index-girl-4.jpg"></div>
+			<div class="main__grid-cell" data-order="5"><img src="img/5157 Дарья (3).jpg"><div class="main__grid-desc"><div class="main__grid-title">Вероника</div><div class="main__grid-id">№ 8795431</div><div class="main__grid-list"><ul><li>23 / 175 / 55</li><li>Не замужем</li><li>Детей нет</li></ul></div></div></div>
+			<div class="main__grid-cell" data-order="3"><img src="img/5153 Наталья (1).JPG"><div class="main__grid-desc"><div class="main__grid-title">Вероника</div><div class="main__grid-id">№ 8795431</div><div class="main__grid-list"><ul><li>23 / 175 / 55</li><li>Не замужем</li><li>Детей нет</li></ul></div></div></div>
 		</div>
 		<div class="main__grid-col">
-			<div class="main__grid-cell"><img src="img/index-girl-5.jpg"></div>
-			<div class="main__grid-cell"><img src="img/index-girl-6.jpg"></div>
+			<div class="main__grid-cell" data-order="1"><img src="img/5138 Татьяна (1).jpg"><div class="main__grid-desc"><div class="main__grid-title">Вероника</div><div class="main__grid-id">№ 8795431</div><div class="main__grid-list"><ul><li>23 / 175 / 55</li><li>Не замужем</li><li>Детей нет</li></ul></div></div></div>
+			<div class="main__grid-cell" data-order="4"><img src="img/5157 Дарья (2).jpg"><div class="main__grid-desc"><div class="main__grid-title">Вероника</div><div class="main__grid-id">№ 8795431</div><div class="main__grid-list"><ul><li>23 / 175 / 55</li><li>Не замужем</li><li>Детей нет</li></ul></div></div></div>
 		</div>
 	</div>
 </div>
 
-<div class="main__section section__third">
+<div class="section main__section section__third">
+	<div class="header">
+		<div class="header__logo"><a href="index.html"><img src="img/logo-main.svg"></a></div>
+		<div class="header__menu">
+			<div class="header__menu__item"><a href="#">О клубе</a></div>
+			<div class="header__menu__item"><a href="#">Для мужчин</a></div>
+			<div class="header__menu__item"><a href="#">Для девушек</a></div>
+			<div class="header__menu__item"><a href="#">Контакты</a></div>
+			<div class="header__menu__item"><a href="#">Выбрать город</a></div>
+			<div class="header__menu__item"><a href="#" class="login">Вход</a></div>
+		</div>
+	</div>
 	<div class="row">
 		<div class="main__beclient main__beclient-man">
 			<div class="beclient__title"><span>ДЛЯ</span>МУЖЧИН</div>
@@ -311,7 +338,18 @@
 		</div>
 	</div>
 </div>
-<div class="main__section section__fourth">
+<div class="section main__section section__fourth">
+	<div class="header">
+		<div class="header__logo"><a href="index.html"><img src="img/logo-main.svg"></a></div>
+		<div class="header__menu">
+			<div class="header__menu__item"><a href="#">О клубе</a></div>
+			<div class="header__menu__item"><a href="#">Для мужчин</a></div>
+			<div class="header__menu__item"><a href="#">Для девушек</a></div>
+			<div class="header__menu__item"><a href="#">Контакты</a></div>
+			<div class="header__menu__item"><a href="#">Выбрать город</a></div>
+			<div class="header__menu__item"><a href="#" class="login">Вход</a></div>
+		</div>
+	</div>
 	<div class="row">
 		<div class="main__about">
 			<div class="main__about-title">О КЛУБЕ</div>
@@ -329,7 +367,18 @@
 	</div>
 </div>
 
-<div class="main__section section__fifth">
+<div class="section main__section section__fifth">
+	<div class="header">
+		<div class="header__logo"><a href="index.html"><img src="img/logo-main.svg"></a></div>
+		<div class="header__menu">
+			<div class="header__menu__item"><a href="#">О клубе</a></div>
+			<div class="header__menu__item"><a href="#">Для мужчин</a></div>
+			<div class="header__menu__item"><a href="#">Для девушек</a></div>
+			<div class="header__menu__item"><a href="#">Контакты</a></div>
+			<div class="header__menu__item"><a href="#">Выбрать город</a></div>
+			<div class="header__menu__item"><a href="#" class="login">Вход</a></div>
+		</div>
+	</div>
 	<div class="main__contacts">
 		<div class="main__contacts-item">
 			<div class="main__contacts-title">КОНТАКТЫ</div>
@@ -345,7 +394,7 @@
 					<div>+7 954 371 19 16</div>
 				</div>
 				<div class="col main__contactsrow-btn">
-					<a href="#" class="button button__border">Написать</a>
+					<a href="#" class="button button__border">позвонить</a>
 				</div>
 			</div>
 			<div class="main__contactsrow">
@@ -355,7 +404,7 @@
 					<div>+7 954 371 19 16</div>
 				</div>
 				<div class="col main__contactsrow-btn">
-					<a href="#" class="button button__border">Написать</a>
+					<a href="#" class="button button__border">позвонить</a>
 				</div>
 			</div>
 			<div class="main__contactsrow">
@@ -365,7 +414,7 @@
 					<div>+7 954 371 19 16</div>
 				</div>
 				<div class="col main__contactsrow-btn">
-					<a href="#" class="button button__border">Написать</a>
+					<a href="#" class="button button__border">позвонить</a>
 				</div>
 			</div>
 		</div>
@@ -377,7 +426,7 @@
 					<div>в WhatsApp</div>
 				</div>
 				<div class="col main__contactsrow-btn">
-					<a href="#" class="button button__border">Написать</a>
+					<a href="#" class="button button__border">написать</a>
 				</div>
 			</div>
 			<div class="main__contactsrow main__contactsrow-soc">
@@ -386,7 +435,7 @@
 					<div>в Viber</div>
 				</div>
 				<div class="col main__contactsrow-btn">
-					<a href="#" class="button button__border">Написать</a>
+					<a href="#" class="button button__border">написать</a>
 				</div>
 			</div>
 			<div class="main__contactsrow main__contactsrow-soc">
@@ -395,7 +444,7 @@
 					<div>в Telegram</div>
 				</div>
 				<div class="col main__contactsrow-btn">
-					<a href="#" class="button button__border">Написать</a>
+					<a href="#" class="button button__border">написать</a>
 				</div>
 			</div>
 			<div class="main__contacts-name">Елена - администратор Клуба</div>
@@ -404,7 +453,26 @@
 </div>
 
 
+</div>
 
+<!-- LOGIN - START -->
+<div class="login-popup">
+	<a href="#" class="close-login">
+		<img src="img/close-read-more.svg" alt="">
+	</a>
+	<h2 class="login-title">для клиентов клуба</h2>
+	<p class="login-comment">Доступ к полной базе данных</p>
+	<form action="" method="POST" class="login-form">
+		<p class="form-input"><input type="login" name="login" placeholder="Логин" class="form-login-text" required></p>
+		<p class="form-input"><input type="password" name="password" placeholder="Пароль" class="form-login-text" required></p>
+		<p class="form-checkbox"><input type="checkbox" id="checkbox" class="form-login-checkbox">
+		<label for="checkbox" class="form-checkbox-text">Запомнить пароль</label></p>
+		<button type="submit" class="login-button">Войти</button>
+		<p class="registration-text form-checkbox-text">Если вы не являетесь клиентом клуба</p>
+		<button type="submit" class="registration-button">Регистрация</button>
+	</form>
+</div>
+<!-- LOGIN - END -->
 
 </body>
 </html>

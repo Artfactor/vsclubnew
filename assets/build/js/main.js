@@ -6,7 +6,9 @@ $(document).ready(function() {
         slidesToScroll: 1,
     });
 	
+	$('#fullpage').fullpage({
 
+	});
 });
 
 // Popup READ-MORE
@@ -34,7 +36,7 @@ $(document).ready(function($){
 //Popup LOGIN
 $(document).ready(function($){
     //�������� ����� �����
-    $('#login').on('click', function(event){
+    $('.login').on('click', function(event){
         event.preventDefault();
         $('.login-popup').addClass('show');
     });
@@ -55,7 +57,7 @@ $(document).ready(function($){
 //��������� �� ����� � ����� ������� ����� ������
 $(document).click(function(e) {
     //if you click on anything except the modal itself or the "open modal" link, close the modal
-    if (!$(e.target).closest(".login-popup, #login").length) {
+    if (!$(e.target).closest(".login-popup, .login").length) {
         $('.login-popup').removeClass('show');
     }
   });
