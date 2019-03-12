@@ -2015,13 +2015,19 @@ a.button__border {
     max-width: 700px; }
     .header .header__menu .header__menu__item a {
       font-size: 16px; }
+  .content-part {
+    background-position-y: 0; }
   .main__beclient-man {
-    padding-top: 146px;
+    padding-top: 156px;
     padding-right: 52px;
     background-position-x: 80%; }
   .main__beclient-woman {
-    padding-top: 166px;
+    padding-top: 156px;
     padding-left: 52px; }
+  /* Section 3 */
+  .main__grid-cell img {
+    width: auto;
+    height: 100%; }
   /* Section 4 */
   .section__fourth {
     background-size: cover;
@@ -2031,14 +2037,17 @@ a.button__border {
     margin-left: 17%;
     padding: 168px 42px 30px 42px; }
     .main__about .button__beclient {
-      padding-left: 40px;
-      padding-right: 40px; }
+      padding-left: 68px;
+      padding-right: 40px;
+      width: 100%;
+      display: block;
+      box-sizing: border-box; }
   .main__about-title {
     line-height: 52px;
     font-size: 52px;
     margin-bottom: 58px; }
   .main__desc {
-    padding: 114px 54px 30px 64px; }
+    padding: 168px 54px 30px 64px; }
     .main__desc p {
       font-weight: 300;
       line-height: 24px;
@@ -2059,6 +2068,8 @@ a.button__border {
     font-size: 52px; } }
 
 @media only screen and (max-width: 1024px) {
+  .fp-tableCell {
+    display: block !important; }
   .header__menu__item {
     display: none; }
   .header__button,
@@ -2115,8 +2126,9 @@ a.button__border {
   .content-part {
     width: 100%; }
     .content-part .dating-text {
-      top: 90px;
-      left: 38px; }
+      bottom: 320px;
+      left: 38px;
+      top: auto; }
   .side-panel {
     position: absolute;
     width: 100%;
@@ -2130,7 +2142,8 @@ a.button__border {
     .side-panel .navigation-city {
       background: transparent; }
     .side-panel .content-sidebar {
-      padding-top: 0; }
+      padding-top: 0;
+      padding-left: 38px; }
     .side-panel .content-sidebar-title {
       line-height: 38px;
       font-size: 28px; }
@@ -2165,9 +2178,10 @@ a.button__border {
       .main__grid-col:nth-child(2) .main__grid-cell img,
       .main__grid-col:nth-child(3) .main__grid-cell img,
       .main__grid-col .main__grid-cell img {
-        width: auto;
-        min-height: 100%;
-        max-width: 130%; }
+        width: 100%;
+        min-height: auto;
+        max-width: none;
+        height: auto; }
     .main__grid-col:nth-child(1) .main__grid-cell + .main__grid-cell,
     .main__grid-col:nth-child(2) .main__grid-cell + .main__grid-cell,
     .main__grid-col:nth-child(3) .main__grid-cell + .main__grid-cell,
@@ -2237,7 +2251,8 @@ a.button__border {
     margin-left: 0;
     height: auto;
     padding: 0 35px;
-    background: transparent; }
+    background: transparent;
+    margin-top: 120px; }
     .main__about .button__beclient {
       padding: 20px 34px;
       font-size: 16px;
@@ -2254,9 +2269,12 @@ a.button__border {
   .main__about-title {
     line-height: 72px;
     font-size: 42px;
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    letter-spacing: 3px; }
   .button__beclient + .button__beclient {
     margin-left: 80px; }
+  .main__about-buttons {
+    max-width: none; }
   /* Section 5 */
   .section__fifth {
     background-position-x: 38%;
@@ -2287,7 +2305,7 @@ a.button__border {
   .main__hidden {
     display: block; } }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .fp-tableCell {
     display: block; }
   .header {
@@ -2298,7 +2316,8 @@ a.button__border {
       width: calc(80% - 30px);
       padding-left: 18px; }
       .header .header__logo img {
-        width: 100%; }
+        width: 100%;
+        max-width: 380px; }
     .header .header__logo-city span {
       line-height: 23px;
       font-size: 23px; }
@@ -2315,6 +2334,8 @@ a.button__border {
     .header .header .header__button {
       width: 26px;
       height: 20px; }
+  .login-popup {
+    top: 0; }
   /* Section 1 */
   .content-sidebar {
     display: none; }
@@ -2322,13 +2343,23 @@ a.button__border {
       line-height: 29px;
       font-size: 22px; }
   .content-part .dating-text {
-    top: 206px;
+    bottom: 460px;
+    top: auto;
     left: 38px;
     background-size: 165%;
     width: 300px;
     height: 143px;
     background-position-x: -82px;
     background-position-y: -79px; }
+  .read-more-sidebar {
+    display: none; }
+  .read-more-content {
+    width: 100%; }
+  .read-more-content .read-more-text {
+    font-size: 16px;
+    padding: 48px 82px 0px 82px; }
+  .read-more-content .read-more-title {
+    padding: 48px 82px 0px 82px; }
   .main__beclient {
     padding: 60px 35px 0; }
   .beclient__title {
@@ -2396,4 +2427,6 @@ a.button__border {
     .main__contactsrow-img img {
       width: 100%; }
   .main__contactsrow-info div:first-child {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .main__hidden {
+    display: block; } }

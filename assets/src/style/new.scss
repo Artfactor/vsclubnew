@@ -694,14 +694,26 @@ a.button__border {
 			}
 		}
 	}
+	
+	.content-part {
+		background-position-y: 0;
+	}
+	
 	.main__beclient-man {
-		padding-top: 146px;
+		padding-top: 156px;
 		padding-right: 52px;
 		background-position-x: 80%;
 	}
 	.main__beclient-woman {
-		padding-top: 166px;
+		padding-top: 156px;
 		padding-left: 52px;
+	}
+	/* Section 3 */
+	.main__grid-cell {
+		img {
+			width: auto;
+			height: 100%;
+		}
 	}
 	
 	/* Section 4 */
@@ -714,8 +726,11 @@ a.button__border {
 		margin-left: 17%;
 		padding: 168px 42px 30px 42px;
 		.button__beclient {
-			padding-left: 40px;
+			padding-left: 68px;
 			padding-right: 40px;
+			width: 100%;
+			display: block;
+			box-sizing: border-box;
 		}
 	}
 	.main__about-title {
@@ -724,7 +739,7 @@ a.button__border {
 		margin-bottom: 58px;
 	}
 	.main__desc {
-		padding: 114px 54px 30px 64px;
+		padding: 168px 54px 30px 64px;
 		p {
 			font-weight: 300;
 			line-height: 24px;
@@ -753,6 +768,9 @@ a.button__border {
 	}
 }
 @media only screen and (max-width : 1024px) {
+	.fp-tableCell {
+		display: block!important;
+	}
 	.header__menu__item {
 		display: none;
 	}
@@ -820,8 +838,9 @@ a.button__border {
 		width: 100%;
 		
 		.dating-text {
-			top: 90px;
+			bottom: 320px;
 			left: 38px;
+			top: auto;
 		}
 	}
 	.side-panel {
@@ -840,6 +859,7 @@ a.button__border {
 		}
 		.content-sidebar {
 			padding-top: 0;
+			padding-left: 38px;
 		}
 		.content-sidebar-title {
 			line-height: 38px;
@@ -877,9 +897,10 @@ a.button__border {
 			height: 100%!important;
 			
 			img {
-				width: auto;
-				min-height: 100%;
-				max-width: 130%;
+				width: 100%;
+				min-height: auto;
+				max-width: none;
+				height: auto;
 			}
 		}
 		.main__grid-cell + .main__grid-cell {
@@ -962,6 +983,7 @@ a.button__border {
 		height: auto;
 		padding: 0 35px;
 		background: transparent;
+		margin-top: 120px;
 		
 		.button__beclient {
 			padding: 20px 34px;
@@ -983,9 +1005,13 @@ a.button__border {
 		line-height: 72px;
 		font-size: 42px;
 		margin-bottom: 24px;
+		letter-spacing: 3px;
 	}
 	.button__beclient + .button__beclient {
 		margin-left: 80px;
+	}
+	.main__about-buttons {
+		max-width: none;
 	}
 	/* Section 5 */
 	.section__fifth {
@@ -1028,7 +1054,7 @@ a.button__border {
 	
 }
 
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width : 768px) {
 
 	.fp-tableCell {
 		display: block;
@@ -1044,6 +1070,7 @@ a.button__border {
 			
 			img {
 				width: 100%;
+				max-width: 380px;
 			}
 		}
 		.header__logo-city {
@@ -1071,6 +1098,9 @@ a.button__border {
 			height: 20px;
 		}
 	}
+	.login-popup {
+		top: 0;
+	}
 	/* Section 1 */
 	.content-sidebar {
 		display: none;
@@ -1081,7 +1111,8 @@ a.button__border {
 	}
 	.content-part  {
 		.dating-text {
-			top: 206px;
+			bottom: 460px;
+			top: auto;
 			left: 38px;
 			background-size: 165%;
 			width: 300px;
@@ -1089,6 +1120,20 @@ a.button__border {
 			background-position-x: -82px;
 			background-position-y: -79px;
 		}
+	}
+	
+	.read-more-sidebar {
+		display: none;
+	}
+	.read-more-content {
+		width: 100%;
+	}
+	.read-more-content .read-more-text {
+		font-size: 16px;
+		padding: 48px 82px 0px 82px;
+	}
+	.read-more-content .read-more-title {
+		padding: 48px 82px 0px 82px;
 	}
 	
 	.main__beclient {
@@ -1181,6 +1226,10 @@ a.button__border {
 	}
 	.main__contactsrow-info div:first-child {
 		margin-bottom: 0;
+	}
+	
+	.main__hidden {
+		display: block;
 	}
 
 }
