@@ -39,7 +39,7 @@
 
 <div id="fullpage">
 
-<div class="section">
+<div class="section" data-anchor="section1">
 <div class="wrap-main">
 	<!-- SIDEBAR - START -->
 	<aside class="side-panel">
@@ -47,7 +47,7 @@
 		<nav class="navigation-city"> 
 			<a class="city" href="#">Москва</a>
 			<a class="city" href="#">Санкт-Петербург</a>
-			<a class="city" href="#">Саратов</a>
+			<a class="city" href="#section2">Саратов</a>
 		</nav>
 		<article class="content-sidebar">
 			<h2 class="content-sidebar-title">Самые эффектные девушки</h2>
@@ -56,6 +56,11 @@
 				1000 девушекнеобходимо стать клиентом Клуба. 1000 девушек ко ВСЕЙ базе, необходимо стать клиентом Клуба. 
 				1000 девушекнеобходимо с
 			</p>
+			<a class="read-more" href="#">читать далее</a>
+		</article>
+		<article class="content-sidebar main__hidden">
+			<h2 class="content-sidebar-title">Самые эффектные девушки</h2>
+			<p class="content-sidebar-description">На сегодняшний день Клуб знакомств "Бархатный сезон" располагает анкетами более 1000 девушек, желающих</p>
 			<a class="read-more" href="#">читать далее</a>
 		</article>
 	</aside>
@@ -75,21 +80,34 @@
 					<ul class="city-list">
 						<a class="city-list-item-link" href="#">Москва</a>
 						<a class="city-list-item-link" href="#">Санкт-Петербург</a>
-						<a class="city-list-item-link" href="#">Саратов</a>
+						<a class="city-list-item-link" href="#section2">Саратов</a>
 					</ul>
 				</li>
 				<li class="top-header-menu-item"><a class="top-header-menu-link login" id="" href="#">Вход</a></li>
 			</nav>
 		</header>
+		<div class="header">
+			<a href="#" class="header__button"></a>
+			<div class="header__logo"><a href="index.html"><img src="img/logo-main.svg"></a></div>
+			<div class="header__slogan">Клуб знакомств с 2002 года!</div>
+			<div class="header__menu">
+				<div class="header__menu__item"><a href="#">О клубе</a></div>
+				<div class="header__menu__item"><a href="#">Для мужчин</a></div>
+				<div class="header__menu__item"><a href="#">Для девушек</a></div>
+				<div class="header__menu__item"><a href="#">Контакты</a></div>
+				<div class="header__menu__item"><a href="#">Выбрать город</a></div>
+				<div class="header__menu__item"><a href="#" class="login">Вход</a></div>
+			</div>
+		</div>
 		<!-- HEADER - END -->
 
 		<!-- HEADER MOBILE - START (display: none в header.scss)-->
-		<header class="top-header-mobile">
+		<!-- <header class="top-header-mobile">
 			<div class="burger-nav"></div>
 			<div class="top-logo-mobile"></div>
 			<div class="start-date-mobile">Клуб знакомств с 2002 года!</div>
 			<div class="login-mobile">Вход</div>
-		</header>
+		</header> -->
 		<!-- HEADER MOBILE - END -->
 
 		
@@ -101,16 +119,78 @@
 		<!-- SLIDER -->
 		<div class="main-slider-bg">
 			<div class="slick-slider">
-				<div class="image-block"><img class="image-block-item" src="img/slider-img-1.jpg" alt=""></div>
-				<div class="image-block"><img class="image-block-item" src="img/slider-img-2.jpg" alt=""></div>
-				<div class="image-block"><img class="image-block-item" src="img/slider-img-3.jpg" alt=""></div>
-				<div class="image-block"><img class="image-block-item" src="img/slider-img-4.jpg" alt=""></div>
-				<div class="image-block"><img class="image-block-item" src="img/slider-img-5.jpg" alt=""></div>
-				<div class="image-block"><img class="image-block-item" src="img/slider-img-1.jpg" alt=""></div>
-				<div class="image-block"><img class="image-block-item" src="img/slider-img-2.jpg" alt=""></div>
-				<div class="image-block"><img class="image-block-item" src="img/slider-img-3.jpg" alt=""></div>
-				<div class="image-block"><img class="image-block-item" src="img/slider-img-4.jpg" alt=""></div>
-				<div class="image-block"><img class="image-block-item" src="img/slider-img-5.jpg" alt=""></div>
+				<div class="image-block">
+					<img class="image-block-item" src="img/slider-img-1.jpg" alt="">
+					<div class="main-slider-desc">
+						<div class="main-slider-img"><img src="img/spb.svg" alt=""></div>
+						<div class="main-slider-name">Валерия</div>
+						<div class="main-slider-id">8795431</div>
+						<div class="main-slider-params">23 / 175 / 55</div>
+					</div>
+				</div>
+				<div class="image-block"><img class="image-block-item" src="img/slider-img-2.jpg" alt="">
+				<div class="main-slider-desc">
+						<div class="main-slider-img"><img src="img/spb.svg" alt=""></div>
+						<div class="main-slider-name">Валерия</div>
+						<div class="main-slider-id">8795431</div>
+						<div class="main-slider-params">23 / 175 / 55</div>
+					</div></div>
+				<div class="image-block"><img class="image-block-item" src="img/slider-img-3.jpg" alt="">
+				<div class="main-slider-desc">
+						<div class="main-slider-img"><img src="img/spb.svg" alt=""></div>
+						<div class="main-slider-name">Валерия</div>
+						<div class="main-slider-id">8795431</div>
+						<div class="main-slider-params">23 / 175 / 55</div>
+					</div></div>
+				<div class="image-block"><img class="image-block-item" src="img/slider-img-4.jpg" alt="">
+				<div class="main-slider-desc">
+						<div class="main-slider-img"><img src="img/spb.svg" alt=""></div>
+						<div class="main-slider-name">Валерия</div>
+						<div class="main-slider-id">8795431</div>
+						<div class="main-slider-params">23 / 175 / 55</div>
+					</div></div>
+				<div class="image-block"><img class="image-block-item" src="img/slider-img-5.jpg" alt="">
+				<div class="main-slider-desc">
+						<div class="main-slider-img"><img src="img/spb.svg" alt=""></div>
+						<div class="main-slider-name">Валерия</div>
+						<div class="main-slider-id">8795431</div>
+						<div class="main-slider-params">23 / 175 / 55</div>
+					</div></div>
+				<div class="image-block"><img class="image-block-item" src="img/slider-img-1.jpg" alt="">
+				<div class="main-slider-desc">
+						<div class="main-slider-img"><img src="img/spb.svg" alt=""></div>
+						<div class="main-slider-name">Валерия</div>
+						<div class="main-slider-id">8795431</div>
+						<div class="main-slider-params">23 / 175 / 55</div>
+					</div></div>
+				<div class="image-block"><img class="image-block-item" src="img/slider-img-2.jpg" alt="">
+				<div class="main-slider-desc">
+						<div class="main-slider-img"><img src="img/spb.svg" alt=""></div>
+						<div class="main-slider-name">Валерия</div>
+						<div class="main-slider-id">8795431</div>
+						<div class="main-slider-params">23 / 175 / 55</div>
+					</div></div>
+				<div class="image-block"><img class="image-block-item" src="img/slider-img-3.jpg" alt="">
+				<div class="main-slider-desc">
+						<div class="main-slider-img"><img src="img/spb.svg" alt=""></div>
+						<div class="main-slider-name">Валерия</div>
+						<div class="main-slider-id">8795431</div>
+						<div class="main-slider-params">23 / 175 / 55</div>
+					</div></div>
+				<div class="image-block"><img class="image-block-item" src="img/slider-img-4.jpg" alt="">
+				<div class="main-slider-desc">
+						<div class="main-slider-img"><img src="img/spb.svg" alt=""></div>
+						<div class="main-slider-name">Валерия</div>
+						<div class="main-slider-id">8795431</div>
+						<div class="main-slider-params">23 / 175 / 55</div>
+					</div></div>
+				<div class="image-block"><img class="image-block-item" src="img/slider-img-5.jpg" alt="">
+				<div class="main-slider-desc">
+						<div class="main-slider-img"><img src="img/spb.svg" alt=""></div>
+						<div class="main-slider-name">Валерия</div>
+						<div class="main-slider-id">8795431</div>
+						<div class="main-slider-params">23 / 175 / 55</div>
+					</div></div>
 			</div>
 		</div>
 		<!-- SLIDER -->
@@ -245,9 +325,11 @@
 </div>
 </div>
 
-<div class="section main__section section__second">
+<div class="section main__section section__second" data-anchor="section2">
 	<div class="header">
+		<a href="#" class="header__button"></a>
 		<div class="header__logo header__logo-city"><img src="img/saratov-light.svg" alt="" title=""><span>Саратов</span></div>
+		<div class="header__slogan">Клуб знакомств с 2002 года!</div>
 		<div class="header__menu">
 			<div class="header__menu__item"><a href="#">О клубе</a></div>
 			<div class="header__menu__item"><a href="#">Для мужчин</a></div>
@@ -303,9 +385,11 @@
 	</div>
 </div>
 
-<div class="section main__section section__third">
+<div class="section main__section section__third" data-anchor="section3">
 	<div class="header">
+		<a href="#" class="header__button"></a>
 		<div class="header__logo"><a href="index.html"><img src="img/logo-main.svg"></a></div>
+		<div class="header__slogan">Клуб знакомств с 2002 года!</div>
 		<div class="header__menu">
 			<div class="header__menu__item"><a href="#">О клубе</a></div>
 			<div class="header__menu__item"><a href="#">Для мужчин</a></div>
@@ -338,9 +422,11 @@
 		</div>
 	</div>
 </div>
-<div class="section main__section section__fourth">
+<div class="section main__section section__fourth" data-anchor="section4">
 	<div class="header">
+		<a href="#" class="header__button"></a>
 		<div class="header__logo"><a href="index.html"><img src="img/logo-main.svg"></a></div>
+		<div class="header__slogan">Клуб знакомств с 2002 года!</div>
 		<div class="header__menu">
 			<div class="header__menu__item"><a href="#">О клубе</a></div>
 			<div class="header__menu__item"><a href="#">Для мужчин</a></div>
@@ -364,12 +450,20 @@
 			<p>Клуба, достаточно одной личной встречи со мной. Все дальнейшее обслуживание происходит дистанционно. Существует вид обслуживания, при котором НЕ требуется личного посещения клиентом Клуба - я готова приехать на встречу с Вами в любое удобное для Вас место. («ПлатинаИкс»). Приятно отметить, что многие Клиенты обращаются ко мне по рекомендациям друзей и деловых партнеров. А это значит, что я хорошо делаю свою работу! С 2002 года "Бархатный сезон" достиг хороших результатов и заработал репутацию серьезной организации, заботящейся о своих Клиентах!</p>
 			<p>Клуба, достаточно одной личной встречи со мной. Все дальнейшее обслуживание происходит дистанционно. Существует вид обслуживания, при котором НЕ требуется личного посещения клиентом Клуба - я готова приехать на встречу с Вами в любое удобное для Вас место. («ПлатинаИкс»). Приятно отметить, что многие Клиенты обращаются ко мне по рекомендациям друзей и деловых партнеров. А это значит, что я хорошо делаю свою работу! С 2002 года "Бархатный сезон" достиг хороших результатов и заработал репутацию серьезной организации, заботящейся о своих Клиентах!</p>
 		</div>
+		<div class="main__desc main__hidden">
+			<div class="main__desc-title">«Бархатный сезон» - Клуб знакомств и общения</div>
+			<p>был основан 9 сентября 2002 года и является единственным в Саратове Клубом «закрытого типа». Я - Елена, Администратор "Бархатного сезона", работаю в Клубе с самого начала его основания. и Филиалы "Бархатного сезона", помимо Саратова, есть в Санкт-Петербурге и Москве! Работа с клиентами построена на принципах членства в Клубе, то есть право пользования услугами имеют только</p>
+			<p>был основан 9 сентября 2002 года и является единственным в Саратове Клубом «закрытого типа». Я - Елена, Администратор "Бархатного сезона", работаю в Клубе с самого начала его основания. и Филиалы "Бархатного сезона", помимо Саратова, есть в</p>
+		</div>
 	</div>
 </div>
 
-<div class="section main__section section__fifth">
+<div class="section main__section section__fifth" data-anchor="section5">
+
 	<div class="header">
+		<a href="#" class="header__button"></a>
 		<div class="header__logo"><a href="index.html"><img src="img/logo-main.svg"></a></div>
+		<div class="header__slogan">Клуб знакомств с 2002 года!</div>
 		<div class="header__menu">
 			<div class="header__menu__item"><a href="#">О клубе</a></div>
 			<div class="header__menu__item"><a href="#">Для мужчин</a></div>
@@ -379,6 +473,7 @@
 			<div class="header__menu__item"><a href="#" class="login">Вход</a></div>
 		</div>
 	</div>
+	
 	<div class="main__contacts">
 		<div class="main__contacts-item">
 			<div class="main__contacts-title">КОНТАКТЫ</div>
