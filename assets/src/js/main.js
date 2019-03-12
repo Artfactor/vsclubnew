@@ -7,8 +7,18 @@ $(document).ready(function() {
     });
 	
 	$('#fullpage').fullpage({
-		anchors: ['section1', 'section2', 'section3', 'section4', 'section5']
+		anchors: ['section1', 'section2', 'section3', 'section4', 'section5'],
+		responsiveHeight: 700
 	});
+	
+	/*$(window).resize(function() {
+		console.log($(window).height());
+		if($(window).height() < 600) {
+			$.fn.fullpage.destroy();
+		}else{
+			$.fn.fullpage.reBuild();
+		}
+	});*/
 });
 
 // Popup READ-MORE

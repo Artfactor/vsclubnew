@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1902,7 +1903,7 @@ a.button__border {
 .main__grid-animate {
   width: 100%;
   height: 100%;
-  background: url("../img/2_bg.jpg") no-repeat;
+  background: url("../img/саратов.jpg") no-repeat;
   background-size: cover;
   position: absolute;
   left: 0;
@@ -2124,7 +2125,8 @@ a.button__border {
   .main-slider-bg {
     display: none; }
   .content-part {
-    width: 100%; }
+    width: 100%;
+    background-size: 120%; }
     .content-part .dating-text {
       bottom: 320px;
       left: 38px;
@@ -2275,6 +2277,11 @@ a.button__border {
     margin-left: 80px; }
   .main__about-buttons {
     max-width: none; }
+  .main__about .button__beclient {
+    width: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 60px; }
   /* Section 5 */
   .section__fifth {
     background-position-x: 38%;
@@ -2342,15 +2349,17 @@ a.button__border {
     .content-sidebar .content-sidebar-title {
       line-height: 29px;
       font-size: 22px; }
-  .content-part .dating-text {
-    bottom: 460px;
-    top: auto;
-    left: 38px;
-    background-size: 165%;
-    width: 300px;
-    height: 143px;
-    background-position-x: -82px;
-    background-position-y: -79px; }
+  .content-part {
+    background-size: cover; }
+    .content-part .dating-text {
+      bottom: 460px;
+      top: auto;
+      left: 38px;
+      background-size: 165%;
+      width: 300px;
+      height: 143px;
+      background-position-x: -82px;
+      background-position-y: -79px; }
   .read-more-sidebar {
     display: none; }
   .read-more-content {
@@ -2390,12 +2399,13 @@ a.button__border {
     display: none; }
   .section__fourth {
     background: url("../img/index-4-bg-small.jpg") no-repeat;
-    background-size: 130%; }
+    background-size: 150%; }
   .section__fourth:before {
     display: none; }
   .main__about {
     height: 30vh;
-    position: relative; }
+    position: relative;
+    margin-top: 0; }
   .main__about-title {
     line-height: 55px;
     font-size: 32px;
@@ -2429,4 +2439,139 @@ a.button__border {
   .main__contactsrow-info div:first-child {
     margin-bottom: 0; }
   .main__hidden {
-    display: block; } }
+    display: block; }
+  .main__grid-cell img {
+    width: auto !important;
+    height: auto !important;
+    min-height: 100% !important;
+    max-height: 200% !important;
+    min-width: 100% !important;
+    max-width: 200% !important; } }
+
+@media only screen and (max-width: 420px) {
+  .header .header__button {
+    width: 24px;
+    height: 20px; }
+  .header .header__logo-city img {
+    width: 32px; }
+  .header .header__logo-city span {
+    line-height: 18px;
+    font-size: 16px;
+    padding-left: 12px; }
+  /* Section 1 */
+  .side-panel .navigation-city .city:nth-child(1),
+  .side-panel .navigation-city .city:nth-child(2),
+  .side-panel .navigation-city .city:nth-child(3) {
+    margin-top: 16px; }
+  .side-panel .navigation-city .city:first-child:before,
+  .side-panel .navigation-city .city:nth-child(2):before,
+  .side-panel .navigation-city .city:last-child:before {
+    width: 40px;
+    height: 40px;
+    left: -62px;
+    top: -2px; }
+  .content-sidebar .content-sidebar-title {
+    line-height: 24px;
+    font-size: 20px; }
+  .side-panel .content-sidebar .content-sidebar-description {
+    line-height: 18px;
+    font-size: 14.0478px;
+    padding-top: 12px;
+    padding-bottom: 10px; }
+  .side-panel .navigation-city .city {
+    line-height: 30px;
+    font-size: 20px; }
+  .content-sidebar {
+    padding-bottom: 20px; }
+  .content-part .dating-text {
+    bottom: 348px;
+    top: auto;
+    left: 38px;
+    background-size: 165%;
+    width: 230px;
+    height: 120px;
+    background-position-x: -63px;
+    background-position-y: -61px; }
+  /* Section 2 */
+  .main__grid-cell img {
+    width: auto !important;
+    height: auto !important;
+    min-height: 100% !important;
+    max-height: 200% !important;
+    min-width: 100% !important;
+    max-width: 200% !important; }
+  .main__hidden {
+    display: block; }
+  /* Section 3 */
+  .beclient__title {
+    font-size: 26px;
+    margin-bottom: 12px; }
+  .beclient__title span {
+    font-size: 12px;
+    line-height: 6px; }
+  .beclient__item a {
+    font-size: 14px; }
+  .beclient__item {
+    margin-bottom: 6px; }
+  .button__beclient {
+    display: none; }
+  /* Section 4 */
+  .main__about {
+    margin-top: 18px; }
+  .main__desc {
+    padding-top: 20px; }
+  .main__desc-title {
+    font-size: 16px;
+    margin-bottom: 10px; }
+  .main__desc p {
+    line-height: 18px;
+    font-size: 12px; }
+  .main__about-title {
+    bottom: 60px; }
+  /* Section 5 */
+  .main__contacts-title {
+    line-height: 30px;
+    font-size: 28px; }
+  .main__contacts-phone {
+    line-height: 24px;
+    font-size: 18px; }
+  .main__contacts-name {
+    line-height: 20px;
+    font-size: 14px; } }
+
+@media only screen and (max-width: 1024px) and (max-height: 900px) {
+  .main__contacts-title {
+    line-height: 26px;
+    font-size: 26px; }
+  .main__contacts-phone {
+    line-height: 14px;
+    font-size: 14px; }
+  .main__contacts-subtitle {
+    line-height: 14px;
+    font-size: 12px;
+    margin-bottom: 10px; }
+  .main__contacts-title {
+    margin-bottom: 15px; }
+  .main__contactsrow {
+    line-height: 16px;
+    font-size: 12px; }
+  .button__border {
+    font-size: 12px;
+    padding: 6px 0; }
+  .main__contacts-name {
+    line-height: 18px;
+    font-size: 14px; }
+  .main__contacts-item {
+    padding: 18px 0; }
+  .main__contactsrow-img {
+    width: 34px; }
+    .main__contactsrow-img img {
+      width: 100%; }
+  .main__contactsrow-info div:first-child {
+    margin-bottom: 4px; }
+  .main__contactsrow-soc .main__contactsrow-img {
+    width: 20px; } }
+
+@media only screen and (max-height: 700px) {
+  .main__section {
+    height: auto !important; } }
