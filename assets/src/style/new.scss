@@ -384,7 +384,7 @@ div {
 	top: 0;
 	height: 100%;
 	width: 29%;
-	padding: 133px 20px 48px 43px;
+	padding: 106px 20px 48px 43px;
 	background: #033953;
 	color: $white;
 	
@@ -404,7 +404,7 @@ div {
 	font-family: Georgia;
 	font-style: normal;
 	font-weight: norma;;
-	line-height: 123px;
+	line-height: 80px;
 	font-size: 79px;
 	letter-spacing: 0.05em;
 	color: #FFFFFF;
@@ -678,6 +678,17 @@ a.button__border {
 .main__grid-cell:hover:before,
 .main__grid-cell:hover .main__grid-desc {
 	opacity: 1;
+}
+@media only screen and (max-width : 1840px) {
+	.main__contacts {
+		width: 32%;
+	}
+}
+@media only screen and (max-width : 1700px) {
+	.main__contacts {
+		width: 42%;
+		padding: 106px 44px 48px 44px;
+	}
 }
 @media only screen and (max-width : 1440px) {
 	.header {
