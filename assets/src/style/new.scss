@@ -95,9 +95,14 @@ div {
 		@extend %font-georgia;
 		font-weight: bold;
 		color: $white;
-		line-height: 49px;
+		line-height: 45px;
 		font-size: 42px;
 		padding-left: 30px;
+		vertical-align: middle;
+	}
+	img {
+		height: 45px;
+		vertical-align: middle;
 	}
 }
 .header__button, .header__slogan {
@@ -360,11 +365,11 @@ div {
 }
 
 .section__fifth {
-	background-size: cover;
 	background: url("../img/bg_7.jpg") no-repeat;
 	width: 100%;
 	height: 100vh;
 	position: relative;
+	background-size: cover;
 }
 .section__fifth:before {
 	position: absolute;
@@ -679,6 +684,35 @@ a.button__border {
 .main__grid-cell:hover .main__grid-desc {
 	opacity: 1;
 }
+
+.header__fix {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	transition: all 300ms ease-in;
+	
+	.header__logo-city {
+		display: none;
+	}
+}
+.fp-viewing-section2 {
+	.header__fix {
+		.header__logo {
+			display: none;
+		}
+		.header__logo-city {
+			display: block;
+		}
+	}
+}
+.fp-viewing-section1 {
+	.header__fix {
+		opacity: 0;
+		z-index: -1;
+	}
+}
+
 @media only screen and (max-width : 1840px) {
 	.main__contacts {
 		width: 32%;
@@ -776,6 +810,15 @@ a.button__border {
 	.main__contacts-title {
 		line-height: 89px;
 		font-size: 52px;
+	}
+	.header__logo-city {
+		span {
+			line-height: 40px;
+			font-size: 38px;
+		}
+		img {
+			height: 40px;
+		}
 	}
 }
 @media only screen and (max-width : 1024px) {
@@ -995,7 +1038,7 @@ a.button__border {
 		height: auto;
 		padding: 0 35px;
 		background: transparent;
-		margin-top: 120px;
+		padding-top: 120px;
 		
 		.button__beclient {
 			padding: 20px 34px;
@@ -1194,8 +1237,9 @@ a.button__border {
 		display: none;
 	}
 	.section__fourth {
-		background: url('../img/index-4-bg-small.jpg') no-repeat;
-		background-size: 150%;
+		/*background: url('../img/index-4-bg-small.jpg') no-repeat;
+		background-size: 150%;*/
+		background: transparent;
 	}
 	.section__fourth:before {
 		display: none;
@@ -1204,6 +1248,8 @@ a.button__border {
 		height: 30vh;
 		position: relative;
 		margin-top: 0;
+		background: url('../img/index-4-bg-small.jpg') no-repeat;
+		background-size: cover;
 	}
 	.main__about-title {
 		line-height: 55px;
@@ -1218,6 +1264,7 @@ a.button__border {
 		display: none;
 		background: #314A5D;
 		height: 70vh;
+		border-top: 0;
 		
 		
 		p {
@@ -1269,11 +1316,13 @@ a.button__border {
 	}
 	.header .header__logo-city img {
 		width: 32px;
+		vertical-align: middle;
 	}
 	.header .header__logo-city span {
-		line-height: 18px;
+		line-height: 32px;
 		font-size: 16px;
 		padding-left: 12px;
+		vertical-align: middle;
 	}
 	/* Section 1 */
 	.side-panel .navigation-city .city:nth-child(1),
@@ -1348,10 +1397,13 @@ a.button__border {
 	}
 	/* Section 4 */
 	.main__about {
-		margin-top: 18px;
+		margin-top: 0px;
 	}
 	.main__desc {
 		padding-top: 20px;
+		position: relative;
+		top: -1px;
+		left: 0;
 	}
 	.main__desc-title {
 		font-size: 16px;
@@ -1381,6 +1433,15 @@ a.button__border {
 @media only screen and (max-width : 1024px) and (max-height: 1366px){
 	.content-part {
 		background-size: cover;
+		background-position-y: 0px;
+		background-position-x: 0px;
+	}
+	.main__grid-col:nth-child(1) .main__grid-cell img, .main__grid-col:nth-child(2) .main__grid-cell img, .main__grid-col:nth-child(3) .main__grid-cell img, .main__grid-col .main__grid-cell img {
+		width: 135%;
+		min-height: auto;
+		max-width: none;
+		min-height: 100%;
+		height: auto;
 	}
 }
 @media only screen and (max-width : 1024px) and (max-height: 900px){
