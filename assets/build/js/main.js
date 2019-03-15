@@ -8,7 +8,7 @@ $(document).ready(function() {
 	
 	$('#fullpage').fullpage({
 		anchors: ['section1', 'section2', 'section3', 'section4', 'section5'],
-		responsiveHeight: 400
+		responsiveHeight: 600
 	});
 	
 	/*$(window).resize(function() {
