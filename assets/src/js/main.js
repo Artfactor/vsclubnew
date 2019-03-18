@@ -5,6 +5,32 @@ $(document).ready(function() {
         slidesToShow: 5,
         slidesToScroll: 1,
     });
+	$('.content-slider').slick({
+        infinite: true,
+		arrows: false,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+		responsive: [
+		{
+		  breakpoint: 1366,
+		  settings: {
+			slidesToShow: 4
+		  }
+		},
+		{
+		  breakpoint: 768,
+		  settings: {
+			slidesToShow: 3
+		  }
+		},
+		{
+		  breakpoint: 420,
+		  settings: {
+			slidesToShow: 2
+		  }
+		}
+	  ]
+    });
 	
 	$('#fullpage').fullpage({
 		anchors: ['section1', 'section2', 'section3', 'section4', 'section5'],
@@ -23,19 +49,19 @@ $(document).ready(function() {
 
 // Popup READ-MORE
 $(document).ready(function($){
-    //Открытие read-more-popup
+    //РћС‚РєСЂС‹С‚РёРµ read-more-popup
     $('.read-more').on('click', function(event){
         event.preventDefault();
         $('.read-more-popup').addClass('read-more-show');
     });
-    //Закрытие read-more-popup
+    //Р—Р°РєСЂС‹С‚РёРµ read-more-popup
     $('.close-read-more').on('click', function(){
 
             event.preventDefault();
             $('.read-more-popup').removeClass('read-more-show');
         // }
     });
-    //Закрыть при нажатии esc на клавиатуре
+    //Р—Р°РєСЂС‹С‚СЊ РїСЂРё РЅР°Р¶Р°С‚РёРё esc РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ
     $(document).keyup(function(event){
         if(event.which=='27'){
             $('.read-more-popup').removeClass('read-more-show');
@@ -45,18 +71,18 @@ $(document).ready(function($){
 
 //Popup LOGIN
 $(document).ready(function($){
-    //Открытие блока входа
+    //РћС‚РєСЂС‹С‚РёРµ Р±Р»РѕРєР° РІС…РѕРґР°
     $('.login').on('click', function(event){
         event.preventDefault();
         $('.login-popup').addClass('show');
     });
-    //Закрытие read-more-popup
+    //Р—Р°РєСЂС‹С‚РёРµ read-more-popup
     $('.close-login').on('click', function(){
             event.preventDefault();
             $('.login-popup').removeClass('show');
         // }
     });
-    //Закрыть при нажатии esc на клавиатуре
+    //Р—Р°РєСЂС‹С‚СЊ РїСЂРё РЅР°Р¶Р°С‚РёРё esc РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ
     $(document).keyup(function(event){
         if(event.which=='27'){
             $('.login-popup').removeClass('show');
@@ -64,7 +90,7 @@ $(document).ready(function($){
     });
 }); 
 
-//Закрываем по клику в любой области кроме попапа
+//Р—Р°РєСЂС‹РІР°РµРј РїРѕ РєР»РёРєСѓ РІ Р»СЋР±РѕР№ РѕР±Р»Р°СЃС‚Рё РєСЂРѕРјРµ РїРѕРїР°РїР°
 $(document).click(function(e) {
     //if you click on anything except the modal itself or the "open modal" link, close the modal
     if (!$(e.target).closest(".login-popup, .login").length) {

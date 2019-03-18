@@ -514,8 +514,14 @@ a.button__border {
 	will-change: opacity;
 	
 	img {
-		width: 130%;
+		width: auto;
+		min-height: auto;
+		min-width: auto;
+		height: auto;
 		min-height: 100%;
+		min-width: 100%;
+		max-width: 740px;
+		max-height: 740px;
 	}
 }
 /*@for $i from 1 through 6 {
@@ -983,6 +989,17 @@ a.button__border {
 	}
 	.main__contactsrow-soc:last-child {
 		margin-bottom: 15px;
+	}
+	.content-part .start-date {
+		margin-right: 80px;
+	}
+	.main__about {
+		width: 30%;
+		margin-left: 20%;
+	}
+	.button__beclient-man:after {
+		left: 7px;
+		top: -26px;
 	}
 }
 @media only screen and (max-width : 1024px) {
