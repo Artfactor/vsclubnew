@@ -520,8 +520,8 @@ a.button__border {
 		height: auto;
 		min-height: 100%;
 		min-width: 100%;
-		max-width: 740px;
-		max-height: 740px;
+		max-width: none;
+		max-height: none;
 	}
 }
 /*@for $i from 1 through 6 {
@@ -789,10 +789,10 @@ a.button__border {
 	/* Section 3 */
 	.main__grid-cell {
 		img {
-			width: auto;
+			/*width: auto;
 			height: auto;
 			max-width: 245%;
-			min-height: auto;
+			min-height: auto;*/
 		}
 	}
 	
@@ -916,21 +916,21 @@ a.button__border {
 		width: 37.5%;
 		.main__grid-cell:nth-child(1) {
 			height: 42.5%;
-			img {
+			/*img {
 				top: 50%;
 				transform: translateY(-50%);
 				position: relative;
-			}
+			}*/
 		}
 		.main__grid-cell:nth-child(2) {
 			height: 57.5%;
 		}
 	}
 	.main__grid-cell img {
-		width: auto;
+		/*width: auto;
 		height: auto;
 		max-width: 140%;
-		min-height: auto;
+		min-height: auto;*/
 	}
 	
 	.beclient__title {

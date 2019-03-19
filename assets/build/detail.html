@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Главная страница</title>
+	<link rel="stylesheet" href="css/main.css">
+	<!-- <link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/read-more.css">
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/style_1366-768.css">
+	<link rel="stylesheet" href="css/header_1366-768.css">
+	<link rel="stylesheet" href="css/login_1366-768.css">
+	<link rel="stylesheet" href="css/menu-mobile.css"> -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<!-- <link rel="stylesheet" href="fonts/Gotham_Pro/stylesheet.css">
+	<link rel="stylesheet" href="fonts/Rage_Italic_Let/stylesheet.css">
+	<link rel="stylesheet" href="fonts/Georgia/stylesheet.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
+	
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	  
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/readmore-js@2.2.1/readmore.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
+	
+	<script src="js/main.js"></script>
+</head>
+<body>      
+
+<div class="row">
+	<div class="side side-left side-detail">
+		<img src="img/detail-pic.jpg" alt="" title="">
+	</div>
+	<div class="side side-right side-detail-right">
+		<div class="row detail__info">
+			<div class="detail__main">
+				<div class="detail__main-city"><img src="img/saratov.svg" alt="" title=""></div>
+				<div class="detail__main-name">Екатерина<span>№ 8795431</span></div>
+				<div class="detail__main-btn"><a href="#description" class="button button__border open-popup">Анкета посмотреть</a></div>
+			</div>
+			<div class="detail__links">
+				<a href="#">Личный кабинет</a>
+				<a href="#">Добавить в избранное</a>
+				<a href="#">Добавить в архив</a>
+			</div>
+		</div>
+		<div class="row detail__photos">
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-1.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-2.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-3.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-4.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-1.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-2.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-3.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-4.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-1.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-2.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-3.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-4.jpg" alt="" title=""></a></div>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup__detail" id="description" style="display:none;">
+	<a href="#" class="popup__close"></a>
+	<div class="detail__name">Екатерина</div>
+	<div class="row detail__address">
+		<div class="detail__address-area">Москва, Алтуфьевский р-н</div>
+		<div class="detail__address-metro">Кузнецкий мост</div>
+	</div>
+	<div class="detail__params">
+		<div class="row detail__params-line">
+			<div>Возраст</div>
+			<div>28</div>
+		</div>
+		<div class="row detail__params-line">
+			<div>Рост</div>
+			<div>158</div>
+		</div>
+		<div class="row detail__params-line">
+			<div>Вес</div>
+			<div>48</div>
+		</div>
+		<div class="row detail__params-line">
+			<div>Знак зодиака</div>
+			<div>Лев</div>
+		</div>
+		<div class="row detail__params-line">
+			<div>Семейное положение</div>
+			<div>Разведена с 2012 года</div>
+		</div>
+		<div class="row detail__params-line">
+			<div>Дети</div>
+			<div>Сын 2012 года рождения</div>
+		</div>
+		<div class="row detail__params-line">
+			<div>Образование</div>
+			<div>Московский открытый социальный университет</div>
+		</div>
+		<div class="row detail__params-line">
+			<div>Работа</div>
+			<div>Финансовый консультант международной окмпании</div>
+		</div>
+		<div class="row detail__params-line">
+			<div>Проживание</div>
+			<div>своя квартира</div>
+		</div>
+	</div>
+	<div class="detail__about">
+		<div class="detail__about-title">О себе</div>
+		<p>Ты встречаешь за свою жизнь тысячу людей, и не один из них не греет душу, а потом, ты встречаешь одного, того, кто меняет твою жизнь. Навсегда.</p>
+	</div>
+</div>
+
+</body>
+</html>
