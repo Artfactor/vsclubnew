@@ -1,0 +1,133 @@
+@media (min-width: 900px) and (max-width: 1099px) {
+
+	.menu-tablet {
+		display: block;
+		margin-bottom: -24px;
+	}
+
+	.numbering-description-text {
+		padding: 0 35px;
+		margin-top: 23px;
+		font-size: 20px;
+	}
+
+	.catalog-list {
+		padding: 0 35px;
+		margin-top: 30px;
+
+		.catalog-item {
+			margin-left: calc((100% - 764px) / 6);
+			margin-right: calc((100% - 764px) / 6);
+			margin-bottom: 48px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&:nth-child(4n+1) {
+				margin-left: 0;
+			}
+	
+			&:nth-child(4n+4) {
+				margin-right: 0;
+			}
+
+			&:nth-child(7n+1) {
+				margin-left: calc((100% - 764px) / 6);
+			}
+	
+			&:nth-child(7n+7) {
+				margin-right: calc((100% - 764px) / 6);
+			}
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			.number-area {
+				width: 29px;
+				height: 29px;
+			}
+
+			.catalog-item-link {
+
+				.icon-favorite {
+					top: -163px;
+					width: 21.8px;
+					height: 18.6px;
+					right: 8px;
+
+					.delete-favorite {
+						font-size: 11px;
+						padding-top: 18px;
+						right: 10px;
+
+						&:hover {
+							right: 10px;
+						}
+					}
+				}
+			}
+
+			.catalog-item-info {
+				width: 191px;
+				height: 185px;
+				padding: 68px 15px 11px 15px;
+
+				.img-city {
+					width: 18.4px;
+					height: 18.4px;
+				}
+
+				.title-city {
+					padding-top: 0;
+					font-size: 13px;
+					display: inline-block;
+					position: relative;
+					left: 0px;
+					top: -4px;
+					line-height: 12px;
+				}
+
+				.characteristic {
+					padding-top: 8px;
+					font-size: 12px;
+					line-height: 11px;
+				}
+
+				.having-children {
+					padding-top: 5px;
+					font-size: 12px;
+					line-height: 11px;
+				}
+	
+				.marital-status {
+					padding-top: 5px;
+					font-size: 12px;
+					font-family: 'Gotham Pro';
+					line-height: 11px;
+				}
+
+				.for-comment {
+					width: 191px;
+					padding: 7px 33px 7px 32px;
+				}
+			}
+
+			.item-content-img {
+				width: 191px;
+				height: 185px;
+			}
+
+			.item-content-description {
+				margin-top: 8px;
+				line-height: 15px;
+
+				.item-content-description-number {
+					margin-top: 9px;
+					line-height: 15px;
+				}
+			}
+		}
+	}
+}

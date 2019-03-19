@@ -1,0 +1,23 @@
+@media (min-width: 1600px) and (max-width: 1899px) {
+  .personal {
+
+    .personal-text {
+        font-size: 64px;
+		}
+    .personal-card {
+        font-size: 20px;
+    }
+	}
+	
+  .personal-menu {
+    margin-top: 62px;
+		font-size: 18px;
+
+		.container {
+
+			&:after {
+				top: 39px;
+			}
+		}
+	}
+}

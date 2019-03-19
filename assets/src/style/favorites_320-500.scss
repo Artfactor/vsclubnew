@@ -1,0 +1,113 @@
+@media (min-width: 0px) and (max-width: 499px) {
+  .numbering-description-text {
+		padding: 0 35px;
+		margin-top: 10px;
+		font-size: 16px;
+		line-height: 21px;
+	}
+
+	.catalog-list {
+		padding: 0 35px;
+		margin-top: 12px;
+
+		.catalog-item {
+			margin-left: calc((100% - 220px) / 2);
+			margin-right: calc((100% - 220px) / 2);
+			margin-bottom: 24px;
+
+			&:nth-child(7n+1) {
+				margin-left: calc((100% - 220px) / 2);
+			}
+	
+			&:nth-child(7n+7) {
+				margin-right: calc((100% - 220px) / 2);
+			}
+
+			.number-area {
+				width: 37.6px;
+				height: 37.6px;
+			}
+
+			.catalog-item-link {
+
+				.icon-favorite {
+					top: -197px;
+					width: 28px;
+					height: 24.8px;
+					right: 11px;
+
+					.delete-favorite {
+						font-size: 13px;
+						line-height: 12px;
+						padding-top: 26px;
+						right: 13px;
+
+						&:hover {
+							right: 13px;
+						}
+					}
+				}
+			}
+
+			.catalog-item-info {
+				width: 220px;
+				height: 220px;
+				padding: 68px 15px 11px 15px;
+
+				.img-city {
+					width: 26.8px;
+					height: 26.8px;
+				}
+
+				.title-city {
+					padding-top: 0;
+					font-size: 18px;
+					display: inline-block;
+					position: relative;
+					left: 4px;
+					top: -7px;
+					line-height: 17px;
+				}
+
+				.characteristic {
+					padding-top: 10px;
+					font-size: 15px;
+					line-height: 15px;
+				}
+
+				.having-children {
+					padding-top: 10px;
+					font-size: 15px;
+					line-height: 15px;
+				}
+	
+				.marital-status {
+					padding-top: 10px;
+					font-size: 15px;
+					font-family: 'Gotham Pro';
+					line-height: 15px;
+				}
+
+				.for-comment {
+					width: 220px;
+					padding: 9px 33px 9px 32px;
+				}
+			}
+
+			.item-content-img {
+				width: 220px;
+				height: 220px;
+			}
+
+			.item-content-description {
+				margin-top: 8px;
+				line-height: 15px;
+
+				.item-content-description-number {
+					margin-top: 9px;
+					line-height: 15px;
+				}
+			}
+		}
+	}
+}

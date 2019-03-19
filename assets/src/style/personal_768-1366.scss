@@ -1,0 +1,58 @@
+@media (min-width: 768px) and (max-width: 1365px) {
+
+	.personal {
+		display: block;
+		margin-top: 24px;
+		padding: 0 35px;
+
+		.container {
+			display: block;
+		}
+
+		.personal-text {
+			font-size: 42px;
+		}
+
+		.personal-card {
+			font-size: 20px;
+
+			.number-card {
+				padding-top: 19px;
+				font-size: 18px;
+				text-align: left;
+			}
+
+			.validaty-card {
+				padding-top: 8px;
+			}
+		}
+	}
+
+	.personal-menu {
+		display: none;
+	}
+		
+	.catalog-message {
+		margin-top: 29px;
+		padding: 0 35px;
+	}
+
+	.message {
+		margin-right: 0;
+		margin-bottom: 30px;
+
+		.author {
+			font-size: 18px;
+		}
+	
+		.text-message {
+			font-size: 16px;
+			margin: 10px 0; 
+			line-height: 23px;
+		}
+	
+		.date-message {
+			font-size: 16px;
+		}
+	}
+}

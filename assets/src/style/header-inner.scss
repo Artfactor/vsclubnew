@@ -1,0 +1,162 @@
+.container {
+	max-width: 1816px;
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header-inner {
+	align-items: center;
+	height: 71px;
+	background: #F3F4F6;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 52px;
+} 
+
+.logo-inner {
+	display: flex;
+	align-items: center;
+	height: 71px;
+
+	.burger {
+		display: none;
+	}
+
+	.header-logo-inner {
+		background: url(../img/logo_black.svg) no-repeat;
+		width: 364px;
+		height: 100%;
+		background-position: center;
+		background-size: contain;
+		display: inline-block;
+	}
+}
+
+.header-inner-text {
+	margin-left: 37px;
+	font-family: 'Rage Italic LET';
+	font-size: 31px;
+	color: #314A5D;
+	padding-top: 12px;
+}
+
+.header-inner-menu {
+	list-style: none;
+	display: flex;
+	margin-left: auto;
+
+	.header-inner-menu-item {
+
+		.header-inner-menu-link {
+			font-family: 'Gotham Pro';
+			color: #314A5D;
+			font-size: 21px;
+			font-weight: 500;
+			text-decoration: none;
+			padding: 26px 32px 24px 32px;
+			transition: all .3s;
+
+			&:hover {
+				color: #DC143C;
+			}
+		}
+	}
+}
+
+.selection-city {
+
+	&:hover .city-list-inner {
+		opacity: 1;
+		left: -95px;
+		pointer-events: visible;
+	}
+
+	.city-list-inner {
+		pointer-events: none;
+		opacity: 0;
+		list-style: none;
+		padding: 21px 34px 25px 79px;
+		background: #01334E;
+		position: absolute;
+		top: 47px;
+		left: -95px;
+		width: 212px;
+		height: 209px;
+		z-index: 3            ;
+		transition: opacity .3s;
+		margin: 0;
+
+		.city-list-inner-link {
+			display: block;
+			font-family: 'Gotham Pro';
+			text-decoration: none;
+			line-height: 34px;
+			font-size: 24px;
+			font-weight: lighter;
+			color: #fff;
+			position: relative;
+			transition: color .5s;
+
+			&:hover {
+				color: #DC143C;
+			}
+
+			&:first-child {
+				margin-top: 30px;
+			}
+
+			&:first-child:before {
+				content: "";
+				 position: absolute;
+				 width: 43.24px;
+				 height: 43.24px;
+				background: url(../img/moscow.svg) no-repeat;
+				left: -55px;
+				top: -6px;
+				background-size: 100%;
+			}
+
+			&:nth-child(2) {
+				margin-top: 27px;
+			}
+
+			&:nth-child(2):before {
+				content: "";
+				 position: absolute;
+				 width: 43.24px;
+				 height: 43.24px;
+				background: url(../img/spb.svg) no-repeat;
+				left: -55px;
+				top: -6px;
+				background-size: 100%;
+			}
+
+			&:last-child {
+				margin-top: 27px;
+			}
+
+			&:last-child:before {
+				content: "";
+				 position: absolute;
+				 width: 43.24px;
+				 height: 43.24px;
+				 background: url(../img/saratov.svg) no-repeat;
+				left: -55px;
+				top: -6px;
+				background-size: 100%;
+			}
+		}		
+	}
+}
+
+.login-inner {
+	display: none;
+	margin-right: 0;
+	text-decoration: none;
+	font-family: Gotham Pro;
+	font-weight: 500;
+	font-size: 16px;
+	color: #314A5D;
+}

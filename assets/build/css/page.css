@@ -2893,3 +2893,1726 @@ a.button__border {
     height: 100%; }
   .main__about-title {
     padding-top: 106px; } }
+
+.container {
+  max-width: 1816px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.header-inner {
+  -ms-flex-align: center;
+      align-items: center;
+  height: 71px;
+  background: #F3F4F6;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 52px; }
+
+.logo-inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 71px; }
+  .logo-inner .burger {
+    display: none; }
+  .logo-inner .header-logo-inner {
+    background: url(../img/logo_black.svg) no-repeat;
+    width: 364px;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    display: inline-block; }
+
+.header-inner-text {
+  margin-left: 37px;
+  font-family: 'Rage Italic LET';
+  font-size: 31px;
+  color: #314A5D;
+  padding-top: 12px; }
+
+.header-inner-menu {
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto; }
+  .header-inner-menu .header-inner-menu-item .header-inner-menu-link {
+    font-family: 'Gotham Pro';
+    color: #314A5D;
+    font-size: 21px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 26px 32px 24px 32px;
+    transition: all .3s; }
+    .header-inner-menu .header-inner-menu-item .header-inner-menu-link:hover {
+      color: #DC143C; }
+
+.selection-city:hover .city-list-inner {
+  opacity: 1;
+  left: -95px;
+  pointer-events: visible; }
+
+.selection-city .city-list-inner {
+  pointer-events: none;
+  opacity: 0;
+  list-style: none;
+  padding: 21px 34px 25px 79px;
+  background: #01334E;
+  position: absolute;
+  top: 47px;
+  left: -95px;
+  width: 212px;
+  height: 209px;
+  z-index: 3;
+  transition: opacity .3s;
+  margin: 0; }
+  .selection-city .city-list-inner .city-list-inner-link {
+    display: block;
+    font-family: 'Gotham Pro';
+    text-decoration: none;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: lighter;
+    color: #fff;
+    position: relative;
+    transition: color .5s; }
+    .selection-city .city-list-inner .city-list-inner-link:hover {
+      color: #DC143C; }
+    .selection-city .city-list-inner .city-list-inner-link:first-child {
+      margin-top: 30px; }
+    .selection-city .city-list-inner .city-list-inner-link:first-child:before {
+      content: "";
+      position: absolute;
+      width: 43.24px;
+      height: 43.24px;
+      background: url(../img/moscow.svg) no-repeat;
+      left: -55px;
+      top: -6px;
+      background-size: 100%; }
+    .selection-city .city-list-inner .city-list-inner-link:nth-child(2) {
+      margin-top: 27px; }
+    .selection-city .city-list-inner .city-list-inner-link:nth-child(2):before {
+      content: "";
+      position: absolute;
+      width: 43.24px;
+      height: 43.24px;
+      background: url(../img/spb.svg) no-repeat;
+      left: -55px;
+      top: -6px;
+      background-size: 100%; }
+    .selection-city .city-list-inner .city-list-inner-link:last-child {
+      margin-top: 27px; }
+    .selection-city .city-list-inner .city-list-inner-link:last-child:before {
+      content: "";
+      position: absolute;
+      width: 43.24px;
+      height: 43.24px;
+      background: url(../img/saratov.svg) no-repeat;
+      left: -55px;
+      top: -6px;
+      background-size: 100%; }
+
+.login-inner {
+  display: none;
+  margin-right: 0;
+  text-decoration: none;
+  font-family: Gotham Pro;
+  font-weight: 500;
+  font-size: 16px;
+  color: #314A5D; }
+
+@media (min-width: 1600px) and (max-width: 1899px) {
+  .container {
+    max-width: 1816px; }
+  .logo-inner .header-logo-inner {
+    width: 292px; }
+  .header-inner-text {
+    margin-left: 15px;
+    font-size: 26px;
+    padding-top: 10px; }
+  .header-inner-menu .header-inner-menu-item .header-inner-menu-link {
+    font-size: 18px;
+    padding: 26px 34px 24px 34px; }
+  .selection-city:hover .city-list-inner {
+    left: -115px; }
+  .selection-city .city-list-inner {
+    top: 45px;
+    left: -115px; } }
+
+@media (min-width: 1366px) and (max-width: 1599px) {
+  .container {
+    max-width: 1516px; }
+  .header-inner {
+    padding: 0 40px; }
+  .logo-inner .header-logo-inner {
+    width: 236px; }
+  .header-inner-text {
+    margin-left: 20px;
+    font-size: 20px;
+    padding-top: 10px; }
+  .header-inner-menu .header-inner-menu-item .header-inner-menu-link {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 26px 16px 26px 16px; }
+  .selection-city:hover .city-list-inner {
+    left: -167px; }
+  .selection-city .city-list-inner {
+    top: 44px;
+    left: -167px; } }
+
+@media (min-width: 768px) and (max-width: 1365px) {
+  .container {
+    max-width: 1296px; }
+  .header-inner {
+    padding: 0 35px; }
+  .logo-inner {
+    margin-left: 0; }
+    .logo-inner .burger {
+      display: block; }
+      .logo-inner .burger .burger-img {
+        display: inline-block;
+        background: url(../img/burger-inner.svg) no-repeat;
+        width: 30px;
+        height: 23px; }
+    .logo-inner .header-logo-inner {
+      margin-left: 19px;
+      width: 236px; }
+  .header-inner-text {
+    margin-left: 20px;
+    font-size: 20px;
+    padding-top: 10px; }
+  .header-inner-menu {
+    display: none; }
+  .login-inner {
+    display: block;
+    margin-left: auto; } }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .container {
+    max-width: 697px; }
+  .header-inner {
+    height: 60px;
+    padding: 0 35px; }
+  .logo-inner {
+    margin-left: 0;
+    height: 60px; }
+    .logo-inner .burger {
+      display: block; }
+      .logo-inner .burger .burger-img {
+        display: inline-block;
+        background: url(../img/burger-inner.svg) no-repeat;
+        width: 30px;
+        height: 23px; }
+    .logo-inner .header-logo-inner {
+      margin-left: 14px;
+      width: 150px; }
+  .header-inner-text {
+    font-size: 20px;
+    padding-top: 8px;
+    margin-left: 20px; }
+  .header-inner-menu {
+    display: none; }
+  .login-inner {
+    display: block;
+    margin-left: auto;
+    font-size: 14px; } }
+
+.personal {
+  margin-top: 36px;
+  padding: 0 52px; }
+  .personal .personal-text {
+    font-family: 'Georgia';
+    color: #485F6C;
+    font-size: 72px;
+    font-weight: normal;
+    margin: 0; }
+  .personal .personal-card {
+    font-family: 'Gotham Pro';
+    font-size: 24px;
+    margin-left: auto; }
+    .personal .personal-card .number-card {
+      color: #DC143C;
+      margin: 0;
+      text-align: right;
+      font-weight: bold; }
+    .personal .personal-card .validaty-card {
+      color: #314A5D;
+      margin: 0;
+      padding-top: 16px; }
+      .personal .personal-card .validaty-card .balance {
+        font-weight: bold; }
+
+.personal-menu {
+  position: relative;
+  list-style: none;
+  margin-top: 44px;
+  font-family: 'Gotham Pro';
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0 52px; }
+  .personal-menu .container {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    position: relative; }
+    .personal-menu .container:after {
+      content: "";
+      position: absolute;
+      border-top: 1px solid #DCE3E7;
+      width: 100%;
+      top: 44px; }
+  .personal-menu .personal-menu-item {
+    position: relative; }
+    .personal-menu .personal-menu-item:last-child {
+      margin-right: 0; }
+
+.personal-menu-link {
+  position: relative;
+  text-decoration: none;
+  color: #314A5D;
+  transition: color .3s; }
+  .personal-menu-link:hover {
+    color: #DC143C; }
+  .personal-menu-link:hover .icon-hover {
+    fill: #DC143C; }
+  .personal-menu-link:before:hover {
+    fill: #DC143C; }
+  .personal-menu-link .icon-personal-menu {
+    padding-right: 8px; }
+  .personal-menu-link .icon-hover {
+    transition: all .3s; }
+
+.catalog-message {
+  margin-top: 59px;
+  padding: 0 52px; }
+  .catalog-message .container {
+    display: block; }
+
+.message {
+  font-family: 'Gotham Pro';
+  margin-bottom: 25px;
+  position: relative; }
+  .message .author {
+    color: #314A5D;
+    font-size: 26px;
+    margin: 0;
+    font-weight: 500; }
+  .message .text-message {
+    color: #606060;
+    font-size: 18px;
+    margin: 8px 0 8px 0;
+    line-height: 26px; }
+  .message .message-read-more {
+    display: inline-block;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: #DC143C; }
+  .message .date-message {
+    color: #314A5D;
+    font-size: 16px;
+    margin: 0; }
+
+@media (min-width: 1600px) and (max-width: 1899px) {
+  .personal .personal-text {
+    font-size: 64px; }
+  .personal .personal-card {
+    font-size: 20px; }
+  .personal-menu {
+    margin-top: 62px;
+    font-size: 18px; }
+    .personal-menu .container:after {
+      top: 39px; } }
+
+@media (min-width: 1366px) and (max-width: 1599px) {
+  .personal {
+    padding: 0 40px; }
+    .personal .personal-text {
+      font-size: 42px; }
+    .personal .personal-card {
+      font-size: 18px; }
+      .personal .personal-card .number-card {
+        font-size: 18px; }
+      .personal .personal-card .validaty-card {
+        padding-top: 10px; }
+  .personal-menu {
+    margin-top: 39px;
+    font-size: 18px;
+    padding: 0 40px; }
+    .personal-menu .container:after {
+      top: 39px; }
+  .catalog-message {
+    margin-top: 51px;
+    padding: 0 40px; }
+  .message {
+    margin-right: 0;
+    margin-bottom: 20px; }
+    .message .author {
+      font-size: 18px; }
+    .message .text-message {
+      font-size: 16px;
+      margin: 8px 0 8px 0; }
+    .message .date-message {
+      font-size: 16px; } }
+
+@media (min-width: 768px) and (max-width: 1365px) {
+  .personal {
+    display: block;
+    margin-top: 24px;
+    padding: 0 35px; }
+    .personal .container {
+      display: block; }
+    .personal .personal-text {
+      font-size: 42px; }
+    .personal .personal-card {
+      font-size: 20px; }
+      .personal .personal-card .number-card {
+        padding-top: 19px;
+        font-size: 18px;
+        text-align: left; }
+      .personal .personal-card .validaty-card {
+        padding-top: 8px; }
+  .personal-menu {
+    display: none; }
+  .catalog-message {
+    margin-top: 29px;
+    padding: 0 35px; }
+  .message {
+    margin-right: 0;
+    margin-bottom: 30px; }
+    .message .author {
+      font-size: 18px; }
+    .message .text-message {
+      font-size: 16px;
+      margin: 10px 0;
+      line-height: 23px; }
+    .message .date-message {
+      font-size: 16px; } }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .personal {
+    display: block;
+    margin-top: 19px;
+    padding: 0 35px; }
+    .personal .container {
+      display: block; }
+    .personal .personal-text {
+      font-size: 24px; }
+    .personal .personal-card {
+      font-size: 16px; }
+      .personal .personal-card .number-card {
+        padding-top: 19px;
+        text-align: left; }
+      .personal .personal-card .validaty-card {
+        padding-top: 10px; }
+  .personal-menu {
+    display: none; }
+  .catalog-message {
+    margin-top: 29px;
+    padding: 0 35px; }
+  .message {
+    margin-right: 0;
+    margin-bottom: 20px; }
+    .message .author {
+      font-size: 16px; }
+    .message .text-message {
+      font-size: 14px;
+      margin: 15px 0;
+      line-height: 20px; }
+    .message .message-read-more {
+      margin-bottom: 12px; }
+    .message .date-message {
+      font-size: 14px; } }
+
+@media (max-width: 600px) {
+  .logo-inner .header-logo-inner {
+    width: 150px; }
+  .logo-inner .header-inner-text {
+    display: none; }
+  .login-inner {
+    font-size: 14px; } }
+
+.menu-tablet {
+  display: none;
+  position: relative;
+  list-style: none;
+  margin-top: 22px;
+  font-family: 'Gotham Pro';
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 35px; }
+  .menu-tablet .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative; }
+    .menu-tablet .container:after {
+      content: "";
+      position: absolute;
+      border-top: 1px solid #DCE3E7;
+      width: 100%;
+      top: 50px; }
+  .menu-tablet .personal-menu-item {
+    margin-right: 32px;
+    margin-bottom: 50px;
+    position: relative; }
+    .menu-tablet .personal-menu-item:last-child {
+      margin-right: 0; }
+
+.personal-menu-link {
+  position: relative;
+  text-decoration: none;
+  color: #314A5D;
+  transition: color .3s; }
+  .personal-menu-link:hover {
+    color: #DC143C; }
+  .personal-menu-link:hover .icon-hover {
+    fill: #DC143C; }
+  .personal-menu-link:before:hover {
+    fill: #DC143C; }
+  .personal-menu-link .icon-personal-menu {
+    padding-right: 8px; }
+  .personal-menu-link .icon-hover {
+    transition: all .3s; }
+
+.numbering-description-text {
+  font-family: 'Gotham Pro';
+  font-size: 24px;
+  color: #828FA2;
+  margin-top: 39px;
+  margin-bottom: 0;
+  padding: 0 52px;
+  position: relative; }
+
+.catalog-list {
+  margin-top: 24px;
+  padding-left: 52px;
+  padding-right: 52px; }
+  .catalog-list .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .catalog-list .catalog-item {
+    position: relative;
+    margin-bottom: 27px;
+    margin-left: calc((100% - 1652px) / 12);
+    margin-right: calc((100% - 1652px) / 12); }
+    .catalog-list .catalog-item:first-child {
+      margin-left: 0; }
+    .catalog-list .catalog-item:nth-child(7n+1) {
+      margin-left: 0; }
+    .catalog-list .catalog-item:nth-child(7n+7) {
+      margin-right: 0; }
+    .catalog-list .catalog-item:hover .catalog-item-info {
+      opacity: 1;
+      pointer-events: visible; }
+    .catalog-list .catalog-item .number-area {
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      background: #FFFFFF;
+      border: 1px solid #C9CED8;
+      box-sizing: border-box;
+      left: 0;
+      top: 0;
+      text-align: center;
+      font-family: 'Gotham Pro';
+      font-size: 18px;
+      color: #5F5F5F;
+      z-index: 1;
+      cursor: pointer;
+      transition: all .4s;
+      -moz-appearance: textfield; }
+      .catalog-list .catalog-item .number-area:hover {
+        border: 2px solid #DC143C; }
+      .catalog-list .catalog-item .number-area::-webkit-inner-spin-button, .catalog-list .catalog-item .number-area ::-webkit-outer-spin-button {
+        -webkit-appearance: none; }
+    .catalog-list .catalog-item .catalog-item-link {
+      position: relative;
+      text-decoration: none; }
+      .catalog-list .catalog-item .catalog-item-link .icon-favorite {
+        position: absolute;
+        background: url(../img/heart-full.svg) no-repeat;
+        top: -206px;
+        right: 5px;
+        width: 27px;
+        height: 23px;
+        background-size: 100%;
+        cursor: pointer;
+        display: inline-block;
+        z-index: 1; }
+        .catalog-list .catalog-item .catalog-item-link .icon-favorite:hover .delete-favorite {
+          opacity: 1;
+          pointer-events: visible; }
+        .catalog-list .catalog-item .catalog-item-link .icon-favorite .delete-favorite {
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          right: 12px;
+          font-family: 'Gotham Pro';
+          font-size: 14px;
+          color: #fff;
+          cursor: pointer;
+          transition: opacity .4s;
+          pointer-events: none;
+          width: -webkit-max-content;
+          width: -moz-max-content;
+          width: max-content;
+          display: inline-block;
+          padding-top: 25px; }
+    .catalog-list .catalog-item .catalog-item-info {
+      position: absolute;
+      opacity: 0;
+      background: rgba(25, 49, 71, 0.772);
+      width: 236px;
+      height: 229px;
+      top: 0;
+      left: 0;
+      padding: 46px 18px 14px 18px;
+      font-family: 'Gotham Pro';
+      font-size: 14px;
+      line-height: 13px;
+      color: #fff;
+      border-radius: 2px;
+      pointer-events: none;
+      transition: opacity .4s; }
+      .catalog-list .catalog-item .catalog-item-info .img-city {
+        background: url(../img/saratov.svg) no-repeat;
+        width: 43px;
+        height: 43px;
+        background-size: 100%;
+        display: inline-block; }
+      .catalog-list .catalog-item .catalog-item-info .title-city {
+        font-weight: 500;
+        display: block;
+        padding-top: 8px; }
+      .catalog-list .catalog-item .catalog-item-info .characteristic {
+        display: block;
+        padding-top: 8px; }
+      .catalog-list .catalog-item .catalog-item-info .having-children {
+        display: block;
+        padding-top: 8px; }
+      .catalog-list .catalog-item .catalog-item-info .marital-status {
+        display: block;
+        padding-top: 8px; }
+      .catalog-list .catalog-item .catalog-item-info .for-comment {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        background: #DC143C;
+        width: 236px;
+        padding: 11px 53px 10px 53px;
+        font-size: 13px;
+        line-height: 12px;
+        outline: none; }
+    .catalog-list .catalog-item .item-content-img {
+      width: 236px;
+      height: 229px; }
+    .catalog-list .catalog-item .item-content-description {
+      margin-top: 11px;
+      font-family: 'Gotham Pro';
+      font-size: 18px;
+      color: #314A5D; }
+      .catalog-list .catalog-item .item-content-description .item-content-description-name {
+        font-weight: 500;
+        margin: 0; }
+      .catalog-list .catalog-item .item-content-description .item-content-description-number {
+        font-weight: normal;
+        margin: 0;
+        margin-top: 4px; }
+
+@media (min-width: 1600px) and (max-width: 1899px) {
+  .numbering-description-text {
+    margin-top: 54px; }
+  .catalog-list {
+    margin-top: 26px; }
+    .catalog-list .catalog-item {
+      margin-left: calc((100% - 1365px) / 12);
+      margin-right: calc((100% - 1365px) / 12); }
+      .catalog-list .catalog-item .number-area {
+        width: 29px;
+        height: 29px; }
+      .catalog-list .catalog-item .catalog-item-link .icon-favorite {
+        top: -169px;
+        width: 23px;
+        height: 19px; }
+        .catalog-list .catalog-item .catalog-item-link .icon-favorite .delete-favorite {
+          font-size: 12px;
+          padding-top: 18px; }
+      .catalog-list .catalog-item .catalog-item-info {
+        width: 195px;
+        height: 189px;
+        padding: 38px 15px 11px 15px; }
+        .catalog-list .catalog-item .catalog-item-info .img-city {
+          width: 35px;
+          height: 35px; }
+        .catalog-list .catalog-item .catalog-item-info .title-city {
+          padding-top: 6px; }
+        .catalog-list .catalog-item .catalog-item-info .characteristic {
+          padding-top: 6px; }
+        .catalog-list .catalog-item .catalog-item-info .having-children {
+          padding-top: 6px; }
+        .catalog-list .catalog-item .catalog-item-info .marital-status {
+          padding-top: 6px; }
+        .catalog-list .catalog-item .catalog-item-info .for-comment {
+          width: 195px;
+          padding: 8px 35px 7px 34px; }
+      .catalog-list .catalog-item .item-content-img {
+        width: 195px;
+        height: 189px; }
+      .catalog-list .catalog-item .item-content-description {
+        margin-top: 12px;
+        font-size: 16px; }
+        .catalog-list .catalog-item .item-content-description .item-content-description-number {
+          margin-top: 12px; } }
+
+@media (min-width: 1300px) and (max-width: 1599px) {
+  .numbering-description-text {
+    margin-top: 31px;
+    font-size: 20px;
+    padding: 0 40px; }
+  .catalog-list {
+    margin-top: 11px;
+    padding: 0 40px; }
+    .catalog-list .catalog-item {
+      margin-left: calc((100% - 1146px) / 10);
+      margin-right: calc((100% - 1146px) / 10);
+      margin-bottom: 17px; }
+      .catalog-list .catalog-item:first-child {
+        margin-left: 0; }
+      .catalog-list .catalog-item:nth-child(6n+1) {
+        margin-left: 0; }
+      .catalog-list .catalog-item:nth-child(6n+6) {
+        margin-right: 0; }
+      .catalog-list .catalog-item:nth-child(7n+1) {
+        margin-left: calc((100% - 1146px) / 10); }
+      .catalog-list .catalog-item:nth-child(7n+7) {
+        margin-right: calc((100% - 1146px) / 10); }
+      .catalog-list .catalog-item:first-child {
+        margin-left: 0; }
+      .catalog-list .catalog-item .number-area {
+        width: 29px;
+        height: 29px; }
+      .catalog-list .catalog-item .catalog-item-link .icon-favorite {
+        top: -163px;
+        width: 21.8px;
+        height: 18.6px;
+        right: 8px; }
+        .catalog-list .catalog-item .catalog-item-link .icon-favorite .delete-favorite {
+          font-size: 11px;
+          padding-top: 18px;
+          right: 10px; }
+          .catalog-list .catalog-item .catalog-item-link .icon-favorite .delete-favorite:hover {
+            right: 10px; }
+      .catalog-list .catalog-item .catalog-item-info {
+        width: 191px;
+        height: 185px;
+        padding: 68px 15px 11px 15px; }
+        .catalog-list .catalog-item .catalog-item-info .img-city {
+          width: 18.4px;
+          height: 18.4px; }
+        .catalog-list .catalog-item .catalog-item-info .title-city {
+          padding-top: 0;
+          font-size: 13px;
+          display: inline-block;
+          position: relative;
+          left: 0px;
+          top: -4px;
+          line-height: 12px; }
+        .catalog-list .catalog-item .catalog-item-info .characteristic {
+          padding-top: 8px;
+          font-size: 12px;
+          line-height: 11px; }
+        .catalog-list .catalog-item .catalog-item-info .having-children {
+          padding-top: 5px;
+          font-size: 12px;
+          line-height: 11px; }
+        .catalog-list .catalog-item .catalog-item-info .marital-status {
+          padding-top: 5px;
+          font-size: 12px;
+          font-family: 'Gotham Pro';
+          line-height: 11px; }
+        .catalog-list .catalog-item .catalog-item-info .for-comment {
+          width: 191px;
+          padding: 7px 33px 7px 32px; }
+      .catalog-list .catalog-item .item-content-img {
+        width: 191px;
+        height: 185px; }
+      .catalog-list .catalog-item .item-content-description {
+        margin-top: 8px;
+        line-height: 15px; }
+        .catalog-list .catalog-item .item-content-description .item-content-description-number {
+          margin-top: 9px;
+          line-height: 15px; } }
+
+@media (min-width: 1100px) and (max-width: 1299px) {
+  .numbering-description-text {
+    padding: 0 35px;
+    margin-top: 23px;
+    font-size: 20px; }
+  .catalog-list {
+    padding: 0 35px;
+    margin-top: 30px; }
+    .catalog-list .catalog-item {
+      margin-left: calc((100% - 955px) / 8);
+      margin-right: calc((100% - 955px) / 8);
+      margin-bottom: 48px; }
+      .catalog-list .catalog-item:first-child {
+        margin-left: 0; }
+      .catalog-list .catalog-item:nth-child(5n+1) {
+        margin-left: 0; }
+      .catalog-list .catalog-item:nth-child(5n+5) {
+        margin-right: 0; }
+      .catalog-list .catalog-item:nth-child(7n+1) {
+        margin-left: calc((100% - 955px) / 8); }
+      .catalog-list .catalog-item:nth-child(7n+7) {
+        margin-right: calc((100% - 955px) / 8); }
+      .catalog-list .catalog-item:first-child {
+        margin-left: 0; }
+      .catalog-list .catalog-item .number-area {
+        width: 29px;
+        height: 29px; }
+      .catalog-list .catalog-item .catalog-item-link .icon-favorite {
+        top: -163px;
+        width: 21.8px;
+        height: 18.6px;
+        right: 8px; }
+        .catalog-list .catalog-item .catalog-item-link .icon-favorite .delete-favorite {
+          font-size: 11px;
+          padding-top: 18px;
+          right: 10px; }
+          .catalog-list .catalog-item .catalog-item-link .icon-favorite .delete-favorite:hover {
+            right: 10px; }
+      .catalog-list .catalog-item .catalog-item-info {
+        width: 191px;
+        height: 185px;
+        padding: 68px 15px 11px 15px; }
+        .catalog-list .catalog-item .catalog-item-info .img-city {
+          width: 18.4px;
+          height: 18.4px; }
+        .catalog-list .catalog-item .catalog-item-info .title-city {
+          padding-top: 0;
+          font-size: 13px;
+          display: inline-block;
+          position: relative;
+          left: 0px;
+          top: -4px;
+          line-height: 12px; }
+        .catalog-list .catalog-item .catalog-item-info .characteristic {
+          padding-top: 8px;
+          font-size: 12px;
+          line-height: 11px; }
+        .catalog-list .catalog-item .catalog-item-info .having-children {
+          padding-top: 5px;
+          font-size: 12px;
+          line-height: 11px; }
+        .catalog-list .catalog-item .catalog-item-info .marital-status {
+          padding-top: 5px;
+          font-size: 12px;
+          font-family: 'Gotham Pro';
+          line-height: 11px; }
+        .catalog-list .catalog-item .catalog-item-info .for-comment {
+          width: 191px;
+          padding: 7px 33px 7px 32px; }
+      .catalog-list .catalog-item .item-content-img {
+        width: 191px;
+        height: 185px; }
+      .catalog-list .catalog-item .item-content-description {
+        margin-top: 8px;
+        line-height: 15px; }
+        .catalog-list .catalog-item .item-content-description .item-content-description-number {
+          margin-top: 9px;
+          line-height: 15px; } }
+
+@media (min-width: 1100px) and (max-width: 1365px) {
+  .menu-tablet {
+    display: block; }
+    .menu-tablet .personal-menu-item {
+      margin-bottom: 0; }
+  .personal {
+    margin-top: 48px; } }
+
+@media (min-width: 900px) and (max-width: 1099px) {
+  .menu-tablet {
+    display: block;
+    margin-bottom: -24px; }
+  .numbering-description-text {
+    padding: 0 35px;
+    margin-top: 23px;
+    font-size: 20px; }
+  .catalog-list {
+    padding: 0 35px;
+    margin-top: 30px; }
+    .catalog-list .catalog-item {
+      margin-left: calc((100% - 764px) / 6);
+      margin-right: calc((100% - 764px) / 6);
+      margin-bottom: 48px; }
+      .catalog-list .catalog-item:first-child {
+        margin-left: 0; }
+      .catalog-list .catalog-item:nth-child(4n+1) {
+        margin-left: 0; }
+      .catalog-list .catalog-item:nth-child(4n+4) {
+        margin-right: 0; }
+      .catalog-list .catalog-item:nth-child(7n+1) {
+        margin-left: calc((100% - 764px) / 6); }
+      .catalog-list .catalog-item:nth-child(7n+7) {
+        margin-right: calc((100% - 764px) / 6); }
+      .catalog-list .catalog-item:first-child {
+        margin-left: 0; }
+      .catalog-list .catalog-item .number-area {
+        width: 29px;
+        height: 29px; }
+      .catalog-list .catalog-item .catalog-item-link .icon-favorite {
+        top: -163px;
+        width: 21.8px;
+        height: 18.6px;
+        right: 8px; }
+        .catalog-list .catalog-item .catalog-item-link .icon-favorite .delete-favorite {
+          font-size: 11px;
+          padding-top: 18px;
+          right: 10px; }
+          .catalog-list .catalog-item .catalog-item-link .icon-favorite .delete-favorite:hover {
+            right: 10px; }
+      .catalog-list .catalog-item .catalog-item-info {
+        width: 191px;
+        height: 185px;
+        padding: 68px 15px 11px 15px; }
+        .catalog-list .catalog-item .catalog-item-info .img-city {
+          width: 18.4px;
+          height: 18.4px; }
+        .catalog-list .catalog-item .catalog-item-info .title-city {
+          padding-top: 0;
+          font-size: 13px;
+          display: inline-block;
+          position: relative;
+          left: 0px;
+          top: -4px;
+          line-height: 12px; }
+        .catalog-list .catalog-item .catalog-item-info .characteristic {
+          padding-top: 8px;
+          font-size: 12px;
+          line-height: 11px; }
+        .catalog-list .catalog-item .catalog-item-info .having-children {
+          padding-top: 5px;
+          font-size: 12px;
+          line-height: 11px; }
+        .catalog-list .catalog-item .catalog-item-info .marital-status {
+          padding-top: 5px;
+          font-size: 12px;
+          font-family: 'Gotham Pro';
+          line-height: 11px; }
+        .catalog-list .catalog-item .catalog-item-info .for-comment {
+          width: 191px;
+          padding: 7px 33px 7px 32px; }
+      .catalog-list .catalog-item .item-content-img {
+        width: 191px;
+        height: 185px; }
+      .catalog-list .catalog-item .item-content-description {
+        margin-top: 8px;
+        line-height: 15px; }
+        .catalog-list .catalog-item .item-content-description .item-content-description-number {
+          margin-top: 9px;
+          line-height: 15px; } }
+
+@media (min-width: 768px) and (max-width: 899px) {
+  .menu-tablet {
+    display: block;
+    margin-bottom: -49px; }
+  .numbering-description-text {
+    padding: 0 35px;
+    margin-top: 23px;
+    font-size: 20px; }
+  .catalog-list {
+    padding: 0 35px;
+    margin-top: 30px; }
+    .catalog-list .catalog-item {
+      margin-left: calc((100% - 660px) / 4);
+      margin-right: calc((100% - 660px) / 4);
+      margin-bottom: 48px; }
+      .catalog-list .catalog-item:first-child {
+        margin-left: 0; }
+      .catalog-list .catalog-item:nth-child(3n+1) {
+        margin-left: 0; }
+      .catalog-list .catalog-item:nth-child(3n+3) {
+        margin-right: 0; }
+      .catalog-list .catalog-item:nth-child(7n+1) {
+        margin-left: calc((100% - 660px) / 4); }
+      .catalog-list .catalog-item:nth-child(7n+7) {
+        margin-right: calc((100% - 660px) / 4); }
+      .catalog-list .catalog-item:first-child {
+        margin-left: 0; }
+      .catalog-list .catalog-item .number-area {
+        width: 37.7px;
+        height: 37.7px; }
+      .catalog-list .catalog-item .catalog-item-link .icon-favorite {
+        top: -197px;
+        width: 28px;
+        height: 24.8px;
+        right: 11px; }
+        .catalog-list .catalog-item .catalog-item-link .icon-favorite .delete-favorite {
+          font-size: 13px;
+          line-height: 12px;
+          padding-top: 26px;
+          right: 13px; }
+          .catalog-list .catalog-item .catalog-item-link .icon-favorite .delete-favorite:hover {
+            right: 13px; }
+      .catalog-list .catalog-item .catalog-item-info {
+        width: 220px;
+        height: 220px;
+        padding: 68px 15px 11px 15px; }
+        .catalog-list .catalog-item .catalog-item-info .img-city {
+          width: 26.8px;
+          height: 26.8px; }
+        .catalog-list .catalog-item .catalog-item-info .title-city {
+          padding-top: 0;
+          font-size: 18px;
+          display: inline-block;
+          position: relative;
+          left: 4px;
+          top: -7px;
+          line-height: 17px; }
+        .catalog-list .catalog-item .catalog-item-info .characteristic {
+          padding-top: 10px;
+          font-size: 15px;
+          line-height: 15px; }
+        .catalog-list .catalog-item .catalog-item-info .having-children {
+          padding-top: 10px;
+          font-size: 15px;
+          line-height: 15px; }
+        .catalog-list .catalog-item .catalog-item-info .marital-status {
+          padding-top: 10px;
+          font-size: 15px;
+          font-family: 'Gotham Pro';
+          line-height: 15px; }
+        .catalog-list .catalog-item .catalog-item-info .for-comment {
+          width: 220px;
+          padding: 9px 33px 9px 32px; }
+      .catalog-list .catalog-item .item-content-img {
+        width: 220px;
+        height: 220px; }
+      .catalog-list .catalog-item .item-content-description {
+        margin-top: 8px;
+        line-height: 15px; }
+        .catalog-list .catalog-item .item-content-description .item-content-description-number {
+          margin-top: 9px;
+          line-height: 15px; } }
+
+@media (min-width: 650px) and (max-width: 767px) {
+  .numbering-description-text {
+    padding: 0 35px;
+    margin-top: 23px;
+    font-size: 16px;
+    line-height: 21px; }
+  .catalog-list {
+    padding: 0 35px;
+    margin-top: 12px; }
+    .catalog-list .catalog-item {
+      margin-left: calc((100% - 573px) / 4);
+      margin-right: calc((100% - 573px) / 4);
+      margin-bottom: 24px; }
+      .catalog-list .catalog-item:first-child {
+        margin-left: 0; }
+      .catalog-list .catalog-item:nth-child(3n+1) {
+        margin-left: 0; }
+      .catalog-list .catalog-item:nth-child(3n+3) {
+        margin-right: 0; }
+      .catalog-list .catalog-item:nth-child(7n+1) {
+        margin-left: calc((100% - 573px) / 4); }
+      .catalog-list .catalog-item:nth-child(7n+7) {
+        margin-right: calc((100% - 573px) / 4); }
+      .catalog-list .catalog-item:first-child {
+        margin-left: 0; }
+      .catalog-list .catalog-item .number-area {
+        width: 29px;
+        height: 29px; }
+      .catalog-list .catalog-item .catalog-item-link .icon-favorite {
+        top: -164px;
+        width: 21.9px;
+        height: 18.6px;
+        right: 8px; }
+        .catalog-list .catalog-item .catalog-item-link .icon-favorite .delete-favorite {
+          font-size: 13px;
+          line-height: 12px;
+          padding-top: 26px;
+          right: 10px; }
+          .catalog-list .catalog-item .catalog-item-link .icon-favorite .delete-favorite:hover {
+            right: 10px; }
+      .catalog-list .catalog-item .catalog-item-info {
+        width: 191px;
+        height: 185px;
+        padding: 68px 15px 11px 15px; }
+        .catalog-list .catalog-item .catalog-item-info .img-city {
+          width: 18.4px;
+          height: 18.4px; }
+        .catalog-list .catalog-item .catalog-item-info .title-city {
+          padding-top: 0;
+          font-size: 13px;
+          display: inline-block;
+          position: relative;
+          left: 0px;
+          top: -4px;
+          line-height: 12px; }
+        .catalog-list .catalog-item .catalog-item-info .characteristic {
+          padding-top: 8px;
+          font-size: 12px;
+          line-height: 11px; }
+        .catalog-list .catalog-item .catalog-item-info .having-children {
+          padding-top: 5px;
+          font-size: 12px;
+          line-height: 11px; }
+        .catalog-list .catalog-item .catalog-item-info .marital-status {
+          padding-top: 5px;
+          font-size: 12px;
+          font-family: 'Gotham Pro';
+          line-height: 11px; }
+        .catalog-list .catalog-item .catalog-item-info .for-comment {
+          width: 191px;
+          padding: 7px 33px 7px 32px; }
+      .catalog-list .catalog-item .item-content-img {
+        width: 191px;
+        height: 185px; }
+      .catalog-list .catalog-item .item-content-description {
+        margin-top: 8px;
+        line-height: 15px; }
+        .catalog-list .catalog-item .item-content-description .item-content-description-number {
+          margin-top: 9px;
+          line-height: 15px; } }
+
+@media (min-width: 500px) and (max-width: 649px) {
+  .numbering-description-text {
+    padding: 0 35px;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 21px; }
+  .catalog-list {
+    padding: 0 35px;
+    margin-top: 12px; }
+    .catalog-list .catalog-item {
+      margin-left: calc((100% - 424px) / 4);
+      margin-right: calc((100% - 424px) / 4);
+      margin-bottom: 24px; }
+      .catalog-list .catalog-item:nth-child(7n+1) {
+        margin-left: calc((100% - 424px) / 4); }
+      .catalog-list .catalog-item:nth-child(7n+7) {
+        margin-right: calc((100% - 424px) / 4); }
+      .catalog-list .catalog-item .number-area {
+        width: 37.6px;
+        height: 37.6px; }
+      .catalog-list .catalog-item .catalog-item-link .icon-favorite {
+        top: -190px;
+        width: 28px;
+        height: 24.8px;
+        right: 10px; }
+        .catalog-list .catalog-item .catalog-item-link .icon-favorite .delete-favorite {
+          font-size: 13px;
+          line-height: 12px;
+          padding-top: 32px;
+          right: 10px; }
+          .catalog-list .catalog-item .catalog-item-link .icon-favorite .delete-favorite:hover {
+            right: 10px; }
+      .catalog-list .catalog-item .catalog-item-info {
+        width: 212px;
+        height: 212px;
+        padding: 68px 15px 11px 15px; }
+        .catalog-list .catalog-item .catalog-item-info .img-city {
+          width: 26.8px;
+          height: 26.8px; }
+        .catalog-list .catalog-item .catalog-item-info .title-city {
+          padding-top: 0;
+          font-size: 18px;
+          display: inline-block;
+          position: relative;
+          left: 4px;
+          top: -7px;
+          line-height: 17px; }
+        .catalog-list .catalog-item .catalog-item-info .characteristic {
+          padding-top: 10px;
+          font-size: 15px;
+          line-height: 15px; }
+        .catalog-list .catalog-item .catalog-item-info .having-children {
+          padding-top: 10px;
+          font-size: 15px;
+          line-height: 15px; }
+        .catalog-list .catalog-item .catalog-item-info .marital-status {
+          padding-top: 10px;
+          font-size: 15px;
+          font-family: 'Gotham Pro';
+          line-height: 15px; }
+        .catalog-list .catalog-item .catalog-item-info .for-comment {
+          width: 212px;
+          padding: 9px 33px 9px 32px; }
+      .catalog-list .catalog-item .item-content-img {
+        width: 212px;
+        height: 212px; }
+      .catalog-list .catalog-item .item-content-description {
+        margin-top: 8px;
+        line-height: 15px; }
+        .catalog-list .catalog-item .item-content-description .item-content-description-number {
+          margin-top: 9px;
+          line-height: 15px; } }
+
+@media (min-width: 0px) and (max-width: 499px) {
+  .numbering-description-text {
+    padding: 0 35px;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 21px; }
+  .catalog-list {
+    padding: 0 35px;
+    margin-top: 12px; }
+    .catalog-list .catalog-item {
+      margin-left: calc((100% - 220px) / 2);
+      margin-right: calc((100% - 220px) / 2);
+      margin-bottom: 24px; }
+      .catalog-list .catalog-item:nth-child(7n+1) {
+        margin-left: calc((100% - 220px) / 2); }
+      .catalog-list .catalog-item:nth-child(7n+7) {
+        margin-right: calc((100% - 220px) / 2); }
+      .catalog-list .catalog-item .number-area {
+        width: 37.6px;
+        height: 37.6px; }
+      .catalog-list .catalog-item .catalog-item-link .icon-favorite {
+        top: -197px;
+        width: 28px;
+        height: 24.8px;
+        right: 11px; }
+        .catalog-list .catalog-item .catalog-item-link .icon-favorite .delete-favorite {
+          font-size: 13px;
+          line-height: 12px;
+          padding-top: 26px;
+          right: 13px; }
+          .catalog-list .catalog-item .catalog-item-link .icon-favorite .delete-favorite:hover {
+            right: 13px; }
+      .catalog-list .catalog-item .catalog-item-info {
+        width: 220px;
+        height: 220px;
+        padding: 68px 15px 11px 15px; }
+        .catalog-list .catalog-item .catalog-item-info .img-city {
+          width: 26.8px;
+          height: 26.8px; }
+        .catalog-list .catalog-item .catalog-item-info .title-city {
+          padding-top: 0;
+          font-size: 18px;
+          display: inline-block;
+          position: relative;
+          left: 4px;
+          top: -7px;
+          line-height: 17px; }
+        .catalog-list .catalog-item .catalog-item-info .characteristic {
+          padding-top: 10px;
+          font-size: 15px;
+          line-height: 15px; }
+        .catalog-list .catalog-item .catalog-item-info .having-children {
+          padding-top: 10px;
+          font-size: 15px;
+          line-height: 15px; }
+        .catalog-list .catalog-item .catalog-item-info .marital-status {
+          padding-top: 10px;
+          font-size: 15px;
+          font-family: 'Gotham Pro';
+          line-height: 15px; }
+        .catalog-list .catalog-item .catalog-item-info .for-comment {
+          width: 220px;
+          padding: 9px 33px 9px 32px; }
+      .catalog-list .catalog-item .item-content-img {
+        width: 220px;
+        height: 220px; }
+      .catalog-list .catalog-item .item-content-description {
+        margin-top: 8px;
+        line-height: 15px; }
+        .catalog-list .catalog-item .item-content-description .item-content-description-number {
+          margin-top: 9px;
+          line-height: 15px; } }
+
+body {
+  position: relative; }
+
+.side {
+  height: 100vh; }
+
+.side-left {
+  width: 40%;
+  background: url("../img/for_man-man.jpg") no-repeat;
+  background-size: cover;
+  padding: 35px; }
+
+.side-right {
+  width: 60%;
+  padding: 30px; }
+  .side-right .side__title {
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: normal;
+    margin-bottom: 28px;
+    color: #314A5D; }
+  .side-right p {
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 28px;
+    color: #314A5D; }
+
+.forman__title {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 89px;
+  color: #fff; }
+
+.forman__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+  .forman__list li {
+    position: relative;
+    margin-bottom: 34px;
+    padding-left: 24px; }
+  .forman__list li:last-child {
+    margin-bottom: 0; }
+  .forman__list li:before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 7px;
+    height: 12px;
+    background: url("../img/for_man-arrow.svg") no-repeat;
+    background-size: cover;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    transition: all 200ms ease-in; }
+  .forman__list li:hover:before {
+    left: 5px; }
+  .forman__list a {
+    font-family: Gotham Pro;
+    font-size: 16px;
+    line-height: 24px;
+    color: #314A5D;
+    text-decoration: none;
+    font-weight: normal; }
+
+.forman__list-white {
+  margin-top: 160px;
+  margin-bottom: 58px; }
+  .forman__list-white a {
+    color: #fff; }
+
+.button__beclient-forman {
+  font-size: 16px;
+  padding: 16px 32px 16px 40px; }
+
+.button__beclient-forman.button__beclient-woman:after {
+  left: 0;
+  right: auto;
+  top: -4px; }
+
+.side-woman {
+  background-image: url("../img/for_man-woman.jpg"); }
+
+.side-target {
+  background-image: url("../img/target-bg.jpg"); }
+
+.side__photos {
+  margin-bottom: 28px;
+  margin-left: -7px;
+  margin-right: -7px; }
+
+.side__photos-item {
+  position: relative;
+  margin: 0 7px; }
+  .side__photos-item img {
+    width: 100%; }
+  .side__photos-item span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 13px;
+    padding-right: 20px;
+    width: 100%;
+    height: 100%;
+    font-family: Gotham Pro;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    box-sizing: border-box; }
+
+.side-detail {
+  background: transparent;
+  height: auto;
+  width: 42.3%;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 0; }
+  .side-detail img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 100%; }
+
+.side-detail-right {
+  padding-left: 92px;
+  padding-right: 58px;
+  width: 57.7%;
+  padding-top: 124px;
+  padding-bottom: 0;
+  height: auto; }
+
+.detail__info {
+  margin-bottom: 18px; }
+
+.detail__photos {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .detail__photos .detail__photos-item {
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    margin-bottom: 14px; }
+    .detail__photos .detail__photos-item img {
+      width: 100%; }
+
+.detail__main {
+  width: 50%; }
+  .detail__main .detail__main-city {
+    margin-bottom: 14px; }
+  .detail__main .detail__main-name {
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: normal;
+    color: #314A5D;
+    margin-bottom: 24px; }
+    .detail__main .detail__main-name span {
+      font-family: Gotham Pro;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 33px;
+      line-height: normal;
+      padding-left: 23px;
+      color: #314A5D; }
+  .detail__main .button__border {
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: normal;
+    color: #314A5D;
+    padding: 8px 26px;
+    border: 1px solid #314A5D;
+    text-decoration: none;
+    display: inline-block; }
+    .detail__main .button__border:visited, .detail__main .button__border:hover, .detail__main .button__border:focus, .detail__main .button__border:active {
+      color: #314A5D; }
+
+.detail__links {
+  width: 50%;
+  text-align: right; }
+  .detail__links a {
+    display: block;
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: normal;
+    margin-bottom: 12px;
+    color: #314A5D;
+    text-decoration: none; }
+
+.fancybox-navigation .fancybox-button.gallery__button {
+  background: url("../img/fancy-left.svg") no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 82px;
+  padding: 0;
+  opacity: 1;
+  left: 100px; }
+
+.fancybox-navigation .fancybox-button.gallery__button.fancybox-button--arrow_right {
+  background: url("../img/fancy-right.svg") no-repeat;
+  left: auto;
+  right: 100px; }
+
+.fancybox-is-open .fancybox-bg {
+  opacity: 1;
+  background: rgba(3, 57, 83, 0.82); }
+
+.fancybox-active .side {
+  -webkit-filter: blur(20px);
+          filter: blur(20px); }
+
+.popup {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 42.3%;
+  background: linear-gradient(0deg, rgba(3, 57, 83, 0.65), rgba(3, 57, 83, 0.65));
+  color: #fff;
+  padding: 15px;
+  display: none; }
+
+.popup__close {
+  background: url("../img/detail-close.svg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 300ms ease-in;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  right: 23px;
+  top: 108px; }
+  .popup__close:hover {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
+
+.popup__detail {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: normal;
+  color: #FFFFFF;
+  padding: 190px 84px 10px 110px;
+  height: 100%;
+  width: 42.1%; }
+
+.detail__name {
+  font-weight: bold;
+  font-size: 33px;
+  margin-bottom: 20px; }
+
+.detail__params {
+  margin-bottom: 24px; }
+  .detail__params .detail__params-line {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .detail__params .detail__params-line div:first-child {
+      width: 27%; }
+    .detail__params .detail__params-line div:last-child {
+      text-align: left;
+      width: 73%;
+      padding-left: 50px; }
+
+.detail__address {
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  margin-bottom: 19px; }
+  .detail__address .detail__address-area {
+    position: relative;
+    padding-left: 30px; }
+    .detail__address .detail__address-area:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: -3px;
+      width: 17px;
+      height: 21px;
+      background: url("../img/detail-point.svg") no-repeat;
+      background-size: cover; }
+  .detail__address .detail__address-metro {
+    position: relative;
+    padding-left: 38px;
+    margin-left: 14px; }
+    .detail__address .detail__address-metro:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: -2px;
+      width: 25px;
+      height: 21px;
+      background: url("../img/detail-metro.svg") no-repeat;
+      background-size: cover; }
+
+.detail__about-title {
+  font-weight: bold;
+  margin-bottom: 15px; }
+
+@media only screen and (max-width: 1366px) {
+  .popup__detail {
+    font-size: 16px;
+    width: 46%;
+    padding: 120px 90px 10px 90px; }
+  .side-detail {
+    width: 46%; }
+  .side-detail-right {
+    padding-left: 41px;
+    padding-right: 41px;
+    padding-top: 76px;
+    width: 54%; }
+  .detail__name {
+    display: none; }
+  .detail__photos .detail__photos-item {
+    width: 210px;
+    height: 168px;
+    margin-bottom: 12px;
+    overflow: hidden; }
+    .detail__photos .detail__photos-item img {
+      width: 100%;
+      height: auto; }
+  .detail__main .detail__main-city {
+    margin-bottom: 20px; }
+  .detail__main .detail__main-name {
+    font-size: 28px;
+    margin-bottom: 12px; }
+    .detail__main .detail__main-name span {
+      font-size: 28px;
+      padding-left: 18px; }
+  .detail__main .button__border {
+    font-size: 16px;
+    padding: 8px 26px;
+    font-weight: normal; }
+  .detail__params {
+    margin-bottom: 24px; }
+    .detail__params .detail__params-line div:first-child {
+      width: auto; }
+    .detail__params .detail__params-line div:last-child {
+      text-align: right;
+      width: auto;
+      padding-left: 30px; }
+  .popup__close {
+    width: 21px;
+    height: 21px;
+    right: 35px;
+    top: 120px; }
+  .detail__address .detail__address-area {
+    padding-left: 25px; }
+  .detail__address .detail__address-metro {
+    padding-left: 33px;
+    margin-left: 24px; } }
+
+@media only screen and (max-width: 1024px) {
+  .row {
+    display: block; }
+  .side {
+    width: 100%;
+    height: auto; }
+  .side-right .forman__list {
+    display: none; }
+  .forman__list-white {
+    margin-top: 32px;
+    margin-bottom: 56px; }
+  /* Detail */
+  .side-detail, .side-detail-right {
+    width: 100%; }
+  .side-detail {
+    height: 500px; }
+    .side-detail img {
+      width: 100%;
+      height: auto; }
+  .side-detail-right {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 26px; }
+  .detail__address,
+  .detail__params-line,
+  .detail__photos,
+  .detail__info {
+    display: -ms-flexbox;
+    display: flex; }
+  .detail__photos .detail__photos-item {
+    width: calc(25% - 1.5px);
+    height: 173px;
+    margin-bottom: 3px; }
+  .detail__main {
+    position: relative; }
+    .detail__main .detail__main-city {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 44px;
+      height: 44px; }
+      .detail__main .detail__main-city img {
+        width: 100%; }
+    .detail__main .detail__main-name {
+      font-size: 33px;
+      margin-bottom: 24px;
+      padding-left: 64px;
+      line-height: 44px;
+      padding-top: 0px; }
+      .detail__main .detail__main-name span {
+        font-size: 28px;
+        padding-left: 27px; }
+    .detail__main .button__border {
+      font-size: 16px;
+      padding: 15px 24px;
+      font-weight: normal; }
+  .detail__info {
+    margin-bottom: 29px; }
+  .popup__detail {
+    height: 100%;
+    width: 100%;
+    padding: 64px 73px 15px 73px; }
+  .popup__close {
+    right: 23px;
+    top: 23px; }
+  .is-popup .side {
+    -webkit-filter: blur(20px);
+            filter: blur(20px); } }
+
+@media only screen and (max-width: 768px) {
+  .forman__title {
+    font-size: 42px;
+    line-height: 72px; }
+  .forman__list-white {
+    margin-top: 15px;
+    margin-bottom: 41px; }
+  /* Detail */
+  .side-detail {
+    height: 576px; }
+  .detail__main {
+    position: relative; }
+    .detail__main .detail__main-city {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 44px;
+      height: 44px; }
+      .detail__main .detail__main-city img {
+        width: 100%; }
+    .detail__main .detail__main-name {
+      font-size: 24px;
+      margin-bottom: 10px;
+      padding-left: 57px;
+      line-height: 24px;
+      margin-bottom: 16px; }
+      .detail__main .detail__main-name span {
+        font-size: 18px;
+        display: block;
+        padding-left: 0;
+        padding-top: 4px; }
+    .detail__main .button__border {
+      font-size: 14px;
+      padding: 14px 16px;
+      font-weight: normal; }
+  .detail__info {
+    margin-bottom: 32px; }
+  .detail__photos .detail__photos-item {
+    width: calc(33.3333% - 1.5px);
+    height: 144px;
+    margin-bottom: 3px; }
+  .fancybox-navigation .fancybox-button.gallery__button {
+    left: 15px; }
+  .fancybox-navigation .fancybox-button.gallery__button.fancybox-button--arrow_right {
+    right: 15px; } }

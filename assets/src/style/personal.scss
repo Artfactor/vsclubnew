@@ -1,0 +1,131 @@
+.personal {
+	margin-top: 36px;
+	padding: 0 52px;
+
+	.personal-text {
+		font-family: 'Georgia';
+		color: #485F6C;
+		font-size: 72px;
+		font-weight: normal;
+		margin: 0;	
+	}
+	.personal-card {
+		font-family: 'Gotham Pro';
+		font-size: 24px;
+		margin-left: auto;
+		.number-card {
+			color: #DC143C;
+			margin: 0;
+			text-align: right;
+			font-weight: bold;
+		}
+		.validaty-card {
+			color: #314A5D;
+			margin: 0;
+			padding-top: 16px;
+			.balance {
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.personal-menu {
+	position: relative;
+	list-style: none;
+	margin-top: 44px;
+	font-family: 'Gotham Pro';
+	font-size: 24px;
+	font-weight: 500;
+	padding: 0 52px;
+
+	.container {
+		justify-content: space-between;
+		position: relative;
+
+		&:after {
+			content: "";
+			position: absolute;
+			border-top: 1px solid #DCE3E7;
+			width: 100%;
+			top: 44px;
+		}
+	}
+
+	.personal-menu-item { 
+		position: relative;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.personal-menu-link {
+	position: relative;
+	text-decoration: none;
+	color: #314A5D;
+	transition: color .3s;
+
+	&:hover {
+		color: #DC143C;
+	}
+
+	&:hover .icon-hover {
+		fill: #DC143C;
+	}
+
+	&:before:hover {
+		fill: #DC143C;
+	}
+
+	.icon-personal-menu {
+		padding-right: 8px;
+	}
+
+	.icon-hover {
+		transition: all .3s;
+	}
+}
+     
+	.catalog-message {
+		margin-top: 59px;
+		padding: 0 52px;
+
+		.container {
+			display: block;
+		}
+	}
+
+.message {
+	font-family: 'Gotham Pro';
+	margin-bottom: 25px;
+	position: relative;
+
+	.author {
+		color: #314A5D;
+		font-size: 26px;
+		margin: 0;
+		font-weight: 500;
+	}
+
+	.text-message {
+		color: #606060;
+		font-size: 18px;
+		margin: 8px 0 8px 0; 
+		line-height: 26px;
+	}
+
+	.message-read-more {
+		display: inline-block;
+    	margin-bottom: 8px;
+    	text-decoration: none;
+		color: #DC143C;
+	}
+
+	.date-message {
+		color: #314A5D;
+		font-size: 16px;
+		margin: 0;
+	}
+}

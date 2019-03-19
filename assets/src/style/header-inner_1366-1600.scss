@@ -1,0 +1,48 @@
+@media (min-width: 1366px) and (max-width: 1599px) {
+
+	.container {
+		max-width: 1516px;
+	}
+
+	.header-inner {
+		padding: 0 40px;
+	}
+
+	.logo-inner {
+
+		.header-logo-inner {
+			width: 236px;
+		}
+	}
+
+	.header-inner-text {
+		margin-left: 20px;
+		font-size: 20px;
+		padding-top: 10px;
+	}
+
+	.header-inner-menu {
+
+		.header-inner-menu-item {
+
+			.header-inner-menu-link {
+				font-size: 16px;
+				font-weight: 500;
+				padding: 26px 16px 26px 16px;
+			}
+		}
+	}
+
+	.selection-city {
+
+		&:hover .city-list-inner {
+			left: -167px;
+		}
+
+		.city-list-inner {
+			top: 44px;
+			left: -167px;
+		}		
+	}
+}
+

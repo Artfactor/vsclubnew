@@ -1,0 +1,48 @@
+@media (min-width: 0px) and (max-width: 767px) {
+
+	.container {
+		max-width: 697px;
+	}
+
+	.header-inner {
+		height: 60px;
+		padding: 0 35px;
+	}
+
+	.logo-inner {
+		margin-left: 0;
+		height: 60px;
+
+  	.burger {
+  	   display: block;
+
+			.burger-img {
+				display: inline-block;
+				background: url(../img/burger-inner.svg) no-repeat;
+				width: 30px;
+				height: 23px;
+			}
+		}
+
+		.header-logo-inner {
+			margin-left: 14px;
+			width: 150px;
+		}      
+	}
+
+	.header-inner-text {
+		font-size: 20px;
+		padding-top: 8px;
+		margin-left: 20px;
+	}
+
+	.header-inner-menu {
+		display: none;
+	}
+
+	.login-inner {
+		display: block;
+		margin-left: auto;
+		font-size: 14px;
+	}
+}

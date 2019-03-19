@@ -1,0 +1,80 @@
+@media (min-width: 1600px) and (max-width: 1899px) {
+
+	.numbering-description-text {
+		margin-top: 54px;
+	}
+
+	.catalog-list {
+		margin-top: 26px;
+
+		.catalog-item {
+			margin-left: calc((100% - 1365px) / 12);
+			margin-right: calc((100% - 1365px) / 12);
+
+			.number-area {
+				width: 29px;
+				height: 29px;
+			}
+
+			.catalog-item-link {
+
+				.icon-favorite {
+					top: -169px;
+					width: 23px;
+					height: 19px;
+
+					.delete-favorite {
+						font-size: 12px;
+						padding-top: 18px;
+					}
+				}
+			}
+
+			.catalog-item-info {
+				width: 195px;
+				height: 189px;
+				padding: 38px 15px 11px 15px;
+
+				.img-city {
+					width: 35px;
+					height: 35px;
+				}
+
+				.title-city {
+					padding-top: 6px;
+				}
+
+				.characteristic {
+					padding-top: 6px;
+				}
+
+				.having-children {
+					padding-top: 6px;
+				}
+	
+				.marital-status {
+					padding-top: 6px;
+				}
+
+				.for-comment {
+					width: 195px;
+					padding: 8px 35px 7px 34px;
+				}
+			}
+
+			.item-content-img {
+				width: 195px;
+				height: 189px;
+			}
+
+			.item-content-description {
+				margin-top: 12px;
+				font-size: 16px;
+				
+				.item-content-description-number {
+					margin-top: 12px;
+				}
+			}
+		}
+	}
+}
