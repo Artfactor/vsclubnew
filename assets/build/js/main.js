@@ -37,6 +37,29 @@ $(document).ready(function() {
 	  ]
     });
 	
+	if($(".button-main-menu-mobile").length > 0) {
+		$(".button-main-menu-mobile").click(function(e){
+			e.preventDefault();
+			$(this).toggleClass("active");
+			$(".main-menu-mobile").toggleClass("active");
+		});
+	};
+	
+	$(".open-menu").click(function(e){
+		e.preventDefault();
+		$(".menu-mobile-bg").fadeIn(300);
+		//$(".menu-mobile").fadeIn(300);
+		$(".menu-mobile").addClass("active");
+		$("body").addClass("is-menu");
+	})
+	$(".close-menu-mobile").click(function(e) {
+		e.preventDefault();
+		$(".menu-mobile-bg").fadeOut(300);
+		//$(".menu-mobile").fadeOut(300);
+		$(".menu-mobile").removeClass("active");
+		$("body").removeClass("is-menu");
+	})
+	
 	createSliderRange("age_slider_from", "age_slider_to", "age_from", "age_to", 18, 40);
 	createSliderRange("height_slider_from", "height_slider_to", "height_from", "height_to", 150, 190);
 	

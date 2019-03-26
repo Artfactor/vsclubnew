@@ -1821,6 +1821,24 @@ a.button__border {
 		font-size: 12px;
 		line-height: 18px;
 	}
+	
+	.read-more-text:last-child {
+		padding-bottom: 30px;
+	}
+	.read-more-content .read-more-title {
+		font-size: 20px;
+	}
+	.read-more-content {
+		.close-read-more {
+			top: 15px;
+			right: 15px;
+			width: 24px;
+			height: 24px;
+			img {
+				width: 100%;
+			}
+		}
+	}
 }
 /*@media only screen and (max-height: 900px) and (min-height: 400px) and (max-width: 768px) {
 	.wrap-main {
