@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Архив</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.1.4/nouislider.min.css" integrity="sha256-Gitv5VlgR/Iqt4W4j+rlhsP4R6M09EcFyTf70GBD2zw=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/page.css">
+	<!-- <link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/read-more.css">
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/style_1366-768.css">
+	<link rel="stylesheet" href="css/header_1366-768.css">
+	<link rel="stylesheet" href="css/login_1366-768.css">
+	<link rel="stylesheet" href="css/menu-mobile.css"> -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<!-- <link rel="stylesheet" href="fonts/Gotham_Pro/stylesheet.css">
+	<link rel="stylesheet" href="fonts/Rage_Italic_Let/stylesheet.css">
+	<link rel="stylesheet" href="fonts/Georgia/stylesheet.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css">
+	
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script> 
+
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/readmore-js@2.2.1/readmore.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.1.4/nouislider.min.js" integrity="sha256-6NGkvvdjRehdAHFa9mUmcVBX8gSDO1CFTnfNiLMrPNY=" crossorigin="anonymous"></script>
+	
+	<script src="js/main.js"></script>
+</head>
+<body>
+
+	<!-- Шапка внутренних страниц - НАЧАЛО -->
+  <header class="header-inner">   
+			<div class="container"> 
+				<div class="logo-inner">
+				<div class="burger">
+					<a class="burger-img" href="#"></a>
+				</div>
+				<a class="header-logo-inner" href="#"></a>
+				<div class="header-inner-text">Клуб знакомств с 2002 года!</div>
+				</div> 
+				<nav class="header-inner-menu">
+				<li	class="header-inner-menu-item"><a class="header-inner-menu-link" href="index.html#section4">О клубе</a></li>
+				<li	class="header-inner-menu-item selection-city"><a class="header-inner-menu-link" href="#">Для мужчин</a><ul class="city-list-inner man-list-inner">
+						<a class="city-list-inner-link" href="target.html">Цели знакомств</a>
+						<a class="city-list-inner-link" href="target.html">Как стать участником</a>
+					</ul></li>
+				<li	class="header-inner-menu-item selection-city"><a class="header-inner-menu-link" href="#">Для девушек</a><ul class="city-list-inner man-list-inner">
+						<a class="city-list-inner-link" href="target.html">Цели знакомств</a>
+						<a class="city-list-inner-link" href="target.html">Как стать участником</a>
+					</ul></li>
+				<li	class="header-inner-menu-item"><a class="header-inner-menu-link" href="index.html#section5">Контакты</a></li>
+				<li	class="header-inner-menu-item selection-city"><a class="header-inner-menu-link" href="#">Выбрать город</a>
+					<ul class="city-list-inner">
+						<a class="city-list-inner-link" href="#">Москва</a>
+						<a class="city-list-inner-link" href="#">Санкт-Петербург</a>
+						<a class="city-list-inner-link" href="#">Саратов</a>
+					</ul>
+				</li>
+				</nav> 
+				<a class="login-inner" href="#">Выход</a>    
+			</div>
+	</header>
+		<!-- Шапка внутренних страниц - КОНЕЦ -->	
+	
+	<!-- Меню для планшета - НАЧАЛО -->
+	<nav class="menu-tablet">
+		<div class="container">
+			<li class="personal-menu-item"><a class="personal-menu-link" href="private.html">
+				<svg id="Group_98" class="icon-personal-menu" data-name="Group 98" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 20.939">
+					<path id="Path_13" class="icon-hover" data-name="Path 13" d="M17.006,15.674c-2.844-1.029-3.752-1.937-3.752-3.813,0-1.15.847-.787,1.271-2.844.182-.847.908,0,1.089-2,0-.787-.424-.968-.424-.968a17.85,17.85,0,0,0,.3-2.058C15.614,2.9,14.827,0,10.893,0s-4.72,2.844-4.6,3.994a17.85,17.85,0,0,0,.3,2.058s-.424.182-.424.968c.121,1.937.908,1.089,1.089,2,.363,2.058,1.271,1.695,1.271,2.844,0,1.876-.908,2.784-3.813,3.813S0,17.792,0,18.518v2.421H21.908V18.518C21.786,17.792,19.91,16.7,17.006,15.674Z" fill="#c9ced8"/>
+				</svg>Личный кабинет</a></li>
+			<li class="personal-menu-item"><a class="personal-menu-link" href="favorites.html">
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon-personal-menu" width="20" height="20" viewBox="0 0 22.104 19.636">
+					<path id="Path_96"  class="icon-hover" data-name="Path 96" d="M15.951,0a8.363,8.363,0,0,0-4.956,2.182A8.679,8.679,0,0,0,6.039,0C2.393,0,0,3.774,0,6.9c0,5.72,11.052,12.737,11.052,12.737S22.1,12.619,22.1,6.9C21.99,3.774,19.6,0,15.951,0Z" fill="#c9ced8"/>
+				</svg>Избранное</a></li>
+			<li class="personal-menu-item"><a class="personal-menu-link active" href="archive.html">
+				<svg id="Group_99" class="icon-personal-menu" data-name="Group 99" xmlns="http://www.w3.org/2000/svg" width="20.491" height="17.521" viewBox="0 0 20.491 17.521">
+					<path id="Path_14" class="icon-hover active" data-name="Path 14" d="M10.246,26.078A23.9,23.9,0,0,1,0,23.9v3.861a1.86,1.86,0,0,0,1.831,1.831H18.611a1.86,1.86,0,0,0,1.831-1.831V23.9A23.5,23.5,0,0,1,10.246,26.078Z" transform="translate(0 -12.07)" fill="#c9ced8"/>
+					<path id="Path_15" class="icon-hover active" data-name="Path 15" d="M18.611,2.92H14.6V1.089A1.1,1.1,0,0,0,13.513,0H6.93A1.1,1.1,0,0,0,5.841,1.089V2.92H1.831A1.86,1.86,0,0,0,0,4.752v6.336a22.716,22.716,0,0,0,10.246,2.227,22.87,22.87,0,0,0,10.246-2.227V4.752A1.87,1.87,0,0,0,18.611,2.92Zm-6.93,8.513H8.761V10.246h2.92ZM13.166,2.92H7.325V1.435h5.841Z" fill="#c9ced8"/>
+				</svg>Архив</a></li>
+			<li class="personal-menu-item"><a class="personal-menu-link" href="message.html">
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon-personal-menu" width="24" height="15.42" viewBox="0 0 24 15.42">
+					<g id="Group_96" data-name="Group 96" transform="translate(0 -33)">
+						<path id="Path_10" class="icon-hover" data-name="Path 10" d="M.945,1.449c.638.348,9.623,5.159,9.971,5.333a2.7,2.7,0,0,0,2.435,0c.348-.174,9.333-4.986,9.971-5.333S24.6,0,23.38,0H.887C-.33,0,.249,1.1.945,1.449Z" transform="translate(-0.076 33)" fill="#c9ced8"/>
+						<path id="Path_11" class="icon-hover" data-name="Path 11" d="M23.478,7.02c-.754.406-9.8,5.1-10.261,5.333a2.354,2.354,0,0,1-1.217.29,2.354,2.354,0,0,1-1.217-.29C10.319,12.122,1.275,7.368.522,7.02,0,6.73,0,7.078,0,7.31v9.739a1.538,1.538,0,0,0,1.333,1.275H22.667A1.538,1.538,0,0,0,24,17.049V7.31C24,7.078,24,6.73,23.478,7.02Z" transform="translate(0 30.096)" fill="#c9ced8"/>
+					</g>
+				</svg>Сообщения</a></li>
+			<li class="personal-menu-item"><a class="personal-menu-link" href="personal.html">
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon-personal-menu" width="27.656" height="12.091" viewBox="0 0 27.656 12.091">
+					<g id="noun_Personal_Networking_1681632" data-name="noun_Personal Networking_1681632" transform="translate(-7.814 -19.796)">
+						<path id="Path_64" class="icon-hover" data-name="Path 64" d="M32.4,40.853,21.646,42.69l-3.054-3a.545.545,0,0,0-.383-.156H12.788A.537.537,0,0,0,12.246,39H10.078l-2.721.076a.537.537,0,0,0-.542.533v8.525a.537.537,0,0,0,.542.533l2.721-.076h2.168a.537.537,0,0,0,.542-.533h1.5l5.8,2.848a1.791,1.791,0,0,0,1.685-.053l11.825-6.78a1.725,1.725,0,0,0,.248-2.837A1.79,1.79,0,0,0,32.4,40.853ZM11.7,47.525H10.62V40.066H11.7Zm21.342-4.373-11.825,6.78a.7.7,0,0,1-.654.021l-5.91-2.9a.544.544,0,0,0-.242-.056H12.788V40.6h5.2l4.271,4.2a.973.973,0,0,1,.29.689.984.984,0,0,1-.991.974.994.994,0,0,1-.7-.285l-2.8-2.756-.766.753,2.8,2.756a2.083,2.083,0,0,0,3.542-1.442,2.007,2.007,0,0,0-.608-1.442l-.439-.432,10-1.709a.7.7,0,0,1,.561.149.67.67,0,0,1-.1,1.1Z" transform="translate(1 -19.204)" fill="#c9ced8"/>
+					</g>
+				</svg>Персональные предложения</a></li>
+			<li class="personal-menu-item"><a class="personal-menu-link open-popup" href="#search">
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon-personal-menu" width="20" height="20" viewBox="0 0 18.997 18.997">
+					<g id="noun_Search_1969783" transform="translate(-24.001 -16.009)">
+						<path id="Path_66" class="icon-hover" data-name="Path 66" d="M19.01,16.857,13.951,11.8A7.6,7.6,0,1,0,11.8,13.947l5.059,5.059ZM2.166,7.609a5.446,5.446,0,1,1,5.445,5.446A5.445,5.445,0,0,1,2.166,7.609Z" transform="translate(23.988 16)" fill="#c9ced8"/>
+					</g>
+				</svg>Поиск</a></li>
+		</div>
+	</nav>
+	<!-- Меню для планшета - КОНЕЦ -->
+
+	<!-- Блок с номером карты - НАЧАЛО -->
+	<div class="personal">
+		<div class="container">
+			<h1 class="personal-text">Архив</h1>
+			<div class="personal-card">
+				<p class="number-card">№123456789</p>
+				<p class="validaty-card">Время окончания действия карты <span class="balance"> 15 дней</span></p>
+			</div>
+		</div>
+	</div>
+		<!-- Блок с номером карты - КОНЕЦ -->
+
+		<!-- Меню внутренних страниц - НАЧАЛО -->
+	<nav class="personal-menu">
+			<div class="container">
+				<li class="personal-menu-item"><a class="personal-menu-link" href="private.html">
+						<svg id="Group_98" class="icon-personal-menu" data-name="Group 98" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 20.939">
+							<path id="Path_13" class="icon-hover" data-name="Path 13" d="M17.006,15.674c-2.844-1.029-3.752-1.937-3.752-3.813,0-1.15.847-.787,1.271-2.844.182-.847.908,0,1.089-2,0-.787-.424-.968-.424-.968a17.85,17.85,0,0,0,.3-2.058C15.614,2.9,14.827,0,10.893,0s-4.72,2.844-4.6,3.994a17.85,17.85,0,0,0,.3,2.058s-.424.182-.424.968c.121,1.937.908,1.089,1.089,2,.363,2.058,1.271,1.695,1.271,2.844,0,1.876-.908,2.784-3.813,3.813S0,17.792,0,18.518v2.421H21.908V18.518C21.786,17.792,19.91,16.7,17.006,15.674Z" fill="#c9ced8"/>
+						</svg>Личный кабинет</a></li>
+				<li class="personal-menu-item"><a class="personal-menu-link" href="favorites.html">
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon-personal-menu" width="20" height="20" viewBox="0 0 22.104 19.636">
+							<path id="Path_96"  class="icon-hover" data-name="Path 96" d="M15.951,0a8.363,8.363,0,0,0-4.956,2.182A8.679,8.679,0,0,0,6.039,0C2.393,0,0,3.774,0,6.9c0,5.72,11.052,12.737,11.052,12.737S22.1,12.619,22.1,6.9C21.99,3.774,19.6,0,15.951,0Z" fill="#c9ced8"/>
+						</svg>Избранное</a></li>
+				<li class="personal-menu-item"><a class="personal-menu-link active" href="archive.html">
+						<svg id="Group_99" class="icon-personal-menu" data-name="Group 99" xmlns="http://www.w3.org/2000/svg" width="20.491" height="17.521" viewBox="0 0 20.491 17.521">
+							<path id="Path_14" class="icon-hover active" data-name="Path 14" d="M10.246,26.078A23.9,23.9,0,0,1,0,23.9v3.861a1.86,1.86,0,0,0,1.831,1.831H18.611a1.86,1.86,0,0,0,1.831-1.831V23.9A23.5,23.5,0,0,1,10.246,26.078Z" transform="translate(0 -12.07)" fill="#c9ced8"/>
+							<path id="Path_15" class="icon-hover active" data-name="Path 15" d="M18.611,2.92H14.6V1.089A1.1,1.1,0,0,0,13.513,0H6.93A1.1,1.1,0,0,0,5.841,1.089V2.92H1.831A1.86,1.86,0,0,0,0,4.752v6.336a22.716,22.716,0,0,0,10.246,2.227,22.87,22.87,0,0,0,10.246-2.227V4.752A1.87,1.87,0,0,0,18.611,2.92Zm-6.93,8.513H8.761V10.246h2.92ZM13.166,2.92H7.325V1.435h5.841Z" fill="#c9ced8"/>
+						</svg>
+						Архив</a></li>
+				<li class="personal-menu-item"><a class="personal-menu-link" href="personal.html">
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon-personal-menu" width="27.656" height="12.091" viewBox="0 0 27.656 12.091">
+							<g id="noun_Personal_Networking_1681632" data-name="noun_Personal Networking_1681632" transform="translate(-7.814 -19.796)">
+								<path id="Path_64" class="icon-hover" data-name="Path 64" d="M32.4,40.853,21.646,42.69l-3.054-3a.545.545,0,0,0-.383-.156H12.788A.537.537,0,0,0,12.246,39H10.078l-2.721.076a.537.537,0,0,0-.542.533v8.525a.537.537,0,0,0,.542.533l2.721-.076h2.168a.537.537,0,0,0,.542-.533h1.5l5.8,2.848a1.791,1.791,0,0,0,1.685-.053l11.825-6.78a1.725,1.725,0,0,0,.248-2.837A1.79,1.79,0,0,0,32.4,40.853ZM11.7,47.525H10.62V40.066H11.7Zm21.342-4.373-11.825,6.78a.7.7,0,0,1-.654.021l-5.91-2.9a.544.544,0,0,0-.242-.056H12.788V40.6h5.2l4.271,4.2a.973.973,0,0,1,.29.689.984.984,0,0,1-.991.974.994.994,0,0,1-.7-.285l-2.8-2.756-.766.753,2.8,2.756a2.083,2.083,0,0,0,3.542-1.442,2.007,2.007,0,0,0-.608-1.442l-.439-.432,10-1.709a.7.7,0,0,1,.561.149.67.67,0,0,1-.1,1.1Z" transform="translate(1 -19.204)" fill="#c9ced8"/>
+							</g>
+						</svg>
+						Персональные предложения</a></li>
+				<li class="personal-menu-item"><a class="personal-menu-link" href="message.html">
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon-personal-menu" width="24" height="15.42" viewBox="0 0 24 15.42">
+							<g id="Group_96" data-name="Group 96" transform="translate(0 -33)">
+								<path id="Path_10" class="icon-hover" data-name="Path 10" d="M.945,1.449c.638.348,9.623,5.159,9.971,5.333a2.7,2.7,0,0,0,2.435,0c.348-.174,9.333-4.986,9.971-5.333S24.6,0,23.38,0H.887C-.33,0,.249,1.1.945,1.449Z" transform="translate(-0.076 33)" fill="#c9ced8"/>
+								<path id="Path_11" class="icon-hover" data-name="Path 11" d="M23.478,7.02c-.754.406-9.8,5.1-10.261,5.333a2.354,2.354,0,0,1-1.217.29,2.354,2.354,0,0,1-1.217-.29C10.319,12.122,1.275,7.368.522,7.02,0,6.73,0,7.078,0,7.31v9.739a1.538,1.538,0,0,0,1.333,1.275H22.667A1.538,1.538,0,0,0,24,17.049V7.31C24,7.078,24,6.73,23.478,7.02Z" transform="translate(0 30.096)" fill="#c9ced8"/>
+							</g>
+						</svg>
+						Сообщения</a></li>
+				<li class="personal-menu-item"><a class="personal-menu-link open-popup" href="#search">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon-personal-menu" width="20" height="20" viewBox="0 0 18.997 18.997">
+						<g id="noun_Search_1969783" transform="translate(-24.001 -16.009)">
+							<path id="Path_66" class="icon-hover" data-name="Path 66" d="M19.01,16.857,13.951,11.8A7.6,7.6,0,1,0,11.8,13.947l5.059,5.059ZM2.166,7.609a5.446,5.446,0,1,1,5.445,5.446A5.445,5.445,0,0,1,2.166,7.609Z" transform="translate(23.988 16)" fill="#c9ced8"/>
+						</g></svg>Поиск</a></li>
+				<li class="personal-menu-item"><a class="personal-menu-link" href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon-personal-menu" width="18" height="18" viewBox="0 0 18 18">
+						<g id="noun_Exit_793321" transform="translate(30.091 116)">
+							<g id="Group_46" data-name="Group 46" transform="translate(-30.091 -116)">
+								<path id="Path_61" class="icon-hover" data-name="Path 61" d="M15.2,6,13.85,7.26,15.38,8.7H8v1.8h7.38l-1.53,1.44L15.2,13.2l3.6-3.6Z" transform="translate(-0.8 -0.6)" fill="#c9ced8"/>
+								<path id="Path_62" class="icon-hover" data-name="Path 62" d="M11.7,16.2H1.8V1.8h9.9V3.6h1.8V0H0V18H13.5V14.4H11.7Z" fill="#c9ced8"/>
+							</g>
+						</g>
+					</svg>Выход</a></li>
+			</div>
+	</nav>
+	<!-- Меню внутренних страниц - КОНЕЦ -->
+
+	<!-- Основное содержимое страницы - НАЧАЛО -->
+	<div class="catalog-list">
+		<div class="container">
+			<div class="catalog-item">
+				<a class="catalog-item-link" href="detail.html">
+					<span class="icon-archive">
+						<svg id="Group_99" class="icon-archive-img" data-name="Group 99" xmlns="http://www.w3.org/2000/svg" width="20.491" height="17.521" viewBox="0 0 20.491 17.521">
+							<path id="Path_14" data-name="Path 14" d="M10.246,26.078A23.9,23.9,0,0,1,0,23.9v3.861a1.86,1.86,0,0,0,1.831,1.831H18.611a1.86,1.86,0,0,0,1.831-1.831V23.9A23.5,23.5,0,0,1,10.246,26.078Z" transform="translate(0 -12.07)" fill="#DC143C"/>
+							<path id="Path_15" data-name="Path 15" d="M18.611,2.92H14.6V1.089A1.1,1.1,0,0,0,13.513,0H6.93A1.1,1.1,0,0,0,5.841,1.089V2.92H1.831A1.86,1.86,0,0,0,0,4.752v6.336a22.716,22.716,0,0,0,10.246,2.227,22.87,22.87,0,0,0,10.246-2.227V4.752A1.87,1.87,0,0,0,18.611,2.92Zm-6.93,8.513H8.761V10.246h2.92ZM13.166,2.92H7.325V1.435h5.841Z" fill="#DC143C"/>
+						</svg>
+						<span class="add-list">
+							<span class="delete-archive">Удалить из архива</span>
+						</span>
+					</span>
+					<img class="item-content-img" src="img/photo1-favorites.jpg" alt="">
+					<div class="item-content-description">
+						<p class="item-content-description-name">Анна-Мария</p>
+						<p class="item-content-description-number">№ 1234567</p>
+					</div>
+					<div class="catalog-item-info">
+						<span class="img-city"></span>
+						<span class="title-city">Саратов</span>
+						<span class="characteristic">23 / 175 / 55</span>
+						<span class="having-children">Детей нет</span>
+						<span class="marital-status">Не замужем</span>
+						<button type="button" class="for-comment">Для комментариев</button>
+					</div>
+				</a>
+			</div>
+			<div class="catalog-item">
+				<a class="catalog-item-link" href="detail.html">
+					<span class="icon-archive">
+						<svg id="Group_99" class="icon-archive-img" data-name="Group 99" xmlns="http://www.w3.org/2000/svg" width="20.491" height="17.521" viewBox="0 0 20.491 17.521">
+							<path id="Path_14" data-name="Path 14" d="M10.246,26.078A23.9,23.9,0,0,1,0,23.9v3.861a1.86,1.86,0,0,0,1.831,1.831H18.611a1.86,1.86,0,0,0,1.831-1.831V23.9A23.5,23.5,0,0,1,10.246,26.078Z" transform="translate(0 -12.07)" fill="#DC143C"/>
+							<path id="Path_15" data-name="Path 15" d="M18.611,2.92H14.6V1.089A1.1,1.1,0,0,0,13.513,0H6.93A1.1,1.1,0,0,0,5.841,1.089V2.92H1.831A1.86,1.86,0,0,0,0,4.752v6.336a22.716,22.716,0,0,0,10.246,2.227,22.87,22.87,0,0,0,10.246-2.227V4.752A1.87,1.87,0,0,0,18.611,2.92Zm-6.93,8.513H8.761V10.246h2.92ZM13.166,2.92H7.325V1.435h5.841Z" fill="#DC143C"/>
+						</svg>
+						<span class="add-list">
+							<span class="delete-archive">Удалить из архива</span>
+						</span>
+					</span>
+					<img class="item-content-img" src="img/photo2-favorites.jpg" alt="">
+					<div class="item-content-description">
+						<p class="item-content-description-name">Анна-Мария</p>
+						<p class="item-content-description-number">№ 1234567</p>
+					</div>
+					<div class="catalog-item-info">
+						<span class="img-city"></span>
+						<span class="title-city">Саратов</span>
+						<span class="characteristic">23 / 175 / 55</span>
+						<span class="having-children">Детей нет</span>
+						<span class="marital-status">Не замужем</span>
+						<button type="button" class="for-comment">Для комментариев</button>
+					</div>
+				</a>
+			</div>
+			<div class="catalog-item">
+				<a class="catalog-item-link" href="detail.html">
+					<span class="icon-archive">
+						<svg id="Group_99" class="icon-archive-img" data-name="Group 99" xmlns="http://www.w3.org/2000/svg" width="20.491" height="17.521" viewBox="0 0 20.491 17.521">
+							<path id="Path_14" data-name="Path 14" d="M10.246,26.078A23.9,23.9,0,0,1,0,23.9v3.861a1.86,1.86,0,0,0,1.831,1.831H18.611a1.86,1.86,0,0,0,1.831-1.831V23.9A23.5,23.5,0,0,1,10.246,26.078Z" transform="translate(0 -12.07)" fill="#DC143C"/>
+							<path id="Path_15" data-name="Path 15" d="M18.611,2.92H14.6V1.089A1.1,1.1,0,0,0,13.513,0H6.93A1.1,1.1,0,0,0,5.841,1.089V2.92H1.831A1.86,1.86,0,0,0,0,4.752v6.336a22.716,22.716,0,0,0,10.246,2.227,22.87,22.87,0,0,0,10.246-2.227V4.752A1.87,1.87,0,0,0,18.611,2.92Zm-6.93,8.513H8.761V10.246h2.92ZM13.166,2.92H7.325V1.435h5.841Z" fill="#DC143C"/>
+						</svg>
+						<span class="add-list">
+							<span class="delete-archive">Удалить из архива</span>
+						</span>
+					</span>
+					<img class="item-content-img" src="img/photo1-favorites.jpg" alt="">
+					<div class="item-content-description">
+						<p class="item-content-description-name">Анна-Мария</p>
+						<p class="item-content-description-number">№ 1234567</p>
+					</div>
+					<div class="catalog-item-info">
+						<span class="img-city"></span>
+						<span class="title-city">Саратов</span>
+						<span class="characteristic">23 / 175 / 55</span>
+						<span class="having-children">Детей нет</span>
+						<span class="marital-status">Не замужем</span>
+						<button type="button" class="for-comment">Для комментариев</button>
+					</div>
+				</a>
+			</div>
+			<div class="catalog-item">
+				<a class="catalog-item-link" href="detail.html">
+					<span class="icon-archive">
+						<svg id="Group_99" class="icon-archive-img" data-name="Group 99" xmlns="http://www.w3.org/2000/svg" width="20.491" height="17.521" viewBox="0 0 20.491 17.521">
+							<path id="Path_14" data-name="Path 14" d="M10.246,26.078A23.9,23.9,0,0,1,0,23.9v3.861a1.86,1.86,0,0,0,1.831,1.831H18.611a1.86,1.86,0,0,0,1.831-1.831V23.9A23.5,23.5,0,0,1,10.246,26.078Z" transform="translate(0 -12.07)" fill="#DC143C"/>
+							<path id="Path_15" data-name="Path 15" d="M18.611,2.92H14.6V1.089A1.1,1.1,0,0,0,13.513,0H6.93A1.1,1.1,0,0,0,5.841,1.089V2.92H1.831A1.86,1.86,0,0,0,0,4.752v6.336a22.716,22.716,0,0,0,10.246,2.227,22.87,22.87,0,0,0,10.246-2.227V4.752A1.87,1.87,0,0,0,18.611,2.92Zm-6.93,8.513H8.761V10.246h2.92ZM13.166,2.92H7.325V1.435h5.841Z" fill="#DC143C"/>
+						</svg>
+						<span class="add-list">
+							<span class="delete-archive">Удалить из архива</span>
+						</span>
+					</span>
+					<img class="item-content-img" src="img/photo2-favorites.jpg" alt="">
+					<div class="item-content-description">
+						<p class="item-content-description-name">Анна-Мария</p>
+						<p class="item-content-description-number">№ 1234567</p>
+					</div>
+					<div class="catalog-item-info">
+						<span class="img-city"></span>
+						<span class="title-city">Саратов</span>
+						<span class="characteristic">23 / 175 / 55</span>
+						<span class="having-children">Детей нет</span>
+						<span class="marital-status">Не замужем</span>
+						<button type="button" class="for-comment">Для комментариев</button>
+					</div>
+				</a>
+			</div>
+			<div class="catalog-item">
+				<a class="catalog-item-link" href="detail.html">
+					<span class="icon-archive">
+						<svg id="Group_99" class="icon-archive-img" data-name="Group 99" xmlns="http://www.w3.org/2000/svg" width="20.491" height="17.521" viewBox="0 0 20.491 17.521">
+							<path id="Path_14" data-name="Path 14" d="M10.246,26.078A23.9,23.9,0,0,1,0,23.9v3.861a1.86,1.86,0,0,0,1.831,1.831H18.611a1.86,1.86,0,0,0,1.831-1.831V23.9A23.5,23.5,0,0,1,10.246,26.078Z" transform="translate(0 -12.07)" fill="#DC143C"/>
+							<path id="Path_15" data-name="Path 15" d="M18.611,2.92H14.6V1.089A1.1,1.1,0,0,0,13.513,0H6.93A1.1,1.1,0,0,0,5.841,1.089V2.92H1.831A1.86,1.86,0,0,0,0,4.752v6.336a22.716,22.716,0,0,0,10.246,2.227,22.87,22.87,0,0,0,10.246-2.227V4.752A1.87,1.87,0,0,0,18.611,2.92Zm-6.93,8.513H8.761V10.246h2.92ZM13.166,2.92H7.325V1.435h5.841Z" fill="#DC143C"/>
+						</svg>
+						<span class="add-list">
+							<span class="delete-archive">Удалить из архива</span>
+						</span>
+					</span>
+					<img class="item-content-img" src="img/photo1-favorites.jpg" alt="">
+					<div class="item-content-description">
+						<p class="item-content-description-name">Анна-Мария</p>
+						<p class="item-content-description-number">№ 1234567</p>
+					</div>
+					<div class="catalog-item-info">
+						<span class="img-city"></span>
+						<span class="title-city">Саратов</span>
+						<span class="characteristic">23 / 175 / 55</span>
+						<span class="having-children">Детей нет</span>
+						<span class="marital-status">Не замужем</span>
+						<button type="button" class="for-comment">Для комментариев</button>
+					</div>
+				</a>
+			</div>
+			<div class="catalog-item">
+				<a class="catalog-item-link" href="detail.html">
+					<span class="icon-archive">
+						<svg id="Group_99" class="icon-archive-img" data-name="Group 99" xmlns="http://www.w3.org/2000/svg" width="20.491" height="17.521" viewBox="0 0 20.491 17.521">
+							<path id="Path_14" data-name="Path 14" d="M10.246,26.078A23.9,23.9,0,0,1,0,23.9v3.861a1.86,1.86,0,0,0,1.831,1.831H18.611a1.86,1.86,0,0,0,1.831-1.831V23.9A23.5,23.5,0,0,1,10.246,26.078Z" transform="translate(0 -12.07)" fill="#DC143C"/>
+							<path id="Path_15" data-name="Path 15" d="M18.611,2.92H14.6V1.089A1.1,1.1,0,0,0,13.513,0H6.93A1.1,1.1,0,0,0,5.841,1.089V2.92H1.831A1.86,1.86,0,0,0,0,4.752v6.336a22.716,22.716,0,0,0,10.246,2.227,22.87,22.87,0,0,0,10.246-2.227V4.752A1.87,1.87,0,0,0,18.611,2.92Zm-6.93,8.513H8.761V10.246h2.92ZM13.166,2.92H7.325V1.435h5.841Z" fill="#DC143C"/>
+						</svg>
+						<span class="add-list">
+							<span class="delete-archive">Удалить из архива</span>
+						</span>
+					</span>
+					<img class="item-content-img" src="img/photo2-favorites.jpg" alt="">
+					<div class="item-content-description">
+						<p class="item-content-description-name">Анна-Мария</p>
+						<p class="item-content-description-number">№ 1234567</p>
+					</div>
+					<div class="catalog-item-info">
+						<span class="img-city"></span>
+						<span class="title-city">Саратов</span>
+						<span class="characteristic">23 / 175 / 55</span>
+						<span class="having-children">Детей нет</span>
+						<span class="marital-status">Не замужем</span>
+						<button type="button" class="for-comment">Для комментариев</button>
+					</div>
+				</a>
+			</div>
+			<div class="catalog-item">
+				<a class="catalog-item-link" href="detail.html">
+					<span class="icon-archive">
+						<svg id="Group_99" class="icon-archive-img" data-name="Group 99" xmlns="http://www.w3.org/2000/svg" width="20.491" height="17.521" viewBox="0 0 20.491 17.521">
+							<path id="Path_14" data-name="Path 14" d="M10.246,26.078A23.9,23.9,0,0,1,0,23.9v3.861a1.86,1.86,0,0,0,1.831,1.831H18.611a1.86,1.86,0,0,0,1.831-1.831V23.9A23.5,23.5,0,0,1,10.246,26.078Z" transform="translate(0 -12.07)" fill="#DC143C"/>
+							<path id="Path_15" data-name="Path 15" d="M18.611,2.92H14.6V1.089A1.1,1.1,0,0,0,13.513,0H6.93A1.1,1.1,0,0,0,5.841,1.089V2.92H1.831A1.86,1.86,0,0,0,0,4.752v6.336a22.716,22.716,0,0,0,10.246,2.227,22.87,22.87,0,0,0,10.246-2.227V4.752A1.87,1.87,0,0,0,18.611,2.92Zm-6.93,8.513H8.761V10.246h2.92ZM13.166,2.92H7.325V1.435h5.841Z" fill="#DC143C"/>
+						</svg>
+						<span class="add-list">
+							<span class="delete-archive">Удалить из архива</span>
+						</span>
+					</span>
+					<img class="item-content-img" src="img/photo1-favorites.jpg" alt="">
+					<div class="item-content-description">
+						<p class="item-content-description-name">Анна-Мария</p>
+						<p class="item-content-description-number">№ 1234567</p>
+					</div>
+					<div class="catalog-item-info">
+						<span class="img-city"></span>
+						<span class="title-city">Саратов</span>
+						<span class="characteristic">23 / 175 / 55</span>
+						<span class="having-children">Детей нет</span>
+						<span class="marital-status">Не замужем</span>
+						<button type="button" class="for-comment">Для комментариев</button>
+					</div>
+				</a>
+			</div>
+			<div class="catalog-item">
+				<a class="catalog-item-link" href="detail.html">
+					<span class="icon-archive">
+						<svg id="Group_99" class="icon-archive-img" data-name="Group 99" xmlns="http://www.w3.org/2000/svg" width="20.491" height="17.521" viewBox="0 0 20.491 17.521">
+							<path id="Path_14" data-name="Path 14" d="M10.246,26.078A23.9,23.9,0,0,1,0,23.9v3.861a1.86,1.86,0,0,0,1.831,1.831H18.611a1.86,1.86,0,0,0,1.831-1.831V23.9A23.5,23.5,0,0,1,10.246,26.078Z" transform="translate(0 -12.07)" fill="#DC143C"/>
+							<path id="Path_15" data-name="Path 15" d="M18.611,2.92H14.6V1.089A1.1,1.1,0,0,0,13.513,0H6.93A1.1,1.1,0,0,0,5.841,1.089V2.92H1.831A1.86,1.86,0,0,0,0,4.752v6.336a22.716,22.716,0,0,0,10.246,2.227,22.87,22.87,0,0,0,10.246-2.227V4.752A1.87,1.87,0,0,0,18.611,2.92Zm-6.93,8.513H8.761V10.246h2.92ZM13.166,2.92H7.325V1.435h5.841Z" fill="#DC143C"/>
+						</svg>
+						<span class="add-list">
+							<span class="delete-archive">Удалить из архива</span>
+						</span>
+					</span>
+					<img class="item-content-img" src="img/photo2-favorites.jpg" alt="">
+					<div class="item-content-description">
+						<p class="item-content-description-name">Анна-Мария</p>
+						<p class="item-content-description-number">№ 1234567</p>
+					</div>
+					<div class="catalog-item-info">
+						<span class="img-city"></span>
+						<span class="title-city">Саратов</span>
+						<span class="characteristic">23 / 175 / 55</span>
+						<span class="having-children">Детей нет</span>
+						<span class="marital-status">Не замужем</span>
+						<button type="button" class="for-comment">Для комментариев</button>
+					</div>
+				</a>
+			</div>
+			<div class="catalog-item">
+				<a class="catalog-item-link" href="detail.html">
+					<span class="icon-archive">
+						<svg id="Group_99" class="icon-archive-img" data-name="Group 99" xmlns="http://www.w3.org/2000/svg" width="20.491" height="17.521" viewBox="0 0 20.491 17.521">
+							<path id="Path_14" data-name="Path 14" d="M10.246,26.078A23.9,23.9,0,0,1,0,23.9v3.861a1.86,1.86,0,0,0,1.831,1.831H18.611a1.86,1.86,0,0,0,1.831-1.831V23.9A23.5,23.5,0,0,1,10.246,26.078Z" transform="translate(0 -12.07)" fill="#DC143C"/>
+							<path id="Path_15" data-name="Path 15" d="M18.611,2.92H14.6V1.089A1.1,1.1,0,0,0,13.513,0H6.93A1.1,1.1,0,0,0,5.841,1.089V2.92H1.831A1.86,1.86,0,0,0,0,4.752v6.336a22.716,22.716,0,0,0,10.246,2.227,22.87,22.87,0,0,0,10.246-2.227V4.752A1.87,1.87,0,0,0,18.611,2.92Zm-6.93,8.513H8.761V10.246h2.92ZM13.166,2.92H7.325V1.435h5.841Z" fill="#DC143C"/>
+						</svg>
+						<span class="add-list">
+							<span class="delete-archive">Удалить из архива</span>
+						</span>
+					</span>
+					<img class="item-content-img" src="img/photo1-favorites.jpg" alt="">
+					<div class="item-content-description">
+						<p class="item-content-description-name">Анна-Мария</p>
+						<p class="item-content-description-number">№ 1234567</p>
+					</div>
+					<div class="catalog-item-info">
+						<span class="img-city"></span>
+						<span class="title-city">Саратов</span>
+						<span class="characteristic">23 / 175 / 55</span>
+						<span class="having-children">Детей нет</span>
+						<span class="marital-status">Не замужем</span>
+						<button type="button" class="for-comment">Для комментариев</button>
+					</div>
+				</a>
+			</div>
+			<div class="catalog-item">
+				<a class="catalog-item-link" href="detail.html">
+					<span class="icon-archive">
+						<svg id="Group_99" class="icon-archive-img" data-name="Group 99" xmlns="http://www.w3.org/2000/svg" width="20.491" height="17.521" viewBox="0 0 20.491 17.521">
+							<path id="Path_14" data-name="Path 14" d="M10.246,26.078A23.9,23.9,0,0,1,0,23.9v3.861a1.86,1.86,0,0,0,1.831,1.831H18.611a1.86,1.86,0,0,0,1.831-1.831V23.9A23.5,23.5,0,0,1,10.246,26.078Z" transform="translate(0 -12.07)" fill="#DC143C"/>
+							<path id="Path_15" data-name="Path 15" d="M18.611,2.92H14.6V1.089A1.1,1.1,0,0,0,13.513,0H6.93A1.1,1.1,0,0,0,5.841,1.089V2.92H1.831A1.86,1.86,0,0,0,0,4.752v6.336a22.716,22.716,0,0,0,10.246,2.227,22.87,22.87,0,0,0,10.246-2.227V4.752A1.87,1.87,0,0,0,18.611,2.92Zm-6.93,8.513H8.761V10.246h2.92ZM13.166,2.92H7.325V1.435h5.841Z" fill="#DC143C"/>
+						</svg>
+						<span class="add-list">
+							<span class="delete-archive">Удалить из архива</span>
+						</span>
+					</span>
+					<img class="item-content-img" src="img/photo2-favorites.jpg" alt="">
+					<div class="item-content-description">
+						<p class="item-content-description-name">Анна-Мария</p>
+						<p class="item-content-description-number">№ 1234567</p>
+					</div>
+					<div class="catalog-item-info">
+						<span class="img-city"></span>
+						<span class="title-city">Саратов</span>
+						<span class="characteristic">23 / 175 / 55</span>
+						<span class="having-children">Детей нет</span>
+						<span class="marital-status">Не замужем</span>
+						<button type="button" class="for-comment">Для комментариев</button>
+					</div>
+				</a>
+			</div>
+			<div class="catalog-item">
+				<a class="catalog-item-link" href="detail.html">
+					<span class="icon-archive">
+						<svg id="Group_99" class="icon-archive-img" data-name="Group 99" xmlns="http://www.w3.org/2000/svg" width="20.491" height="17.521" viewBox="0 0 20.491 17.521">
+							<path id="Path_14" data-name="Path 14" d="M10.246,26.078A23.9,23.9,0,0,1,0,23.9v3.861a1.86,1.86,0,0,0,1.831,1.831H18.611a1.86,1.86,0,0,0,1.831-1.831V23.9A23.5,23.5,0,0,1,10.246,26.078Z" transform="translate(0 -12.07)" fill="#DC143C"/>
+							<path id="Path_15" data-name="Path 15" d="M18.611,2.92H14.6V1.089A1.1,1.1,0,0,0,13.513,0H6.93A1.1,1.1,0,0,0,5.841,1.089V2.92H1.831A1.86,1.86,0,0,0,0,4.752v6.336a22.716,22.716,0,0,0,10.246,2.227,22.87,22.87,0,0,0,10.246-2.227V4.752A1.87,1.87,0,0,0,18.611,2.92Zm-6.93,8.513H8.761V10.246h2.92ZM13.166,2.92H7.325V1.435h5.841Z" fill="#DC143C"/>
+						</svg>
+						<span class="add-list">
+							<span class="delete-archive">Удалить из архива</span>
+						</span>
+					</span>
+					<img class="item-content-img" src="img/photo1-favorites.jpg" alt="">
+					<div class="item-content-description">
+						<p class="item-content-description-name">Анна-Мария</p>
+						<p class="item-content-description-number">№ 1234567</p>
+					</div>
+					<div class="catalog-item-info">
+						<span class="img-city"></span>
+						<span class="title-city">Саратов</span>
+						<span class="characteristic">23 / 175 / 55</span>
+						<span class="having-children">Детей нет</span>
+						<span class="marital-status">Не замужем</span>
+						<button type="button" class="for-comment">Для комментариев</button>
+					</div>
+				</a>
+			</div>
+			<div class="catalog-item">
+				<a class="catalog-item-link" href="detail.html">
+					<span class="icon-archive">
+						<svg id="Group_99" class="icon-archive-img" data-name="Group 99" xmlns="http://www.w3.org/2000/svg" width="20.491" height="17.521" viewBox="0 0 20.491 17.521">
+							<path id="Path_14" data-name="Path 14" d="M10.246,26.078A23.9,23.9,0,0,1,0,23.9v3.861a1.86,1.86,0,0,0,1.831,1.831H18.611a1.86,1.86,0,0,0,1.831-1.831V23.9A23.5,23.5,0,0,1,10.246,26.078Z" transform="translate(0 -12.07)" fill="#DC143C"/>
+							<path id="Path_15" data-name="Path 15" d="M18.611,2.92H14.6V1.089A1.1,1.1,0,0,0,13.513,0H6.93A1.1,1.1,0,0,0,5.841,1.089V2.92H1.831A1.86,1.86,0,0,0,0,4.752v6.336a22.716,22.716,0,0,0,10.246,2.227,22.87,22.87,0,0,0,10.246-2.227V4.752A1.87,1.87,0,0,0,18.611,2.92Zm-6.93,8.513H8.761V10.246h2.92ZM13.166,2.92H7.325V1.435h5.841Z" fill="#DC143C"/>
+						</svg>
+						<span class="add-list">
+							<span class="delete-archive">Удалить из архива</span>
+						</span>
+					</span>
+					<img class="item-content-img" src="img/photo2-favorites.jpg" alt="">
+					<div class="item-content-description">
+						<p class="item-content-description-name">Анна-Мария</p>
+						<p class="item-content-description-number">№ 1234567</p>
+					</div>
+					<div class="catalog-item-info">
+						<span class="img-city"></span>
+						<span class="title-city">Саратов</span>
+						<span class="characteristic">23 / 175 / 55</span>
+						<span class="having-children">Детей нет</span>
+						<span class="marital-status">Не замужем</span>
+						<button type="button" class="for-comment">Для комментариев</button>
+					</div>
+				</a>
+			</div>
+			<div class="catalog-item">
+				<a class="catalog-item-link" href="detail.html">
+					<span class="icon-archive">
+						<svg id="Group_99" class="icon-archive-img" data-name="Group 99" xmlns="http://www.w3.org/2000/svg" width="20.491" height="17.521" viewBox="0 0 20.491 17.521">
+							<path id="Path_14" data-name="Path 14" d="M10.246,26.078A23.9,23.9,0,0,1,0,23.9v3.861a1.86,1.86,0,0,0,1.831,1.831H18.611a1.86,1.86,0,0,0,1.831-1.831V23.9A23.5,23.5,0,0,1,10.246,26.078Z" transform="translate(0 -12.07)" fill="#DC143C"/>
+							<path id="Path_15" data-name="Path 15" d="M18.611,2.92H14.6V1.089A1.1,1.1,0,0,0,13.513,0H6.93A1.1,1.1,0,0,0,5.841,1.089V2.92H1.831A1.86,1.86,0,0,0,0,4.752v6.336a22.716,22.716,0,0,0,10.246,2.227,22.87,22.87,0,0,0,10.246-2.227V4.752A1.87,1.87,0,0,0,18.611,2.92Zm-6.93,8.513H8.761V10.246h2.92ZM13.166,2.92H7.325V1.435h5.841Z" fill="#DC143C"/>
+						</svg>
+						<span class="add-list">
+							<span class="delete-archive">Удалить из архива</span>
+						</span>
+					</span>
+					<img class="item-content-img" src="img/photo1-favorites.jpg" alt="">
+					<div class="item-content-description">
+						<p class="item-content-description-name">Анна-Мария</p>
+						<p class="item-content-description-number">№ 1234567</p>
+					</div>
+					<div class="catalog-item-info">
+						<span class="img-city"></span>
+						<span class="title-city">Саратов</span>
+						<span class="characteristic">23 / 175 / 55</span>
+						<span class="having-children">Детей нет</span>
+						<span class="marital-status">Не замужем</span>
+						<button type="button" class="for-comment">Для комментариев</button>
+					</div>
+				</a>
+			</div>
+			<div class="catalog-item">
+				<a class="catalog-item-link" href="detail.html">
+					<span class="icon-archive">
+						<svg id="Group_99" class="icon-archive-img" data-name="Group 99" xmlns="http://www.w3.org/2000/svg" width="20.491" height="17.521" viewBox="0 0 20.491 17.521">
+							<path id="Path_14" data-name="Path 14" d="M10.246,26.078A23.9,23.9,0,0,1,0,23.9v3.861a1.86,1.86,0,0,0,1.831,1.831H18.611a1.86,1.86,0,0,0,1.831-1.831V23.9A23.5,23.5,0,0,1,10.246,26.078Z" transform="translate(0 -12.07)" fill="#DC143C"/>
+							<path id="Path_15" data-name="Path 15" d="M18.611,2.92H14.6V1.089A1.1,1.1,0,0,0,13.513,0H6.93A1.1,1.1,0,0,0,5.841,1.089V2.92H1.831A1.86,1.86,0,0,0,0,4.752v6.336a22.716,22.716,0,0,0,10.246,2.227,22.87,22.87,0,0,0,10.246-2.227V4.752A1.87,1.87,0,0,0,18.611,2.92Zm-6.93,8.513H8.761V10.246h2.92ZM13.166,2.92H7.325V1.435h5.841Z" fill="#DC143C"/>
+						</svg>
+						<span class="add-list">
+							<span class="delete-archive">Удалить из архива</span>
+						</span>
+					</span>
+					<img class="item-content-img" src="img/photo2-favorites.jpg" alt="">
+					<div class="item-content-description">
+						<p class="item-content-description-name">Анна-Мария</p>
+						<p class="item-content-description-number">№ 1234567</p>
+					</div>
+					<div class="catalog-item-info">
+						<span class="img-city"></span>
+						<span class="title-city">Саратов</span>
+						<span class="characteristic">23 / 175 / 55</span>
+						<span class="having-children">Детей нет</span>
+						<span class="marital-status">Не замужем</span>
+						<button type="button" class="for-comment">Для комментариев</button>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+		<!-- Основное содержимое страницы - КОНЕЦ -->
+	 <div class="popup popup__search" id="search">
+	 	<a href="#" class="popup__close"></a>
+	 	<div class="popup__container">
+	 		<div class="popup__title">Поиск</div>
+	 		<form>
+	 		<div class="input__row">
+	 			<div class="input__col"><input class="input__text" type="text" name="name" placeholder="Имя"></div>
+	 			<div class="input__col"><input class="input__text" type="text" name="number" placeholder="№"></div>
+	 		</div>
+	 		<div class="input__row">
+	 			<div class="input__col">
+	 				<label for="age_from">Возраст (лет)</label>
+	 				<div class="input__row">
+	 					<div class="input__col input__col-slider">
+	 						<input class="input__text" type="text" name="age_from"  id="age_from" placeholder="от 18" disabled>
+	 						<div class="input__bar"></div>
+	 						<div id="age_slider_from" class="input__slider"></div>
+	 					</div>
+	 					<div class="input__col input__col-slider">
+	 						<input class="input__text" type="text" name="age_to"  id="age_to" placeholder="до 40" disabled>
+	 						<div class="input__bar"></div>
+	 						<div id="age_slider_to" class="input__slider"></div>
+	 					</div>
+	 				</div>
+	 			</div>
+	 			<div class="input__col">
+	 				<label for="height_from">Рост (см)</label>
+	 				<div class="input__row">
+	 					<div class="input__col input__col-slider">
+	 						<input class="input__text" type="text" name="height_from"  id="height_from" placeholder="от 150" disabled>
+	 						<div class="input__bar"></div>
+	 						<div id="height_slider_from" class="input__slider"></div>
+	 					</div>
+	 					<div class="input__col input__col-slider">
+	 						<input class="input__text" type="text" name="height_to"  id="height_to" placeholder="до 190" disabled>
+	 						<div class="input__bar"></div>
+	 						<div id="height_slider_to" class="input__slider"></div>
+	 					</div>
+	 				</div>
+	 			</div>
+	 		</div>
+	 		<div class="input__row">
+	 			<div class="input__col input__col-full">
+	 				<select class="input__select">
+	 					<option>Саратов</option>
+	 					<option>Санкт-Петербург</option>
+	 					<option>Москва</option>
+	 				</select>
+	 			</div>
+	 		</div>
+	 		<div class="input__row">
+	 			<div class="input__col input__col">
+	 				<select class="input__select">
+	 					<option>Район</option>
+	 					<option>Район</option>
+	 					<option>Район</option>
+	 				</select>
+	 			</div>
+	 			<div class="input__col input__col">
+	 				<select class="input__select">
+	 					<option>Метро</option>
+	 					<option>Метро</option>
+	 					<option>Метро</option>
+	 				</select>
+	 			</div>
+	 		</div>
+	 		<div class="input__row">
+	 			<div class="input__col input__col">
+	 				<select class="input__select">
+	 					<option>Семейное положение</option>
+	 					<option>Семейное положение</option>
+	 					<option>Семейное положение</option>
+	 				</select>
+	 			</div>
+	 			<div class="input__col input__col">
+	 				<select class="input__select">
+	 					<option>Блондинка</option>
+	 					<option>Блондинка</option>
+	 					<option>Блондинка</option>
+	 				</select>
+	 			</div>
+	 		</div>
+	 		<div class="input__row input__row-small">
+	 			<div class="input__col-full">
+	 				<label for="cbx" class="label-cbx">
+	 				  <input id="cbx" type="checkbox" class="invisible">
+	 				  <div class="checkbox">
+	 					<svg width="34px" height="34px" viewBox="0 0 34 34">
+	 					  <polyline points="6.8 18.7 13.6 25.5 27.2 10.2"></polyline>
+	 					</svg>
+	 				  </div>
+	 				  <span>Дети</span>
+	 				</label>
+	 			</div>
+	 		</div>
+	 		<div class="input__row input__row-small">
+	 			<div class="input__col-full"><input class="input__submit" type="submit" value="Найти" name="submit"></div>
+	 		</div>
+	 		</form>
+	 	</div>
+	 </div>
+</body>
+</html>

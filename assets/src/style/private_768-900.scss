@@ -1,0 +1,80 @@
+@media (min-width: 768px) and (max-width: 899px) {
+
+  .base-city {
+		margin-top: 30px;
+		margin-bottom: 0;
+		padding: 0 35px;
+
+		.base-city-link {
+			font-size: 20px;
+			line-height: 23px;
+			margin-right: 33px;
+		}
+  }
+
+  .catalog-list {
+
+		.catalog-item {
+
+			.catalog-item-link {
+
+				.icon-private {
+					top: 15px;
+					right: 15px;
+
+					.icon-private-img {
+						width: 20px;
+						height: 20px;
+
+						& line {
+							stroke-width: 2;
+						}
+					}
+
+					.add-list {
+            font-size: 14px;
+            padding-top: 18px;
+					}
+
+					.add-favorite, .add-archive {
+						padding-top: 10px;
+					}
+				}
+			}
+		}
+
+		.catalog-item-info-private {
+			width: 220px;
+			height: 220px;
+      font-size: 16px;
+      padding: 95px 24px 21px 24px;
+
+			.img-city {
+				width: 26.8px;
+				height: 26.8px;
+			}
+
+			.title-city {
+				font-size: 18px;
+				line-height: 17px;
+        padding-top: 4px;
+        display: inline-block;
+        position: relative;
+        left: 4px;
+        top: -7px;
+			}
+
+			.characteristic {
+				padding-top: 10px;
+      }
+      
+      .having-children {
+        padding-top: 10px;
+      }
+
+      .marital-status {
+        padding-top: 10px;
+      }
+		}
+	}
+}

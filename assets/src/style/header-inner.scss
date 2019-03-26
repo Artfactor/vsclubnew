@@ -159,4 +159,9 @@
 	font-weight: 500;
 	font-size: 16px;
 	color: #314A5D;
+	transition: color .4s;
+
+	&:hover {
+		color: #DC143C;
+	}
 }

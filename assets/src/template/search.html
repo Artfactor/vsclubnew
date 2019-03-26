@@ -1,0 +1,101 @@
+<div class="popup popup__search" id="search">
+	<a href="#" class="popup__close"></a>
+	<div class="popup__container">
+		<div class="popup__title">Поиск</div>
+		<form>
+		<div class="input__row">
+			<div class="input__col"><input class="input__text" type="text" name="name" placeholder="Имя"></div>
+			<div class="input__col"><input class="input__text" type="text" name="number" placeholder="№"></div>
+		</div>
+		<div class="input__row">
+			<div class="input__col">
+				<label for="age_from">Возраст (лет)</label>
+				<div class="input__row">
+					<div class="input__col input__col-slider">
+						<input class="input__text" type="text" name="age_from"  id="age_from" placeholder="от 18" disabled>
+						<div class="input__bar"></div>
+						<div id="age_slider_from" class="input__slider"></div>
+					</div>
+					<div class="input__col input__col-slider">
+						<input class="input__text" type="text" name="age_to"  id="age_to" placeholder="до 40" disabled>
+						<div class="input__bar"></div>
+						<div id="age_slider_to" class="input__slider"></div>
+					</div>
+				</div>
+			</div>
+			<div class="input__col">
+				<label for="height_from">Рост (см)</label>
+				<div class="input__row">
+					<div class="input__col input__col-slider">
+						<input class="input__text" type="text" name="height_from"  id="height_from" placeholder="от 150" disabled>
+						<div class="input__bar"></div>
+						<div id="height_slider_from" class="input__slider"></div>
+					</div>
+					<div class="input__col input__col-slider">
+						<input class="input__text" type="text" name="height_to"  id="height_to" placeholder="до 190" disabled>
+						<div class="input__bar"></div>
+						<div id="height_slider_to" class="input__slider"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="input__row">
+			<div class="input__col input__col-full">
+				<select class="input__select">
+					<option>Саратов</option>
+					<option>Санкт-Петербург</option>
+					<option>Москва</option>
+				</select>
+			</div>
+		</div>
+		<div class="input__row">
+			<div class="input__col input__col">
+				<select class="input__select">
+					<option>Район</option>
+					<option>Район</option>
+					<option>Район</option>
+				</select>
+			</div>
+			<div class="input__col input__col">
+				<select class="input__select">
+					<option>Метро</option>
+					<option>Метро</option>
+					<option>Метро</option>
+				</select>
+			</div>
+		</div>
+		<div class="input__row">
+			<div class="input__col input__col">
+				<select class="input__select">
+					<option>Семейное положение</option>
+					<option>Семейное положение</option>
+					<option>Семейное положение</option>
+				</select>
+			</div>
+			<div class="input__col input__col">
+				<select class="input__select">
+					<option>Блондинка</option>
+					<option>Блондинка</option>
+					<option>Блондинка</option>
+				</select>
+			</div>
+		</div>
+		<div class="input__row input__row-small">
+			<div class="input__col-full">
+				<label for="cbx" class="label-cbx">
+				  <input id="cbx" type="checkbox" class="invisible">
+				  <div class="checkbox">
+					<svg width="34px" height="34px" viewBox="0 0 34 34">
+					  <polyline points="6.8 18.7 13.6 25.5 27.2 10.2"></polyline>
+					</svg>
+				  </div>
+				  <span>Дети</span>
+				</label>
+			</div>
+		</div>
+		<div class="input__row input__row-small">
+			<div class="input__col-full"><input class="input__submit" type="submit" value="Найти" name="submit"></div>
+		</div>
+		</form>
+	</div>
+</div>

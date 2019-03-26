@@ -52,20 +52,21 @@
 			.catalog-item-link {
 
 				.icon-favorite {
-					top: -197px;
-					width: 28px;
-					height: 24.8px;
-					right: 11px;
+					top: 13px;
+					right: 13px;
 
+					.icon-favorite-img {
+						width: 28px;
+						height: 24.8px;
+					}
+				}
+
+				.add-list {
+					
 					.delete-favorite {
 						font-size: 13px;
 						line-height: 12px;
-						padding-top: 26px;
-						right: 13px;
-
-						&:hover {
-							right: 13px;
-						}
+						padding-top: 9px;
 					}
 				}
 			}

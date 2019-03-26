@@ -31,20 +31,23 @@
 			.catalog-item-link {
 
 				.icon-favorite {
-					top: -197px;
-					width: 28px;
-					height: 24.8px;
+					top: 11px;
 					right: 11px;
 
+					.icon-favorite-img {
+						width: 28px;
+						height: 24.8px;
+					}
+				}
+
+				.add-list {
+					right: 8px;
+					padding-top: 16px;
+					
 					.delete-favorite {
 						font-size: 13px;
 						line-height: 12px;
-						padding-top: 26px;
-						right: 13px;
-
-						&:hover {
-							right: 13px;
-						}
+						padding-top: 10px;
 					}
 				}
 			}

@@ -1,5 +1,10 @@
 //SLICK-SLIDER
 $(document).ready(function() {
+	
+	if($("select").length > 0) {
+		$('select').niceSelect();
+	}
+	
     $('.slick-slider').slick({
         infinite: true,
         slidesToShow: 5,
@@ -31,6 +36,69 @@ $(document).ready(function() {
 		}
 	  ]
     });
+	
+	createSliderRange("age_slider_from", "age_slider_to", "age_from", "age_to", 18, 40);
+	createSliderRange("height_slider_from", "height_slider_to", "height_from", "height_to", 150, 190);
+	
+	function createSliderRange(slider_from_id, slider_to_id, input_to, input_from, min, max) {
+		
+		if($("#"+slider_from_id).length > 0 && $("#"+slider_to_id).length > 0) {
+		
+		var slider_from = document.getElementById(slider_from_id);
+		var slider_to = document.getElementById(slider_to_id);
+		
+		noUiSlider.create(slider_from, {
+			start: min,
+			step: 1,
+			animate: true,
+			range: {
+				min: min,
+				max: max
+			}
+		});
+
+		noUiSlider.create(slider_to, {
+			start: max,
+			step: 1,
+			animate: true,
+			range: {
+				min: min,
+				max: max
+			}
+		});
+
+		slider_from.noUiSlider.on('update', function (values, handle) {
+			var val_from = parseInt(values[handle]);
+			var val_to = parseInt(slider_to.noUiSlider.get());
+			
+			$("#"+input_to).val("от "+val_from);
+			if(val_to <= val_from) {
+				slider_to.noUiSlider.set(val_from + 1);
+			}
+			sliderRangeBarUpdate($("#"+slider_from_id).parent().find(".input__bar"), min, max, val_from);
+		});
+
+		slider_to.noUiSlider.on('update', function (values, handle) {
+			
+			var val_from = parseInt(slider_from.noUiSlider.get());
+			var val_to = parseInt(values[handle]);
+			
+			$("#"+input_from).val("до "+val_to);
+			if(val_from >= val_to) {
+				slider_from.noUiSlider.set(val_to - 1);
+			}
+			sliderRangeBarUpdate($("#"+slider_to_id).parent().find(".input__bar"), min, max, val_to);
+		});
+		}
+	}
+	
+	function sliderRangeBarUpdate(bar, from, to, val) {
+		var delta = to - from;
+		var step = val - from;
+		var width = 100 / (delta / step) + "%";
+		console.log(delta, step, width);
+		bar.css('width', width);
+	}
 	
 	if($('#fullpage').length > 0) {
 		$('#fullpage').fullpage({
@@ -66,6 +134,14 @@ $(document).ready(function() {
 			$("body").removeClass("is-popup");
 		});
 	};
+	
+	if($(".for-comment").length > 0 && $("#comment").length > 0) {
+		$(".for-comment").click(function(e){
+			e.preventDefault();
+			$("#comment").fadeIn(300);
+			$("body").addClass("is-popup");
+		});
+	}
 	
 	/*$(window).resize(function() {
 		console.log($(window).height());

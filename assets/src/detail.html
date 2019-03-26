@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Детальная страница</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.1.4/nouislider.min.css" integrity="sha256-Gitv5VlgR/Iqt4W4j+rlhsP4R6M09EcFyTf70GBD2zw=" crossorigin="anonymous" />
 	<link rel="stylesheet" href="css/page.css">
 	<!-- <link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/read-more.css">
@@ -32,12 +34,14 @@
 	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.1.4/nouislider.min.js" integrity="sha256-6NGkvvdjRehdAHFa9mUmcVBX8gSDO1CFTnfNiLMrPNY=" crossorigin="anonymous"></script>
 	
 	<script src="js/main.js"></script>
 </head>
 <body>      
 
-	<header class="header-inner">   
+	<header class="header-inner header-inner-fixed header-inner-detail">   
 			<div class="container"> 
 				<div class="logo-inner">
 				<div class="burger">
@@ -46,25 +50,20 @@
 				<a class="header-logo-inner" href="#"></a>
 				<div class="header-inner-text">Клуб знакомств с 2002 года!</div>
 				</div> 
-				<nav class="header-inner-menu">
-				<li	class="header-inner-menu-item"><a class="header-inner-menu-link" href="#">О клубе</a></li>
-				<li	class="header-inner-menu-item"><a class="header-inner-menu-link" href="#">Для мужчин</a></li>
-				<li	class="header-inner-menu-item"><a class="header-inner-menu-link" href="#">Для девушек</a></li>
-				<li	class="header-inner-menu-item"><a class="header-inner-menu-link" href="#">Контакты</a></li>
-				<li	class="header-inner-menu-item selection-city"><a class="header-inner-menu-link" href="#">Выбрать город</a>
-					<ul class="city-list-inner">
-						<a class="city-list-inner-link" href="#">Москва</a>
-						<a class="city-list-inner-link" href="#">Санкт-Петербург</a>
-						<a class="city-list-inner-link" href="#">Саратов</a>
-					</ul>
-				</li>
+				<nav class="header-inner-menu header-inner-menu-detail">
+				<li	class="header-inner-menu-item"><a class="header-inner-menu-link" href="favorites.html">Избранное</a></li>
+				<li	class="header-inner-menu-item"><a class="header-inner-menu-link" href="archive.html">Архив</a></li>
+				<li	class="header-inner-menu-item"><a class="header-inner-menu-link" href="personal.html">Персональные предложения</a></li>
+				<li	class="header-inner-menu-item"><a class="header-inner-menu-link" href="messages.html">Сообщения</a></li>
+				<li	class="header-inner-menu-item"><a class="header-inner-menu-link open-popup" href="#search">Поиск</a></li>
+				<li	class="header-inner-menu-item"><a class="header-inner-menu-link" href="#">Выход</a></li>
 				</nav> 
 				<a class="login-inner" href="#">Выход</a>    
 			</div>
 	</header>
 		<!-- Шапка внутренних страниц - КОНЕЦ -->	
 	
-<div class="row">
+<div class="row detail__page">
 	<div class="side side-left side-detail">
 		<img src="img/detail-pic.jpg" alt="" title="">
 	</div>
@@ -73,10 +72,12 @@
 			<div class="detail__main">
 				<div class="detail__main-city"><img src="img/saratov.svg" alt="" title=""></div>
 				<div class="detail__main-name">Екатерина<span>№ 8795431</span></div>
-				<div class="detail__main-btn"><a href="#description" class="button button__border open-popup">Анкета посмотреть</a></div>
+				<div class="detail__main-btn"><a href="#description" class="button button__border open-popup">Посмотреть анкету</a></div>
 			</div>
 			<div class="detail__links">
-				<a href="#">Личный кабинет</a>
+				<a href="personal.html" class="link__cabinet"><svg id="Group_98" class="icon-personal-menu" data-name="Group 98" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 20.939">
+							<path id="Path_13" class="icon-hover" data-name="Path 13" d="M17.006,15.674c-2.844-1.029-3.752-1.937-3.752-3.813,0-1.15.847-.787,1.271-2.844.182-.847.908,0,1.089-2,0-.787-.424-.968-.424-.968a17.85,17.85,0,0,0,.3-2.058C15.614,2.9,14.827,0,10.893,0s-4.72,2.844-4.6,3.994a17.85,17.85,0,0,0,.3,2.058s-.424.182-.424.968c.121,1.937.908,1.089,1.089,2,.363,2.058,1.271,1.695,1.271,2.844,0,1.876-.908,2.784-3.813,3.813S0,17.792,0,18.518v2.421H21.908V18.518C21.786,17.792,19.91,16.7,17.006,15.674Z" fill="#c9ced8"></path>
+						</svg>Личный кабинет</a>
 				<a href="#">Добавить в избранное</a>
 				<a href="#">Добавить в архив</a>
 			</div>
@@ -148,6 +149,6 @@
 		<p>Ты встречаешь за свою жизнь тысячу людей, и не один из них не греет душу, а потом, ты встречаешь одного, того, кто меняет твою жизнь. Навсегда.</p>
 	</div>
 </div>
-
+//= template/search.html
 </body>
 </html>

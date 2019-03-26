@@ -1,5 +1,5 @@
 .personal {
-	margin-top: 36px;
+	margin-top: 24px;
 	padding: 0 52px;
 
 	.personal-text {
@@ -38,6 +38,11 @@
 	font-size: 24px;
 	font-weight: 500;
 	padding: 0 52px;
+
+	.active {
+		color: #DC143C;
+		fill: #DC143C;
+	}
 
 	.container {
 		justify-content: space-between;

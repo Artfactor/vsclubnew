@@ -48,20 +48,22 @@
 			.catalog-item-link {
 
 				.icon-favorite {
-					top: -164px;
-					width: 21.9px;
-					height: 18.6px;
+					top: 8px;
 					right: 8px;
 
-					.delete-favorite {
-						font-size: 13px;
-						line-height: 12px;
-						padding-top: 26px;
-						right: 10px;
+					.icon-favorite-img {
+						width: 21.9px;
+						height: 18.6px;
+					}
+				}
 
-						&:hover {
-							right: 10px;
-						}
+				.add-list {
+					padding-top: 16px;
+					right: 8px;
+					
+					.delete-favorite {
+						font-size: 12px;
+						padding-top: 4px;
 					}
 				}
 			}

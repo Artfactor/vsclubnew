@@ -1,0 +1,76 @@
+@media (min-width: 500px) and (max-width: 649px) {
+
+  .base-city {
+    display: none;
+  }
+
+  .base-city-mobile {
+    display: block;
+    padding: 0 35px;
+    margin-top: 20px;
+    padding-bottom: 11px;
+
+    .select-city {
+      padding: 11px 12px;
+      font-family: 'Georgia';
+      font-size: 16px;
+      line-height: 18px;
+      color: #314A5D;
+      width: 100%;
+      border: 1px solid rgba(72, 95, 108, 0.16);
+    }
+  }
+
+  .catalog-list {
+
+		.catalog-item {
+
+			.catalog-item-link {
+
+				.icon-private {
+					top: 7px;
+					right: 11px;
+
+					.icon-private-img {
+						width: 19.4px;
+						height: 19.4px;
+
+						& line {
+							stroke-width: 1;
+						}
+					}
+
+					.add-list {
+            font-size: 13px;
+            padding-top: 18px;
+					}
+
+					.add-favorite, .add-archive {
+						padding-top: 5px;
+					}
+				}
+			}
+		}
+
+		.catalog-item-info-private {
+			width: 212px;
+			height: 212px;
+      font-size: 14px;
+
+			.img-city {
+				width: 35px;
+				height: 35px;
+			}
+
+			.title-city {
+				font-size: 16px;
+				line-height: 15px;
+        padding-top: 4px;
+			}
+
+			.characteristic {
+				padding-top: 6px;
+      }
+		}
+	}
+}

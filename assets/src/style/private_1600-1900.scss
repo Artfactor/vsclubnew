@@ -1,0 +1,65 @@
+@media (min-width: 1600px) and (max-width: 1899px) {
+	
+	.base-city {
+		margin-top: 55px;
+		margin-bottom: 0;
+
+		.base-city-link {
+			font-size: 24px;
+			line-height: 27px;
+			margin-right: 58px;
+		}
+	}
+
+	.catalog-list {
+
+		.catalog-item {
+
+			.catalog-item-link {
+
+				.icon-private {
+					top: 8px;
+					right: 8px;
+
+					.icon-private-img {
+						width: 21px;
+						height: 21px;
+
+						& line {
+							stroke-width: 1.3;
+						}
+					}
+
+					.add-list {
+						font-size: 13px;
+					}
+
+					.add-favorite, .add-archive {
+						padding-top: 5px;
+					}
+				}
+			}
+		}
+
+		.catalog-item-info-private {
+			width: 195px;
+			height: 189px;
+			font-size: 14px;
+
+			.img-city {
+				width: 35px;
+				height: 35px;
+			}
+
+			.title-city {
+				font-size: 16px;
+				line-height: 15px;
+				padding-top: 4px;
+			}
+
+			.characteristic {
+				padding-top: 6px;
+			}
+		}
+	}
+}

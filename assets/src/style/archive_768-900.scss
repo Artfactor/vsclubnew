@@ -1,0 +1,30 @@
+@media (min-width: 768px) and (max-width: 899px) {
+
+  .catalog-list {
+
+    .catalog-item {
+  
+      .catalog-item-link {
+  
+        .icon-archive {
+          top: 13px;
+          right: 13px;
+
+          .icon-archive-img {
+            width: 25px;
+            height: 22px;
+          }
+
+          .add-list {
+
+            .delete-archive {
+              font-size: 13px;
+              line-height: 12px;
+              padding-top: 9px;
+            }
+          }  
+        }
+      }
+    }
+  }
+}

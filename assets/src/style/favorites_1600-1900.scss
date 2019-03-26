@@ -19,13 +19,20 @@
 			.catalog-item-link {
 
 				.icon-favorite {
-					top: -169px;
-					width: 23px;
-					height: 19px;
+					top: 6px;
 
+					.icon-favorite-img {
+						width: 23px;
+						height: 19px;
+					}
+				}
+
+				.add-list {
+					padding-top: 16px;
+					
 					.delete-favorite {
 						font-size: 12px;
-						padding-top: 18px;
+						padding-top: 2px;
 					}
 				}
 			}

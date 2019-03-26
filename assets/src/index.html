@@ -36,7 +36,7 @@
 	<script src="js/main.js"></script>
 </head>
 <body>      
-
+//= template/preloader.html
 <div id="fullpage">
 
 <div class="section" data-anchor="section1">
@@ -54,7 +54,6 @@
 			<p class="content-sidebar-description">На сегодняшний день Клуб знакомств "Бархатный сезон" располагает анкетами более 1000 девушек, желающих познакомиться! 
 				Чтобы иметь доступ ко ВСЕЙ базе, необходимо стать клиентом Клуба. 
 				1000 девушекнеобходимо стать клиентом Клуба. 1000 девушек ко ВСЕЙ базе, необходимо стать клиентом Клуба. 
-				1000 девушекнеобходимо с
 			</p>
 			<a class="read-more" href="#">читать далее</a>
 		</article>
@@ -77,10 +76,16 @@
 		<!-- HEADER - START -->
 		<header class="top-header">
 			<nav class="top-header-menu">
-				<li class="top-header-menu-item"><a class="top-header-menu-link" href="#">О клубе</a></li>
-				<li class="top-header-menu-item"><a class="top-header-menu-link" href="#">Для мужчин</a></li>
-				<li class="top-header-menu-item"><a class="top-header-menu-link" href="#">Для девушек</a></li>
-				<li class="top-header-menu-item"><a class="top-header-menu-link" href="#">Контакты</a></li>
+				<li class="top-header-menu-item"><a class="top-header-menu-link" href="#section4">О клубе</a></li>
+				<li class="top-header-menu-item selection-city"><a class="top-header-menu-link" href="#section3">Для мужчин</a><ul class="city-list man-list-inner">
+						<a class="city-list-item-link" href="#">Цели знакомств</a>
+						<a class="city-list-item-link" href="#">Как стать участником</a>
+					</ul></li>
+				<li class="top-header-menu-item selection-city"><a class="top-header-menu-link" href="#section3">Для девушек</a><ul class="city-list man-list-inner">
+						<a class="city-list-item-link" href="#">Цели знакомств</a>
+						<a class="city-list-item-link" href="#">Как стать участником</a>
+					</ul></li>
+				<li class="top-header-menu-item"><a class="top-header-menu-link" href="#section5">Контакты</a></li>
 				<li class="top-header-menu-item selection-city"><a class="top-header-menu-link" href="#">Выбрать город</a>
 					<ul class="city-list">
 						<a class="city-list-item-link" href="#">Москва</a>
@@ -96,10 +101,10 @@
 			<div class="header__logo"><a href="index.html"><img src="img/logo-main.svg"></a></div>
 			<div class="header__slogan">Клуб знакомств с 2002 года!</div>
 			<div class="header__menu">
-				<div class="header__menu__item"><a href="#">О клубе</a></div>
-				<div class="header__menu__item"><a href="#">Для мужчин</a></div>
-				<div class="header__menu__item"><a href="#">Для девушек</a></div>
-				<div class="header__menu__item"><a href="#">Контакты</a></div>
+				<div class="header__menu__item"><a href="#section4">О клубе</a></div>
+				<div class="header__menu__item"><a href="#section3">Для мужчин</a></div>
+				<div class="header__menu__item"><a href="#section3">Для девушек</a></div>
+				<div class="header__menu__item"><a href="#section5">Контакты</a></div>
 				<div class="header__menu__item"><a href="#">Выбрать город</a></div>
 				<div class="header__menu__item"><a href="#" class="login">Вход</a></div>
 			</div>
@@ -210,29 +215,6 @@
 	</div>
 	<!-- CONTENT - END -->
 
-		<!-- Read-more Popup - START -->
-	<div class="read-more-popup">
-		<div class="read-more-sidebar"></div>
-			<main class="read-more-content">
-			<a href="#" class="close-read-more">
-				<img src="img/close-read-more.svg" alt="">
-			</a>
-			<h1 class="read-more-title">Знакомства в Саратове, Москве, Санкт-Петербурге!</h1>
-			<p class="read-more-text">Знакомства в Саратове, Москве, Санкт-Петербурге! 
-				Доступ к постоянно обновляющейся базе данных девушек! 
-				На сегодняшний день Клуб знакомств "Бархатный сезон" располагает анкетами 
-				более 1000 девушек, желающих познакомиться!</p>
-			<p class="read-more-accentuation">Это МОДЕЛИ и САМЫЕ ЭФФЕКТНЫЕ девушки Саратова, 
-					Москвы и Санкт-Петербурга в возрасте от 20 до 35 лет!</p>
-			<p class="read-more-text">На этой странице Вы видите лишь несколько анкет клиенток. 
-				Это лишь малая часть моей базы данных! Чтобы иметь доступ ко ВСЕЙ базе, 
-				необходимо стать клиентом Клуба. Отличительной особенностью "Бархатного сезона" 
-				является то, что здесь девушки только с незаурядными внешними данными. И если на 
-				фотографиях Вы видите молодую и очаровательную девушку, то я гарантирую, что она 
-				молодая и очаровательная</p>
-		</main>
-	</div> 
-			<!-- Read-more Popup - END -->
 
 	<!-- MOBILE-MENU - START (display: none в menu-mobile.scss)-->
 	<div class="menu-mobile">
@@ -376,16 +358,16 @@
 	
 	<div class="main__grid">
 		<div class="main__grid-col">
-			<div class="main__grid-cell" data-order="2"><img src="img/720х635.jpg"><div class="main__grid-desc"><div class="main__grid-title">Вероника</div><div class="main__grid-id">№ 8795431</div><div class="main__grid-list"><ul><li>23 / 175 / 55</li><li>Не замужем</li><li>Детей нет</li></ul></div></div></div>
-			<div class="main__grid-cell" data-order="6"><img src="img/720х294.jpg"><div class="main__grid-desc"><div class="main__grid-title">Вероника</div><div class="main__grid-id">№ 8795431</div><div class="main__grid-list"><ul><li>23 / 175 / 55</li><li>Не замужем</li><li>Детей нет</li></ul></div></div></div>
+			<div class="main__grid-cell" data-order="2"><a href="detail.html"><img src="img/720х635.jpg"><div class="main__grid-desc"><div class="main__grid-title">Вероника</div><div class="main__grid-id">№ 8795431</div><div class="main__grid-list"><ul><li>23 / 175 / 55</li><li>Не замужем</li><li>Детей нет</li></ul></div></div></a></div>
+			<div class="main__grid-cell" data-order="6"><a href="detail.html"><img src="img/720х294.jpg"><div class="main__grid-desc"><div class="main__grid-title">Вероника</div><div class="main__grid-id">№ 8795431</div><div class="main__grid-list"><ul><li>23 / 175 / 55</li><li>Не замужем</li><li>Детей нет</li></ul></div></div></a></div>
 		</div>
 		<div class="main__grid-col">
-			<div class="main__grid-cell" data-order="5"><img src="img/475х635.jpg"><div class="main__grid-desc"><div class="main__grid-title">Вероника</div><div class="main__grid-id">№ 8795431</div><div class="main__grid-list"><ul><li>23 / 175 / 55</li><li>Не замужем</li><li>Детей нет</li></ul></div></div></div>
-			<div class="main__grid-cell" data-order="3"><img src="img/475х294.jpg"><div class="main__grid-desc"><div class="main__grid-title">Вероника</div><div class="main__grid-id">№ 8795431</div><div class="main__grid-list"><ul><li>23 / 175 / 55</li><li>Не замужем</li><li>Детей нет</li></ul></div></div></div>
+			<div class="main__grid-cell" data-order="5"><a href="detail.html"><img src="img/qq.jpg"><div class="main__grid-desc"><div class="main__grid-title">Вероника</div><div class="main__grid-id">№ 8795431</div><div class="main__grid-list"><ul><li>23 / 175 / 55</li><li>Не замужем</li><li>Детей нет</li></ul></div></div></a></div>
+			<div class="main__grid-cell" data-order="3"><a href="detail.html"><img src="img/475х294.jpg"><div class="main__grid-desc"><div class="main__grid-title">Вероника</div><div class="main__grid-id">№ 8795431</div><div class="main__grid-list"><ul><li>23 / 175 / 55</li><li>Не замужем</li><li>Детей нет</li></ul></div></div></a></div>
 		</div>
 		<div class="main__grid-col">
-			<div class="main__grid-cell" data-order="1"><img src="img/715х313.jpg"><div class="main__grid-desc"><div class="main__grid-title">Вероника</div><div class="main__grid-id">№ 8795431</div><div class="main__grid-list"><ul><li>23 / 175 / 55</li><li>Не замужем</li><li>Детей нет</li></ul></div></div></div>
-			<div class="main__grid-cell" data-order="4"><img src="img/715х615.jpg"><div class="main__grid-desc"><div class="main__grid-title">Вероника</div><div class="main__grid-id">№ 8795431</div><div class="main__grid-list"><ul><li>23 / 175 / 55</li><li>Не замужем</li><li>Детей нет</li></ul></div></div></div>
+			<div class="main__grid-cell" data-order="1"><a href="detail.html"><img src="img/715х313.jpg"><div class="main__grid-desc"><div class="main__grid-title">Вероника</div><div class="main__grid-id">№ 8795431</div><div class="main__grid-list"><ul><li>23 / 175 / 55</li><li>Не замужем</li><li>Детей нет</li></ul></div></div></a></div>
+			<div class="main__grid-cell" data-order="4"><a href="detail.html"><img src="img/715х615.jpg"><div class="main__grid-desc"><div class="main__grid-title">Вероника</div><div class="main__grid-id">№ 8795431</div><div class="main__grid-list"><ul><li>23 / 175 / 55</li><li>Не замужем</li><li>Детей нет</li></ul></div></div></a></div>
 		</div>
 	</div>
 </div>
@@ -413,7 +395,7 @@
 				<div class="beclient__item"><a href="#">Как стать участником</a></div>
 				<div class="beclient__item"><a href="#">Тестовый текст?</a></div>
 			</div>
-			<a href="#" class="button button__beclient button__beclient-man">Стать клиентом Клуба</a>
+			<a href="beclient.html" class="button button__beclient button__beclient-man">Стать клиентом Клуба</a>
 		</div>
 		<div class="main__beclient main__beclient-woman">
 			<div class="beclient__title"><span>ДЛЯ</span>ДЕВУШЕК</div>
@@ -423,7 +405,7 @@
 				<div class="beclient__item"><a href="#">Требования к фото</a></div>
 				<div class="beclient__item"><a href="#">Тестовый текст?</a></div>
 			</div>
-			<a href="#" class="button button__beclient button__beclient-woman">Стать клиенткой Клуба</a>
+			<a href="beclient.html" class="button button__beclient button__beclient-woman">Стать клиенткой Клуба</a>
 		</div>
 	</div>
 </div>
@@ -445,8 +427,8 @@
 		<div class="main__about">
 			<div class="main__about-title">О КЛУБЕ</div>
 			<div class="main__about-buttons">
-				<a href="#" class="button button__beclient button__beclient-man">Стать клиентом Клуба</a>
-				<a href="#" class="button button__beclient button__beclient-woman">Стать клиенткой Клуба</a>
+				<a href="beclient.html" class="button button__beclient button__beclient-man">Стать клиентом Клуба</a>
+				<a href="beclient.html" class="button button__beclient button__beclient-woman">Стать клиенткой Клуба</a>
 			</div>
 		</div>
 		<div class="main__desc">
@@ -561,11 +543,21 @@
 	<div class="header__logo header__logo-city"><img src="img/saratov-light.svg" alt="" title=""><span>Саратов</span></div>
 	<div class="header__slogan">Клуб знакомств с 2002 года!</div>
 	<div class="header__menu">
-		<div class="header__menu__item"><a href="#">О клубе</a></div>
-		<div class="header__menu__item"><a href="#">Для мужчин</a></div>
-		<div class="header__menu__item"><a href="#">Для девушек</a></div>
-		<div class="header__menu__item"><a href="#">Контакты</a></div>
-		<div class="header__menu__item"><a href="#">Выбрать город</a></div>
+		<div class="header__menu__item"><a href="#section4">О клубе</a></div>
+		<div class="header__menu__item selection-city"><a href="#section3">Для мужчин</a><ul class="city-list man-list">
+						<a class="city-list-item-link" href="target.html">Цели знакомств</a>
+						<a class="city-list-item-link" href="target.html">Как стать участником</a>
+					</ul></div>
+		<div class="header__menu__item selection-city"><a href="#section3">Для девушек</a><ul class="city-list man-list">
+						<a class="city-list-item-link" href="target.html">Цели знакомств</a>
+						<a class="city-list-item-link" href="target.html">Как стать участником</a>
+					</ul></div>
+		<div class="header__menu__item"><a href="#section5">Контакты</a></div>
+		<div class="header__menu__item selection-city"><a href="#">Выбрать город</a><ul class="city-list">
+						<a class="city-list-item-link" href="#">Москва</a>
+						<a class="city-list-item-link" href="#">Санкт-Петербург</a>
+						<a class="city-list-item-link" href="#section2">Саратов</a>
+					</ul></div>
 		<div class="header__menu__item"><a href="#" class="login">Вход</a></div>
 	</div>
 </div>
@@ -588,6 +580,30 @@
 	</form>
 </div>
 <!-- LOGIN - END -->
+
+	<!-- Read-more Popup - START -->
+<div class="read-more-popup">
+	<div class="read-more-sidebar"></div>
+		<main class="read-more-content">
+			<a href="#" class="close-read-more">
+				<img src="img/close-read-more.svg" alt="">
+			</a>
+			<h1 class="read-more-title">Знакомства в Саратове, Москве, Санкт-Петербурге!</h1>
+			<p class="read-more-text">Знакомства в Саратове, Москве, Санкт-Петербурге! 
+				Доступ к постоянно обновляющейся базе данных девушек! 
+				На сегодняшний день Клуб знакомств "Бархатный сезон" располагает анкетами 
+				более 1000 девушек, желающих познакомиться!</p>
+			<p class="read-more-accentuation">Это МОДЕЛИ и САМЫЕ ЭФФЕКТНЫЕ девушки Саратова, 
+					Москвы и Санкт-Петербурга в возрасте от 20 до 35 лет!</p>
+			<p class="read-more-text">На этой странице Вы видите лишь несколько анкет клиенток. 
+				Это лишь малая часть моей базы данных! Чтобы иметь доступ ко ВСЕЙ базе, 
+				необходимо стать клиентом Клуба. Отличительной особенностью "Бархатного сезона" 
+				является то, что здесь девушки только с незаурядными внешними данными. И если на 
+				фотографиях Вы видите молодую и очаровательную девушку, то я гарантирую, что она 
+				молодая и очаровательная</p>
+		</main>
+</div> 
+		<!-- Read-more Popup - END -->
 
 </body>
 </html>
