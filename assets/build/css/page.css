@@ -307,122 +307,143 @@ template {
 
 /*# sourceMappingURL=normalize.css.map */
 @font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro-MediumItalic.eot");
+  src: url("../fonts/GothamPro-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-MediumItalic.woff2") format("woff2"), url("../fonts/GothamPro-MediumItalic.woff") format("woff"), url("../fonts/GothamPro-MediumItalic.ttf") format("truetype"), url("../fonts/GothamPro-MediumItalic.svg#GothamPro-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Gotham Pro Narrow';
+  src: url("../fonts/GothamProNarrow-Bold.eot");
+  src: url("../fonts/GothamProNarrow-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProNarrow-Bold.woff2") format("woff2"), url("../fonts/GothamProNarrow-Bold.woff") format("woff"), url("../fonts/GothamProNarrow-Bold.ttf") format("truetype"), url("../fonts/GothamProNarrow-Bold.svg#GothamProNarrow-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
   font-family: 'Georgia';
   src: url("../fonts/Georgia-BoldItalic.eot");
-  src: local("../fonts/Georgia Bold Italic"), local("../fonts/Georgia-BoldItalic"), url("../fonts/Georgia-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia-BoldItalic.woff") format("woff"), url("../fonts/Georgia-BoldItalic.ttf") format("truetype");
+  src: url("../fonts/Georgia-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia-BoldItalic.woff2") format("woff2"), url("../fonts/Georgia-BoldItalic.woff") format("woff"), url("../fonts/Georgia-BoldItalic.ttf") format("truetype"), url("../fonts/Georgia-BoldItalic.svg#Georgia-BoldItalic") format("svg");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Georgia';
-  src: url("../fonts/Georgia-Italic.eot");
-  src: local("../fonts/Georgia Italic"), local("../fonts/Georgia-Italic"), url("../fonts/Georgia-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia-Italic.woff") format("woff"), url("../fonts/Georgia-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Georgia';
-  src: url("../fonts/Georgia-Bold.eot");
-  src: local("../fonts/Georgia Bold"), local("../fonts/Georgia-Bold"), url("../fonts/Georgia-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia-Bold.woff") format("woff"), url("../fonts/Georgia-Bold.ttf") format("truetype");
-  font-weight: bold;
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro-Black.eot");
+  src: url("../fonts/GothamPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Black.woff2") format("woff2"), url("../fonts/GothamPro-Black.woff") format("woff"), url("../fonts/GothamPro-Black.ttf") format("truetype"), url("../fonts/GothamPro-Black.svg#GothamPro-Black") format("svg");
+  font-weight: 900;
   font-style: normal; }
 
 @font-face {
   font-family: 'Georgia';
   src: url("../fonts/Georgia.eot");
-  src: local("../fonts/Georgia"), url("../fonts/Georgia.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia.woff") format("woff"), url("../fonts/Georgia.ttf") format("truetype");
+  src: url("../fonts/Georgia.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia.woff2") format("woff2"), url("../fonts/Georgia.woff") format("woff"), url("../fonts/Georgia.ttf") format("truetype"), url("../fonts/Georgia.svg#Georgia") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Gotham Pro';
-  src: url("../fonts/GothamPro-BoldItalic.eot");
-  src: local("../fonts/Gotham Pro Bold Italic"), local("../fonts/GothamPro-BoldItalic"), url("../fonts/GothamPro-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-BoldItalic.woff") format("woff"), url("../fonts/GothamPro-BoldItalic.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Gotham Pro';
-  src: url("../fonts/GothamPro-Italic.eot");
-  src: local("../fonts/Gotham Pro Italic"), local("../fonts/GothamPro-Italic"), url("../fonts/GothamPro-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Italic.woff") format("woff"), url("../fonts/GothamPro-Italic.ttf") format("truetype");
+  font-family: 'Georgia';
+  src: url("../fonts/Georgia-Italic.eot");
+  src: url("../fonts/Georgia-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia-Italic.woff2") format("woff2"), url("../fonts/Georgia-Italic.woff") format("woff"), url("../fonts/Georgia-Italic.ttf") format("truetype"), url("../fonts/Georgia-Italic.svg#Georgia-Italic") format("svg");
   font-weight: normal;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Gotham Pro';
-  src: url("../fonts/GothamPro-Medium.eot");
-  src: local("../fonts/Gotham Pro Medium"), local("../fonts/GothamPro-Medium"), url("../fonts/GothamPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Medium.woff") format("woff"), url("../fonts/GothamPro-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Gotham Pro';
-  src: url("../fonts/GothamPro-BlackItalic.eot");
-  src: local("../fonts/Gotham Pro Black Italic"), local("../fonts/GothamPro-BlackItalic"), url("../fonts/GothamPro-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-BlackItalic.woff") format("woff"), url("../fonts/GothamPro-BlackItalic.ttf") format("truetype");
-  font-weight: 900;
   font-style: italic; }
 
 @font-face {
   font-family: 'Gotham Pro';
   src: url("../fonts/GothamPro-Bold.eot");
-  src: local("../fonts/Gotham Pro Bold"), local("../fonts/GothamPro-Bold"), url("../fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro-Bold.ttf") format("truetype");
+  src: url("../fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Bold.woff2") format("woff2"), url("../fonts/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro-Bold.ttf") format("truetype"), url("../fonts/GothamPro-Bold.svg#GothamPro-Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Gotham Pro Narrow';
-  src: url("../fonts/GothamProNarrow-Bold.eot");
-  src: local("../fonts/Gotham Pro Narrow Bold"), local("../fonts/GothamProNarrow-Bold"), url("../fonts/GothamProNarrow-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProNarrow-Bold.woff") format("woff"), url("../fonts/GothamProNarrow-Bold.ttf") format("truetype");
+  font-family: 'Rage Italic LET';
+  src: url("../fonts/RageItalicLetPlain.eot");
+  src: url("../fonts/RageItalicLetPlain.eot?#iefix") format("embedded-opentype"), url("../fonts/RageItalicLetPlain.woff2") format("woff2"), url("../fonts/RageItalicLetPlain.woff") format("woff"), url("../fonts/RageItalicLetPlain.ttf") format("truetype"), url("../fonts/RageItalicLetPlain.svg#RageItalicLetPlain") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Rage Italic LET';
+  src: url("../fonts/RageItalicLetPlain.eot");
+  src: url("../fonts/RageItalicLetPlain.eot?#iefix") format("embedded-opentype"), url("../fonts/RageItalicLetPlain.woff2") format("woff2"), url("../fonts/RageItalicLetPlain.woff") format("woff"), url("../fonts/RageItalicLetPlain.ttf") format("truetype"), url("../fonts/RageItalicLetPlain.svg#RageItalicLetPlain") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Rage Italic LET';
+  src: url("../fonts/RageItalicLetPlain.eot");
+  src: url("../fonts/RageItalicLetPlain.eot?#iefix") format("embedded-opentype"), url("../fonts/RageItalicLetPlain.woff2") format("woff2"), url("../fonts/RageItalicLetPlain.woff") format("woff"), url("../fonts/RageItalicLetPlain.ttf") format("truetype"), url("../fonts/RageItalicLetPlain.svg#RageItalicLetPlain") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Rage Italic LET';
+  src: url("../fonts/RageItalicLetPlain.eot");
+  src: url("../fonts/RageItalicLetPlain.eot?#iefix") format("embedded-opentype"), url("../fonts/RageItalicLetPlain.woff2") format("woff2"), url("../fonts/RageItalicLetPlain.woff") format("woff"), url("../fonts/RageItalicLetPlain.ttf") format("truetype"), url("../fonts/RageItalicLetPlain.svg#RageItalicLetPlain") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Gotham Pro Narrow';
-  src: url("../fonts/GothamProNarrow-Medium.eot");
-  src: local("../fonts/Gotham Pro Narrow Medium"), local("../fonts/GothamProNarrow-Medium"), url("../fonts/GothamProNarrow-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProNarrow-Medium.woff") format("woff"), url("../fonts/GothamProNarrow-Medium.ttf") format("truetype");
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro-Medium.eot");
+  src: url("../fonts/GothamPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Medium.woff2") format("woff2"), url("../fonts/GothamPro-Medium.woff") format("woff"), url("../fonts/GothamPro-Medium.ttf") format("truetype"), url("../fonts/GothamPro-Medium.svg#GothamPro-Medium") format("svg");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Gotham Pro';
   src: url("../fonts/GothamPro-LightItalic.eot");
-  src: local("../fonts/Gotham Pro Light Italic"), local("../fonts/GothamPro-LightItalic"), url("../fonts/GothamPro-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-LightItalic.woff") format("woff"), url("../fonts/GothamPro-LightItalic.ttf") format("truetype");
+  src: url("../fonts/GothamPro-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-LightItalic.woff2") format("woff2"), url("../fonts/GothamPro-LightItalic.woff") format("woff"), url("../fonts/GothamPro-LightItalic.ttf") format("truetype"), url("../fonts/GothamPro-LightItalic.svg#GothamPro-LightItalic") format("svg");
   font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro-BlackItalic.eot");
+  src: url("../fonts/GothamPro-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-BlackItalic.woff2") format("woff2"), url("../fonts/GothamPro-BlackItalic.woff") format("woff"), url("../fonts/GothamPro-BlackItalic.ttf") format("truetype"), url("../fonts/GothamPro-BlackItalic.svg#GothamPro-BlackItalic") format("svg");
+  font-weight: 900;
   font-style: italic; }
 
 @font-face {
   font-family: 'Gotham Pro';
   src: url("../fonts/GothamPro-Light.eot");
-  src: local("../fonts/Gotham Pro Light"), local("../fonts/GothamPro-Light"), url("../fonts/GothamPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Light.woff") format("woff"), url("../fonts/GothamPro-Light.ttf") format("truetype");
+  src: url("../fonts/GothamPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Light.woff2") format("woff2"), url("../fonts/GothamPro-Light.woff") format("woff"), url("../fonts/GothamPro-Light.ttf") format("truetype"), url("../fonts/GothamPro-Light.svg#GothamPro-Light") format("svg");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Gotham Pro';
-  src: url("../fonts/GothamPro-Black.eot");
-  src: local("../fonts/Gotham Pro Black"), local("../fonts/GothamPro-Black"), url("../fonts/GothamPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Black.woff") format("woff"), url("../fonts/GothamPro-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Gotham Pro';
   src: url("../fonts/GothamPro.eot");
-  src: local("../fonts/Gotham Pro"), local("../fonts/GothamPro"), url("../fonts/GothamPro.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro.woff") format("woff"), url("../fonts/GothamPro.ttf") format("truetype");
+  src: url("../fonts/GothamPro.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro.woff2") format("woff2"), url("../fonts/GothamPro.woff") format("woff"), url("../fonts/GothamPro.ttf") format("truetype"), url("../fonts/GothamPro.svg#GothamPro") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
+  font-family: 'Georgia';
+  src: url("../fonts/Georgia-Bold.eot");
+  src: url("../fonts/Georgia-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia-Bold.woff2") format("woff2"), url("../fonts/Georgia-Bold.woff") format("woff"), url("../fonts/Georgia-Bold.ttf") format("truetype"), url("../fonts/Georgia-Bold.svg#Georgia-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
   font-family: 'Gotham Pro';
-  src: url("../fonts/GothamPro-MediumItalic.eot");
-  src: local("../fonts/Gotham Pro Medium Italic"), local("../fonts/GothamPro-MediumItalic"), url("../fonts/GothamPro-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-MediumItalic.woff") format("woff"), url("../fonts/GothamPro-MediumItalic.ttf") format("truetype");
-  font-weight: 500;
+  src: url("../fonts/GothamPro-BoldItalic.eot");
+  src: url("../fonts/GothamPro-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-BoldItalic.woff2") format("woff2"), url("../fonts/GothamPro-BoldItalic.woff") format("woff"), url("../fonts/GothamPro-BoldItalic.ttf") format("truetype"), url("../fonts/GothamPro-BoldItalic.svg#GothamPro-BoldItalic") format("svg");
+  font-weight: bold;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Rage Italic LET';
-  src: url("../fonts/RageItalicLetPlain.eot");
-  src: local("../fonts/Rage Italic LET Plain:1.0"), local("../fonts/RageItalicLetPlain"), url("../fonts/RageItalicLetPlain.eot?#iefix") format("embedded-opentype"), url("../fonts/RageItalicLetPlain.woff2") format("woff2"), url("../fonts/RageItalicLetPlain.woff") format("woff"), url("../fonts/RageItalicLetPlain.ttf") format("truetype"), url("../fonts/RageItalicLetPlain.svg#RageItalicLetPlain") format("svg");
-  font-weight: 100;
+  font-family: 'Gotham Pro Narrow';
+  src: url("../fonts/GothamProNarrow-Medium.eot");
+  src: url("../fonts/GothamProNarrow-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProNarrow-Medium.woff2") format("woff2"), url("../fonts/GothamProNarrow-Medium.woff") format("woff"), url("../fonts/GothamProNarrow-Medium.ttf") format("truetype"), url("../fonts/GothamProNarrow-Medium.svg#GothamProNarrow-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro-Italic.eot");
+  src: url("../fonts/GothamPro-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Italic.woff2") format("woff2"), url("../fonts/GothamPro-Italic.woff") format("woff"), url("../fonts/GothamPro-Italic.ttf") format("truetype"), url("../fonts/GothamPro-Italic.svg#GothamPro-Italic") format("svg");
+  font-weight: normal;
   font-style: italic; }
 
 body {
@@ -526,14 +547,14 @@ body {
       opacity: 1; }
 
 .wepb .content-part {
-  background: url(../img/1_bg_min.webp) no-repeat; }
+  /*background: url(../img/1_bg_min.webp) no-repeat;*/ }
 
 .content-part {
   width: 76.3%;
-  background: url(../img/1_bg_min.jpg) no-repeat;
+  background: url(../img/bg_1_big.jpg) no-repeat;
   position: relative;
-  background-size: cover;
-  overflow-x: hidden; }
+  background-size: contain;
+  background-size: auto 100%; }
   .content-part .start-date {
     font-family: 'Rage Italic LET';
     font-size: 2.8vw;
@@ -559,20 +580,20 @@ body {
   background: rgba(87, 114, 131, 0.5);
   background-blend-mode: multiply;
   position: absolute;
-  width: 995px;
+  width: 1015px;
   height: 201px;
   bottom: 0;
   right: 0; }
   .main-slider-bg .slick-slider {
     position: absolute;
-    width: 1000px;
+    width: 1020px;
     height: 195px;
     bottom: 0;
     right: -17px; }
     .main-slider-bg .slick-slider .image-block {
       outline: none; }
     .main-slider-bg .slick-slider .image-block-item {
-      width: 183px;
+      width: 190px;
       height: 194px;
       border: 1px solid #7F96A8;
       border-bottom: none; }
@@ -752,14 +773,14 @@ body {
       opacity: 1; }
 
 .wepb .content-part {
-  background: url(../img/1_bg_min.webp) no-repeat; }
+  /*background: url(../img/1_bg_min.webp) no-repeat;*/ }
 
 .content-part {
   width: 76.3%;
-  background: url(../img/1_bg_min.jpg) no-repeat;
+  background: url(../img/bg_1_big.jpg) no-repeat;
   position: relative;
-  background-size: cover;
-  overflow-x: hidden; }
+  background-size: contain;
+  background-size: auto 100%; }
   .content-part .start-date {
     font-family: 'Rage Italic LET';
     font-size: 2.8vw;
@@ -785,20 +806,20 @@ body {
   background: rgba(87, 114, 131, 0.5);
   background-blend-mode: multiply;
   position: absolute;
-  width: 995px;
+  width: 1015px;
   height: 201px;
   bottom: 0;
   right: 0; }
   .main-slider-bg .slick-slider {
     position: absolute;
-    width: 1000px;
+    width: 1020px;
     height: 195px;
     bottom: 0;
     right: -17px; }
     .main-slider-bg .slick-slider .image-block {
       outline: none; }
     .main-slider-bg .slick-slider .image-block-item {
-      width: 183px;
+      width: 190px;
       height: 194px;
       border: 1px solid #7F96A8;
       border-bottom: none; }
@@ -1081,11 +1102,13 @@ body {
       font-size: 14px;
       font-weight: lighter; }
   .wepb .content-part {
-    background: url(../img/1_bg_1368-768.webp) no-repeat; }
+    /*background: url(../img/1_bg_1368-768.webp) no-repeat; */ }
   .content-part {
     width: 75%;
-    background: url(../img/1_bg_1368-768.jpg) no-repeat;
-    background-size: cover; }
+    /*background: url(../img/1_bg_1368-768.jpg) no-repeat;
+		background-size: cover; */
+    background: url("../img/bg_1_big.jpg") no-repeat;
+    background-size: auto 100%; }
     .content-part .start-date {
       font-size: 3.1vw;
       margin-top: 32px;
@@ -1440,7 +1463,7 @@ body {
       text-decoration: none;
       color: #314A5D; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .menu-mobile {
     display: block; } }
 
@@ -1450,6 +1473,35 @@ body {
   .is-menu #fullpage, .is-menu .header__fix, .is-menu > .row {
     -webkit-filter: none;
             filter: none; } }
+
+@media only screen and (max-width: 400px) {
+  .menu-mobile .menu-mobile-wrapper {
+    padding: 56px 25px 30px 25px; }
+  .connection-text {
+    line-height: 20px;
+    font-size: 14px;
+    margin-left: 42px; }
+  .connection-text .city-phone-number-link {
+    line-height: 20px;
+    font-size: 14px; }
+  .connection-button {
+    margin-left: 15px; }
+  .connection-button .connection-button-link {
+    padding: 8px 0px 8px 0px;
+    line-height: 14px;
+    font-size: 14px;
+    display: block;
+    width: 100px;
+    text-align: center; }
+  .connection-button .social-button-link {
+    padding: 8px 0px 8px 0px;
+    line-height: 14px;
+    font-size: 14px;
+    display: block;
+    width: 100px;
+    text-align: center; }
+  .menu-mobile {
+    height: 100%; } }
 
 .header__logo-city span {
   font-family: Georgia;
@@ -1485,6 +1537,40 @@ div {
 
 .read-more-sidebar {
   opacity: 0.8; }
+
+.readmore {
+  overflow: hidden; }
+
+.main__desc-wrapper {
+  height: 100%;
+  overflow-y: auto; }
+  .main__desc-wrapper a {
+    padding-top: 30px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    padding: 10px 0;
+    transition: color 0.3s;
+    display: block;
+    position: relative;
+    z-index: 2; }
+  .main__desc-wrapper a:before {
+    position: absolute;
+    left: 0;
+    bottom: 36px;
+    width: 100%;
+    height: 160px;
+    display: block;
+    content: "";
+    z-index: 1;
+    /* FF3.6-15 */
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(125, 185, 232, 0) 0%, #314A5D 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#314A5D',GradientType=0 );
+    /* IE6-9 */ }
+  .main__desc-wrapper a.active:before {
+    opacity: 0; }
 
 .main__hidden {
   display: none; }
@@ -1579,7 +1665,7 @@ div {
 
 .content-part {
   overflow: hidden;
-  background-position-y: -60px; }
+  background-position-y: 0px; }
   .content-part .header {
     display: none; }
 
@@ -1611,7 +1697,7 @@ div {
   position: absolute;
   top: 0;
   left: 0;
-  width: 185px;
+  width: 192px;
   height: 194px;
   display: block;
   background: linear-gradient(0deg, rgba(3, 57, 83, 0.74), rgba(3, 57, 83, 0.74));
@@ -2096,16 +2182,19 @@ a.button__border {
   opacity: 0;
   z-index: -1; }
 
+.selection-city .city-list {
+  background: #01334e; }
+
 .selection-city .man-list .city-list-item-link:before,
 .selection-city .man-list-inner .city-list-item-link:before {
   display: none; }
 
 .selection-city .man-list-inner {
-  background: #F3F4F6;
+  background: #01334e;
   width: 250px;
-  height: 155px; }
+  height: 220px; }
   .selection-city .man-list-inner a.city-list-item-link {
-    color: #314A5D;
+    color: #fff;
     line-height: 24px;
     font-size: 20px;
     margin-top: 15px; }
@@ -2118,15 +2207,27 @@ a.button__border {
   height: 75px; }
   .header__menu__item.selection-city a {
     top: 26px;
-    position: relative; }
+    position: relative;
+    margin-top: 0; }
+
+.header__menu__item.selection-city .city-list.man-list .city-list-item-link:first-child {
+  margin-top: 0; }
+
+.header__menu__item.selection-city .city-list.man-list {
+  height: 150px; }
 
 .header__menu__item .city-list {
   top: 75px;
   padding-left: 30px;
   padding-right: 30px;
-  width: 236px; }
+  width: 236px;
+  background: #01334e; }
   .header__menu__item .city-list a.city-list-item-link {
     color: #C9CED8 !important; }
+
+.selection-city-really .city-list {
+  padding-left: 80px;
+  height: 210px; }
 
 @media only screen and (max-width: 1840px) {
   .main__contacts {
@@ -2155,7 +2256,10 @@ a.button__border {
     background-position-x: -100px; }
   .main__about .button__beclient {
     margin-bottom: 68px;
-    padding-right: 26px; } }
+    padding-right: 26px; }
+  .read-more-content {
+    height: 100%;
+    overflow-y: scroll; } }
 
 @media only screen and (max-width: 1440px) {
   .header .header__logo {
@@ -2229,6 +2333,32 @@ a.button__border {
 .main__hidden-big {
   display: none; }
 
+@media only screen and (max-width: 1366px) and (min-width: 1200px) and (max-height: 740px) and (min-height: 580px) {
+  .main-slider-bg {
+    width: 732px;
+    height: 120px; }
+  .main-slider-bg .slick-slider .image-block-item {
+    width: 136px;
+    height: 136px; }
+  .main-slider-bg .slick-slider {
+    width: 728px;
+    height: 118px; }
+  .main-slider-bg .image-block:before {
+    width: 138px;
+    height: 138px; }
+  .main-slider-desc {
+    line-height: 20px;
+    font-size: 14px; }
+  .main-slider-desc .main-slider-img {
+    height: 30px; }
+    .main-slider-desc .main-slider-img img {
+      height: 100%; }
+  .selection-city .city-list.man-list .city-list-item-link:nth-child(1),
+  .selection-city .city-list.man-list .city-list-item-link:nth-child(2),
+  .selection-city .city-list.man-list .city-list-item-link:nth-child(3),
+  .selection-city .city-list.man-list .city-list-item-link:nth-child(4) {
+    margin-top: 0px; } }
+
 @media only screen and (max-width: 1366px) and (max-height: 768px) {
   .side-panel .navigation-city .city {
     font-size: 24px;
@@ -2289,8 +2419,8 @@ a.button__border {
   .beclient__links {
     margin-bottom: 67px; }
   .section__fourth {
-    background-size: 1170px;
-    background-position-x: -130px;
+    background-size: 892px;
+    background-position-x: -65px;
     background-position-y: 0px; }
   .main__contacts-title {
     margin-bottom: 0; }
@@ -2327,7 +2457,84 @@ a.button__border {
     margin-left: 20%; }
   .button__beclient-man:after {
     left: 7px;
-    top: -26px; } }
+    top: -26px; }
+  .selection-city-really .city-list {
+    height: 210px; }
+  .main-slider-bg .image-block:before {
+    width: 130px;
+    height: 140px; }
+  .main-slider-img {
+    height: 36px; }
+    .main-slider-img img {
+      height: 100%; } }
+
+@media only screen and (max-width: 1366px) and (max-height: 660px) {
+  .content-sidebar .content-sidebar-title {
+    font-size: 26px;
+    line-height: 28px; }
+  .content-sidebar .content-sidebar-description {
+    line-height: 20px;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 12px; }
+  .section__second {
+    height: auto; }
+  .beclient__title {
+    font-size: 58px;
+    margin-bottom: 34px; }
+    .beclient__title span {
+      font-size: 22px; }
+  .beclient__item {
+    margin-bottom: 20px; }
+    .beclient__item a {
+      font-size: 22px; }
+  .main__about {
+    padding-top: 120px; }
+  .main__desc {
+    padding-top: 120px; }
+    .main__desc p {
+      line-height: 16px;
+      font-size: 12px; }
+  .main__contacts {
+    padding-top: 58px; }
+    .main__contacts .button__border {
+      font-size: 12px;
+      padding: 8px 30px; }
+  .main__contacts-title {
+    line-height: 70px;
+    font-size: 40px; }
+  .main__contactsrow-info {
+    font-size: 12px;
+    line-height: 18px; }
+  .main__contacts-item {
+    padding: 12px 0; }
+  .main__contacts-subtitle {
+    line-height: 20px;
+    font-size: 14px; }
+  .main__contactsrow {
+    margin-bottom: 14px; }
+  .main__contacts-phone {
+    line-height: 30px;
+    font-size: 20px; }
+  .main__contacts-name {
+    line-height: 20px;
+    font-size: 14px; }
+  /* SHIT */
+  /*.main__grid-cell img {
+		width: 100%;
+		min-height: auto;
+		min-width: auto;
+		height: auto;
+		min-height: auto;
+		min-width: auto;
+		max-width: none;
+		max-height: none;
+	}*/
+  .read-more-content {
+    height: 100%;
+    overflow-y: scroll; }
+  .selection-city-really .city-list {
+    height: 210px; } }
 
 @media only screen and (max-width: 1024px) {
   .main__hidden-big {
@@ -2529,8 +2736,7 @@ a.button__border {
     padding: 0 35px;
     background: transparent;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding-top: 32px;
-    display: none; }
+    padding-top: 32px; }
   .main__about-title {
     line-height: 72px;
     font-size: 42px;
@@ -2582,7 +2788,9 @@ a.button__border {
     overflow: hidden; }
   .read-more-content {
     height: 100%;
-    overflow-y: scroll; } }
+    overflow-y: scroll; }
+  .main__desc-wrapper {
+    max-height: 60vh; } }
 
 @media only screen and (max-width: 768px) and (max-height: 1024px) {
   .beclient__links {
@@ -2591,7 +2799,7 @@ a.button__border {
   .main__beclient {
     padding-top: 100px; }
   .beclient__links {
-    margin-bottom: 68px; }
+    margin-bottom: 30px; }
   .beclient__item {
     -ms-flex: 50%;
         flex: 50%; }
@@ -2711,7 +2919,6 @@ a.button__border {
     bottom: 70px;
     width: 100%; }
   .main__desc {
-    display: none;
     background: #314A5D;
     height: 70vh;
     border-top: 0; }
@@ -2743,7 +2950,64 @@ a.button__border {
     min-height: 100% !important;
     max-height: 200% !important;
     min-width: 100% !important;
-    max-width: 200% !important; } }
+    max-width: 200% !important; }
+  .main__desc-wrapper {
+    max-height: 100%; }
+  .login-popup:before {
+    background-size: cover;
+    width: 32px;
+    height: 92px; }
+  .login-popup {
+    width: 100%;
+    height: 100%; }
+    .login-popup .login-title {
+      font-size: 24px !important;
+      line-height: 24px !important;
+      padding: 60px 30px 24px 60px !important; }
+    .login-popup .login-form,
+    .login-popup .login-comment {
+      padding-left: 30px;
+      padding-right: 30px; }
+    .login-popup .login-form .form-input .form-login-text {
+      font-size: 14px;
+      height: 38px;
+      margin-bottom: 15px;
+      width: 100%;
+      margin-left: 0;
+      box-sizing: border-box; }
+    .login-popup .login-form .login-button {
+      padding: 14px 0 12px 0;
+      font-size: 16px;
+      text-align: center;
+      width: 200px; }
+    .login-popup .login-form .registration-button {
+      padding: 14px 0;
+      font-size: 16px;
+      width: 200px;
+      text-align: center; }
+    .login-popup .login-form .form-checkbox-text {
+      font-size: 14px; }
+    .login-popup .login-popup .login-comment {
+      font-size: 16px;
+      line-height: 16px; }
+    .login-popup .close-login {
+      background: url(../img/close-read-more.svg) no-repeat;
+      background-size: cover;
+      width: 24px;
+      height: 24px; }
+      .login-popup .close-login img {
+        width: 100%; } }
+
+@media only screen and (max-width: 480px) {
+  .main__desc {
+    height: 100vh; }
+  .main__about {
+    padding-top: 25vh; }
+  .main__about-title {
+    bottom: 20px; }
+  .content-part .dating-text {
+    left: 25px !important;
+    right: auto !important; } }
 
 @media only screen and (max-width: 420px) {
   .header .header__button {
@@ -2813,7 +3077,18 @@ a.button__border {
   .beclient__item {
     margin-bottom: 6px; }
   .button__beclient {
-    display: none; }
+    padding: 12px 30px 12px 36px; }
+  .button__beclient-man:after {
+    background-size: cover;
+    left: 4px;
+    top: -17px;
+    width: 24px;
+    height: 68px; }
+  .button__beclient-woman:after {
+    background-size: cover;
+    width: 42px;
+    height: 38px;
+    top: 5px; }
   /* Section 4 */
   .main__about {
     margin-top: 0px; }
@@ -2829,7 +3104,7 @@ a.button__border {
     line-height: 18px;
     font-size: 12px; }
   .main__about-title {
-    bottom: 60px; }
+    bottom: 35px; }
   /* Section 5 */
   .main__contacts-title {
     line-height: 30px;
@@ -2848,7 +3123,17 @@ a.button__border {
     padding: 48px 35px 0px 35px; }
   .read-more-content .read-more-accentuation {
     font-size: 16px;
-    padding: 34px 35px 0px 35px; } }
+    padding: 34px 35px 0px 35px; }
+  .header {
+    padding-left: 25px;
+    padding-right: 25px; }
+  .side-panel .content-sidebar {
+    padding-right: 25px;
+    padding-left: 25px; }
+  .side-panel .navigation-city {
+    padding-left: 86px; }
+  .content-part .dating-text {
+    left: 25px; } }
 
 @media only screen and (max-width: 1024px) and (max-height: 1366px) {
   .content-part {
@@ -2898,15 +3183,42 @@ a.button__border {
   .main__contactsrow-soc .main__contactsrow-img {
     width: 20px; } }
 
-@media only screen and (max-height: 767px) and (min-height: 400px) {
+@media only screen and (max-width: 1024px) and (max-height: 722px) {
+  .section__second .main__grid {
+    height: 100vh; }
+  .beclient__title {
+    font-size: 34px;
+    margin-bottom: 20px; }
+    .beclient__title span {
+      font-size: 18px;
+      margin-bottom: 5px; }
+  .beclient__item {
+    margin-bottom: 8px; }
+    .beclient__item a {
+      font-size: 16px; }
+  .beclient__links {
+    margin-bottom: 20px; }
+  .main__contacts {
+    padding-top: 75px; }
+  .content-part .dating-text {
+    left: auto;
+    right: 35px; }
+  .login-form .form-input .form-login-text {
+    font-size: 14px;
+    height: 45px;
+    margin-bottom: 24px; }
+  .login-popup .login-title {
+    font-size: 30px;
+    line-height: 30px;
+    padding: 82px 82px 24px 133px; } }
+
+@media only screen and (max-height: 767px) and (min-height: 400px) and (max-width: 1000px) {
   .section__second {
     height: 900px !important; }
     .section__second .fp-tableCell {
       height: 900px !important; }
     .section__second .main__grid {
       height: 900px; }
-  .main__desc {
-    height: 100%; }
   .main__about {
     height: auto; }
   .section__fifth {
@@ -2942,7 +3254,20 @@ a.button__border {
     width: 24px;
     height: 24px; }
     .read-more-content .close-read-more img {
-      width: 100%; } }
+      width: 100%; }
+  .content-part .dating-text {
+    background-image: url("../img/main-1-text.png");
+    background-size: 100%;
+    background-position: 0 0;
+    bottom: 268px; }
+  .side-panel .navigation-city .city {
+    font-size: 16px; }
+  .side-panel .content-sidebar .content-sidebar-description {
+    line-height: 16px;
+    font-size: 12px; }
+  .content-sidebar .content-sidebar-title {
+    line-height: 22px;
+    font-size: 18px; } }
 
 /*@media only screen and (max-height: 900px) and (min-height: 400px) and (max-width: 768px) {
 	.wrap-main {
@@ -3034,6 +3359,38 @@ a.button__border {
     height: 100%; }
   .main__about-title {
     padding-top: 106px; } }
+
+@media only screen and (max-width: 370px) and (max-height: 570px) {
+  .main__beclient {
+    left: 0;
+    height: 380px; }
+  .section__third {
+    height: 760px !important; }
+    .section__third .fp-tableCell {
+      height: 760px !important; }
+  .section__fourth {
+    height: 668px !important; }
+    .section__fourth .fp-tableCell {
+      height: 668px !important; }
+    .section__fourth .main__desc {
+      height: 500px; }
+    .section__fourth .main__about {
+      height: 170px; }
+  .main__contacts {
+    height: auto;
+    padding-top: 35px; }
+  .section__fifth {
+    height: 600px !important; }
+    .section__fifth .fp-tableCell {
+      height: 600px !important; }
+  .login-popup {
+    position: fixed;
+    top: 0;
+    left: 0; }
+  .login-popup .login-title {
+    padding: 35px 30px 24px 60px !important; }
+  .login-popup .login-comment {
+    font-size: 14px; } }
 
 .container {
   max-width: 1816px;
@@ -3351,12 +3708,16 @@ a.button__border {
     color: #606060;
     font-size: 18px;
     margin: 8px 0 8px 0;
-    line-height: 26px; }
+    line-height: 26px;
+    max-height: 52px;
+    overflow: hidden; }
   .message .message-read-more {
     display: inline-block;
     margin-bottom: 8px;
     text-decoration: none;
-    color: #DC143C; }
+    color: #DC143C;
+    cursor: pointer;
+    margin-top: 0; }
   .message .date-message {
     color: #314A5D;
     font-size: 16px;
@@ -5124,7 +5485,8 @@ body {
   color: #FFFFFF;
   padding: 190px 84px 10px 110px;
   height: 100%;
-  width: 42.3%; }
+  width: 42.3%;
+  z-index: 20; }
 
 .detail__name {
   font-weight: bold;
@@ -5664,7 +6026,8 @@ body {
   .popup__detail {
     font-size: 16px;
     width: 46%;
-    padding: 120px 90px 10px 90px; }
+    padding: 120px 90px 10px 90px;
+    overflow-y: scroll; }
   .side-detail {
     width: 46%; }
   .side-detail-right {
@@ -5767,7 +6130,20 @@ body {
       height: 42px; }
   .page__404 a {
     top: 71%;
-    left: 45%; } }
+    left: 45%; }
+  .header-inner-menu-detail .header-inner-menu-item .header-inner-menu-link {
+    padding: 26px 7px 24px 7px; } }
+
+@media only screen and (max-width: 1366px) and (max-height: 768px) and (min-height: 600px) {
+  .catalog-list {
+    margin-top: 40px; }
+    .catalog-list .catalog-item:nth-child(1),
+    .catalog-list .catalog-item:nth-child(2),
+    .catalog-list .catalog-item:nth-child(3),
+    .catalog-list .catalog-item:nth-child(4),
+    .catalog-list .catalog-item:nth-child(5),
+    .catalog-list .catalog-item:nth-child(6) {
+      margin-bottom: 120px; } }
 
 @media only screen and (max-width: 1024px) {
   .row {
@@ -5800,7 +6176,7 @@ body {
     display: flex; }
   .detail__photos .detail__photos-item {
     width: calc(25% - 1.5px);
-    height: 173px;
+    height: auto;
     margin-bottom: 3px; }
   .detail__main {
     position: relative; }
@@ -5880,7 +6256,9 @@ body {
   .popup__comment .input__row-small {
     text-align: left; }
   .page__404 a {
-    left: 43%; } }
+    left: 43%; }
+  .header-inner-detail {
+    position: absolute; } }
 
 @media only screen and (max-width: 768px) {
   .forman__title {
@@ -5921,7 +6299,7 @@ body {
     margin-bottom: 32px; }
   .detail__photos .detail__photos-item {
     width: calc(33.3333% - 1.5px);
-    height: 144px;
+    height: auto;
     margin-bottom: 3px; }
   .fancybox-navigation .fancybox-button.gallery__button {
     left: 15px; }
@@ -6020,6 +6398,33 @@ body {
     .page__404 a {
       top: 71%;
       left: 37%; } }
+
+@media only screen and (max-width: 360px) and (max-width: 640px) {
+  .detail__main {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 30px; }
+    .detail__main .detail__main-btn a {
+      width: 100%;
+      display: block;
+      text-align: center; }
+  .detail__links {
+    width: 100%;
+    text-align: left; }
+  .detail__info {
+    display: block; }
+  .side-detail {
+    height: 400px; }
+  .popup__detail {
+    padding: 64px 25px 15px 25px;
+    font-size: 14px; }
+  .detail__address {
+    display: block; }
+    .detail__address .detail__address-area {
+      margin-left: 0;
+      margin-bottom: 15px; }
+    .detail__address .detail__address-metro {
+      margin-left: 0; } }
 
 @media only screen and (max-width: 480px) {
   .popup__comment .row {

@@ -119,13 +119,17 @@
 		font-size: 18px;
 		margin: 8px 0 8px 0; 
 		line-height: 26px;
+		max-height: 52px;
+		overflow: hidden;
 	}
 
 	.message-read-more {
 		display: inline-block;
-    	margin-bottom: 8px;
-    	text-decoration: none;
+    margin-bottom: 8px;
+  	text-decoration: none;
 		color: #DC143C;
+		cursor: pointer;
+		margin-top: 0;
 	}
 
 	.date-message {

@@ -133,15 +133,15 @@ body {
 }
 
 .wepb .content-part {
-	background: url(../img/1_bg_min.webp) no-repeat;
+	/*background: url(../img/1_bg_min.webp) no-repeat;*/
 }
 
 .content-part {
 	width: 76.3%;
-  background: url(../img/1_bg_min.jpg) no-repeat;
+  background: url(../img/bg_1_big.jpg) no-repeat;
   position: relative;
-	background-size: cover;
-	overflow-x: hidden;
+	background-size: contain;
+	background-size: auto 100%;
 
 	.start-date {
 		font-family: 'Rage Italic LET'; 
@@ -175,14 +175,14 @@ body {
 	background: rgba(87, 114, 131, .5);;
 	background-blend-mode: multiply;
 	position: absolute;
-	width: 995px;
+	width: 1015px;
 	height: 201px;
 	bottom: 0;
 	right: 0;
 
 	.slick-slider {
 		position: absolute;
-		width: 1000px;
+		width: 1020px;
 		height: 195px;
 		bottom: 0;
 		right: -17px;
@@ -192,7 +192,7 @@ body {
 		}
 
 		.image-block-item {
-			width: 183px;
+			width: 190px;
 			height: 194px;
 			border: 1px solid #7F96A8;
 			border-bottom: none;	

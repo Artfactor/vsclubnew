@@ -77,13 +77,15 @@
 	}
 
 	.wepb .content-part {
-		background: url(../img/1_bg_1368-768.webp) no-repeat;
+		/*background: url(../img/1_bg_1368-768.webp) no-repeat; */
 	}
 	
 	.content-part {
 		width: 75%;
-		background: url(../img/1_bg_1368-768.jpg) no-repeat;
-		background-size: cover;
+		/*background: url(../img/1_bg_1368-768.jpg) no-repeat;
+		background-size: cover; */
+		    background: url('../img/bg_1_big.jpg') no-repeat;
+			background-size: auto 100%;
 
 		.start-date {
 			font-size: 3.1vw;

@@ -333,7 +333,7 @@
 	}
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 1024px) {
 	.menu-mobile {
 		display: block;
 	}
@@ -345,6 +345,42 @@
 	}
 	.is-menu #fullpage, .is-menu .header__fix, .is-menu > .row  {
 		filter: none;
+	}
+}
+@media only screen and (max-width : 400px) {
+	.menu-mobile .menu-mobile-wrapper {
+		padding: 56px 25px 30px 25px;
+	}
+	.connection-text {
+		line-height: 20px;
+		font-size: 14px;
+		margin-left: 42px;
+	}
+	.connection-text .city-phone-number-link {
+		line-height: 20px;
+		font-size: 14px;
+	}
+	.connection-button {
+		margin-left: 15px;
+	}
+	.connection-button .connection-button-link {
+		padding: 8px 0px 8px 0px;
+		line-height: 14px;
+		font-size: 14px;
+		display: block;
+		width: 100px;
+		text-align: center;
+	}
+	.connection-button .social-button-link {
+		padding: 8px 0px 8px 0px;
+		line-height: 14px;
+		font-size: 14px;
+		display: block;
+		width: 100px;
+		text-align: center;
+	}
+	.menu-mobile {
+		height: 100%;
 	}
 }
 

@@ -330,6 +330,7 @@ body {
 	padding: 190px 84px 10px 110px;
 	height: 100%;
 	width: 42.3%;
+	z-index: 20;
 }
 .detail__name {
 	font-weight: bold;
@@ -991,6 +992,7 @@ body {
 		font-size: 16px;
 		width: 46%;
 		padding: 120px 90px 10px 90px;
+		overflow-y: scroll;
 	}
 	.side-detail {
 		width: 46%;
@@ -1152,6 +1154,25 @@ body {
 			left: 45%;
 		}
 	}
+	
+	.header-inner-menu-detail .header-inner-menu-item .header-inner-menu-link {
+		padding: 26px 7px 24px 7px;
+	}
+}
+
+@media only screen and (max-width : 1366px) and (max-height : 768px) and (min-height : 600px) {
+	.catalog-list {
+		margin-top: 40px;
+		
+		.catalog-item:nth-child(1),
+		.catalog-item:nth-child(2),
+		.catalog-item:nth-child(3),
+		.catalog-item:nth-child(4),
+		.catalog-item:nth-child(5),
+		.catalog-item:nth-child(6) {
+			margin-bottom: 120px;
+		}
+	}
 }
 @media only screen and (max-width : 1024px) {
 	.row {
@@ -1196,7 +1217,7 @@ body {
 	.detail__photos {
 		.detail__photos-item {
 			width: calc(25% - 1.5px);
-			height: 173px;
+			height: auto;
 			margin-bottom: 3px;
 		}
 	}
@@ -1305,6 +1326,9 @@ body {
 			left: 43%;
 		}
 	}
+	.header-inner-detail {
+		position: absolute;
+	}
 }
 @media only screen and (max-width : 768px) {
 	.forman__title {
@@ -1357,7 +1381,7 @@ body {
 	.detail__photos {
 		.detail__photos-item {
 			width: calc(33.3333% - 1.5px);
-			height: 144px;
+			height: auto;
 			margin-bottom: 3px;
 		}
 	}
@@ -1486,6 +1510,45 @@ body {
 		a {
 			top: 71%;
 			left: 37%;
+		}
+	}
+}
+@media only screen and (max-width : 360px) and (max-width : 640px) {
+	.detail__main {
+		width: 100%;
+		text-align: left;
+		margin-bottom: 30px;
+		
+		.detail__main-btn {
+			a {
+				width: 100%;
+				display: block;
+				text-align: center;
+			}
+		}
+	}
+	.detail__links {
+		width: 100%;
+		text-align: left;
+	}
+	.detail__info {
+		display: block;
+	}
+	.side-detail {
+		height: 400px;
+	}
+	.popup__detail {
+		padding: 64px 25px 15px 25px;
+		font-size: 14px;
+	}
+	.detail__address {
+		display: block;
+		.detail__address-area {
+			margin-left: 0;
+			margin-bottom: 15px;
+		}
+		.detail__address-metro {
+			margin-left: 0;
 		}
 	}
 }

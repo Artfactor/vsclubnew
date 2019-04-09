@@ -4,44 +4,66 @@ $(document).ready(function() {
 	if($("select").length > 0) {
 		$('select').niceSelect();
 	}
-	
-    $('.slick-slider').slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-    });
-	$('.content-slider').slick({
-        infinite: true,
-		arrows: false,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-		responsive: [
-		{
-		  breakpoint: 1366,
-		  settings: {
-			slidesToShow: 4
-		  }
-		},
-		{
-		  breakpoint: 768,
-		  settings: {
-			slidesToShow: 3
-		  }
-		},
-		{
-		  breakpoint: 420,
-		  settings: {
-			slidesToShow: 2
-		  }
-		}
-	  ]
-    });
+	if($(".readmore").length > 0) {
+		$('.readmore').readmore({ speed: 300, collapsedHeight: 400, moreLink: '<a href="#" class="readmore-btn">Читать далее</a>', lessLink: '<a href="#" class="readmore-btn active">Свернуть</a>'});
+		
+	}
+	if($(".slick-slider").length > 0) {
+		$('.slick-slider').slick({
+			infinite: true,
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			responsive: [
+			{
+			  breakpoint: 1367,
+			  settings: {
+				slidesToShow: 5
+			  }
+			},
+			{
+			  breakpoint: 1280,
+			  settings: {
+				slidesToShow: 5
+			  }
+			}
+			]
+		});
+	}
+	if($(".slick-slider").length > 0) {
+		$('.content-slider').slick({
+			infinite: true,
+			arrows: false,
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			responsive: [
+			{
+			  breakpoint: 1366,
+			  settings: {
+				slidesToShow: 4
+			  }
+			},
+			{
+			  breakpoint: 768,
+			  settings: {
+				slidesToShow: 3
+			  }
+			},
+			{
+			  breakpoint: 420,
+			  settings: {
+				slidesToShow: 2
+			  }
+			}
+		  ]
+		});
+	}
 	
 	if($(".button-main-menu-mobile").length > 0) {
 		$(".button-main-menu-mobile").click(function(e){
 			e.preventDefault();
 			$(this).toggleClass("active");
 			$(".main-menu-mobile").toggleClass("active");
+			return false;
 		});
 	};
 	
@@ -51,6 +73,7 @@ $(document).ready(function() {
 		//$(".menu-mobile").fadeIn(300);
 		$(".menu-mobile").addClass("active");
 		$("body").addClass("is-menu");
+		return false;
 	})
 	$(".close-menu-mobile").click(function(e) {
 		e.preventDefault();
@@ -58,6 +81,7 @@ $(document).ready(function() {
 		//$(".menu-mobile").fadeOut(300);
 		$(".menu-mobile").removeClass("active");
 		$("body").removeClass("is-menu");
+		return false;
 	})
 	
 	createSliderRange("age_slider_from", "age_slider_to", "age_from", "age_to", 18, 40);
@@ -150,11 +174,13 @@ $(document).ready(function() {
 			var id = $(this).attr("href");
 			$(id).fadeIn(300);
 			$("body").addClass("is-popup");
+			return false;
 		});
 		$(".popup__close").click(function(e){
 			e.preventDefault();
 			$(this).parent().fadeOut(300);
 			$("body").removeClass("is-popup");
+			return false;
 		});
 	};
 	
@@ -163,8 +189,30 @@ $(document).ready(function() {
 			e.preventDefault();
 			$("#comment").fadeIn(300);
 			$("body").addClass("is-popup");
+			return false;
 		});
 	}
+	
+	if($('.message-read-more').length > 0) {
+		$('.message-read-more').on("click", function(){
+				var $itemMessage = $(this).parent('.message');
+				var $text = $itemMessage.find(".text-message");
+				var textHeight = $text[0].scrollHeight;
+				var newHeight = 0;
+				
+			  if ($text.hasClass("active")) {
+				newHeight = 52;
+				$text.removeClass("active");
+			  } else {
+				newHeight = textHeight;
+				$text.addClass("active");
+			  }
+			  $text.animate({
+				"max-height": newHeight
+			  }, 500);
+			  console.log(newHeight);
+		});
+	};
 	
 	/*$(window).resize(function() {
 		console.log($(window).height());
@@ -182,6 +230,7 @@ $(document).ready(function($){
     $('.read-more').on('click', function(event){
         event.preventDefault();
         $('.read-more-popup').addClass('read-more-show');
+		return false;
     });
     //Закрытие read-more-popup
     $('.close-read-more').on('click', function(){
@@ -204,11 +253,13 @@ $(document).ready(function($){
     $('.login').on('click', function(event){
         event.preventDefault();
         $('.login-popup').addClass('show');
+		return false;
     });
     //Закрытие read-more-popup
     $('.close-login').on('click', function(){
             event.preventDefault();
             $('.login-popup').removeClass('show');
+			return false;
         // }
     });
     //Закрыть при нажатии esc на клавиатуре

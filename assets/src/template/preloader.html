@@ -56,11 +56,29 @@
 		opacity: 0;
 		z-index: -1;
 	}
+	@media only screen and (max-width : 768px)  {
+		.preloader__container {
+			width: 100%;
+		}
+		.preloader__title {
+			font-size: 32px;
+			margin-bottom: 20px;
+			font-family: 'Georgia';
+		}
+		.preloader__subtitle {
+			font-size: 24px;
+			color: #99bdcf;
+			margin-bottom: 30px;
+			font-family: 'Rage Italic LET';
+		}
+		.preloader__cities img {
+			margin: 0 10px;
+		}
+	}
 </style>
 
 <script>
 	window.onload = function() {
-		console.log( 'Документ и все ресурсы загружены' );
 		var preloader = document.getElementById("preloader");
 		preloader.classList.add("active");
 		setTimeout(function(){
