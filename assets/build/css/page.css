@@ -2453,8 +2453,16 @@ a.button__border {
   .content-part .start-date {
     margin-right: 80px; }
   .main__about {
-    width: 30%;
+    width: 27%;
     margin-left: 20%; }
+  .main__about .button__beclient {
+    padding-left: 60px;
+    padding-right: 30px; }
+  .main__desc {
+    width: 55.5%; }
+  .main__desc p {
+    line-height: 20px;
+    font-size: 16px; }
   .button__beclient-man:after {
     left: 7px;
     top: -26px; }
@@ -2534,7 +2542,10 @@ a.button__border {
     height: 100%;
     overflow-y: scroll; }
   .selection-city-really .city-list {
-    height: 210px; } }
+    height: 210px; }
+  .main__desc p {
+    line-height: 20px;
+    font-size: 16px; } }
 
 @media only screen and (max-width: 1024px) {
   .main__hidden-big {
