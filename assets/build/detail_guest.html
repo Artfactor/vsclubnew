@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Детальная страница</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.1.4/nouislider.min.css" integrity="sha256-Gitv5VlgR/Iqt4W4j+rlhsP4R6M09EcFyTf70GBD2zw=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/page.css">
+	<!-- <link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/read-more.css">
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/style_1366-768.css">
+	<link rel="stylesheet" href="css/header_1366-768.css">
+	<link rel="stylesheet" href="css/login_1366-768.css">
+	<link rel="stylesheet" href="css/menu-mobile.css"> -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<!-- <link rel="stylesheet" href="fonts/Gotham_Pro/stylesheet.css">
+	<link rel="stylesheet" href="fonts/Rage_Italic_Let/stylesheet.css">
+	<link rel="stylesheet" href="fonts/Georgia/stylesheet.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
+	
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	  
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/readmore-js@2.2.1/readmore.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.1.4/nouislider.min.js" integrity="sha256-6NGkvvdjRehdAHFa9mUmcVBX8gSDO1CFTnfNiLMrPNY=" crossorigin="anonymous"></script>
+	
+	<script src="js/main.js"></script>
+</head>
+<body>      
+
+	<header class="header-inner header-inner-fixed header-inner-detail">   
+			<div class="container"> 
+				<div class="logo-inner">
+				<div class="burger open-menu">
+					<a class="burger-img" href="#"></a>
+				</div>
+				<a class="header-logo-inner" href="#"></a>
+				<div class="header-inner-text">Клуб знакомств с 2002 года!</div>
+				</div> 
+				<nav class="header-inner-menu header-inner-menu-detail">
+				<li	class="header-inner-menu-item"><a class="header-inner-menu-link" href="favorites.html">О клубе</a></li>
+				<li	class="header-inner-menu-item"><a class="header-inner-menu-link" href="archive.html">Для мужчин</a></li>
+				<li	class="header-inner-menu-item"><a class="header-inner-menu-link" href="personal.html">Для девушек</a></li>
+				<li	class="header-inner-menu-item"><a class="header-inner-menu-link" href="messages.html">Контакты</a></li>
+				<li	class="header-inner-menu-item"><a class="header-inner-menu-link open-popup" href="#search">Выбрать город</a></li>
+				<li	class="header-inner-menu-item"><a class="header-inner-menu-link" href="#">Вход</a></li>
+				</nav> 
+				<a class="login-inner" href="#">Вхрд</a>    
+			</div>
+	</header>
+		<!-- Шапка внутренних страниц - КОНЕЦ -->	
+	
+<div class="row detail__page">
+	<div class="side side-left side-detail">
+		<img src="img/detail-pic.jpg" alt="" title="">
+	</div>
+	<div class="side side-right side-detail-right">
+		<div class="row detail__info">
+			<div class="detail__main">
+				<div class="detail__main-city"><img src="img/saratov.svg" alt="" title=""></div>
+				<div class="detail__main-name">Екатерина<span>№ 8795431</span></div>
+				<div class="detail__main-btn"><a href="#description" class="button button__border open-popup">Посмотреть анкету</a></div>
+			</div>
+			<div class="detail__links">
+			</div>
+		</div>
+		<div class="row detail__photos">
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-1.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-2.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-3.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-4.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-1.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-2.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-3.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-4.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-1.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-2.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-3.jpg" alt="" title=""></a></div>
+			<div class="detail__photos-item"><a data-fancybox="gallery" href="img/detail-photo-detail.jpg"><img src="img/detail-photo-4.jpg" alt="" title=""></a></div>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup__detail" id="description" style="display:none;">
+	<a href="#" class="popup__close"></a>
+	<div class="detail__name">Екатерина</div>
+	<div class="row detail__address">
+		<div class="detail__address-area">Москва, Алтуфьевский р-н</div>
+		<div class="detail__address-metro">Кузнецкий мост</div>
+	</div>
+	<div class="detail__params">
+		<div class="row detail__params-line">
+			<div>Возраст</div>
+			<div>28</div>
+		</div>
+		<div class="row detail__params-line">
+			<div>Рост</div>
+			<div>158</div>
+		</div>
+		<div class="row detail__params-line">
+			<div>Вес</div>
+			<div>48</div>
+		</div>
+		<div class="row detail__params-line">
+			<div>Знак зодиака</div>
+			<div>Лев</div>
+		</div>
+		<div class="row detail__params-line">
+			<div>Семейное положение</div>
+			<div>Разведена с 2012 года</div>
+		</div>
+		<div class="row detail__params-line">
+			<div>Дети</div>
+			<div>Сын 2012 года рождения</div>
+		</div>
+		<div class="row detail__params-line">
+			<div>Образование</div>
+			<div>Московский открытый социальный университет</div>
+		</div>
+		<div class="row detail__params-line">
+			<div>Работа</div>
+			<div>Финансовый консультант международной компании</div>
+		</div>
+		<div class="row detail__params-line">
+			<div>Проживание</div>
+			<div>своя квартира</div>
+		</div>
+	</div>
+	<div class="detail__about">
+		<div class="detail__about-title">О себе</div>
+		<p>Ты встречаешь за свою жизнь тысячу людей, и не один из них не греет душу, а потом, ты встречаешь одного, того, кто меняет твою жизнь. Навсегда.</p>
+	</div>
+</div>
+<!-- MOBILE-MENU - START (display: none в menu-mobile.scss)-->
+	<div class="menu-mobile-bg"></div>
+	<div class="menu-mobile">
+		<div class="menu-mobile-wrapper">
+			<a href="#" class="close-menu-mobile">
+				<img src="img/close-menu-mobile.svg" alt="">
+			</a>
+			<ul class="menu-mobile-list">
+				<li	class="menu-mobile-item"><a href="favorites.html" class="menu-mobile-link">Избранное</a></li>
+				<li	class="menu-mobile-item"><a href="archive.html" class="menu-mobile-link">Архив</a></li>
+				<li	class="menu-mobile-item"><a href="personal.html" class="menu-mobile-link">Персональные предложения</a></li>
+				<li	class="menu-mobile-item"><a href="message.html" class="menu-mobile-link">Сообщения</a></li>
+				<li	class="menu-mobile-item"><a href="#search" class="menu-mobile-link open-popup">Поиск</a></li>
+				<li	class="menu-mobile-item"><a href="private.html" class="menu-mobile-link">Личный кабинет</a></li>
+			</ul>
+			<a href="#" class="exit-personal">Выход</a>
+			
+			<!-- Блок с телефонами городов - НАЧАЛО -->
+			<div class="block-connection">
+				<div class="city-phone">
+					<div class="connection-text">
+						<span class="city-phone-number-title">Москва</span>
+						<a class="city-phone-number-link" href="tel:+79543711916">+7 954 371 19 16</a>	
+					</div>
+					<div class="connection-button">
+						<a class="connection-button-link" href="tel:+79543711916">позвонить</a>
+					</div>
+				</div>
+				<div class="city-phone">
+					<div class="connection-text">
+						<span class="city-phone-number-title">Санкт-Петербург</span>
+						<a class="city-phone-number-link" href="tel:+79543711916">+7 954 371 19 16</a>	
+					</div>
+					<div class="connection-button">
+						<a class="connection-button-link" href="tel:+79543711916">позвонить</a>
+					</div>
+				</div>
+				<div class="city-phone">
+					<div class="connection-text">
+						<span class="city-phone-number-title">Саратов</span>
+						<a class="city-phone-number-link" href="tel:+79543711916">+7 954 371 19 16</a>	
+					</div>
+					<div class="connection-button">
+						<a class="connection-button-link" href="tel:+79543711916">позвонить</a>
+					</div>
+				</div>
+			</div>
+			<!-- Блок с телефонами городов - КОНЕЦ -->
+
+			<!-- Блок с соц.сетями - НАЧАЛО -->
+			<div class="block-connection">
+				<div class="social-write">
+					<div class="connection-text">
+					<span class="social-write-title-text">в WhatsApp</span>
+					</div>
+					<div class="connection-button">
+						<a class="social-button-link" href="#">написать</a>
+					</div>
+				</div>
+				<div class="social-write">
+					<div class="connection-text">
+						<span class="social-write-title-text">в Viber</span>
+					</div>
+					<div class="connection-button">
+						<a class="social-button-link" href="#">написать</a>
+					</div>
+				</div>
+				<div class="social-write">
+					<div class="connection-text">
+						<span class="social-write-title-text">в Telegram</span>
+					</div>
+					<div class="connection-button">
+						<a class="social-button-link" href="#">написать</a>
+					</div>
+				</div>
+			</div>
+			<!-- Блок с соц.сетями - КОНЕЦ -->
+
+			<!-- Блок с основным меню - НАЧАЛО -->
+			<a class="button-main-menu-mobile" href="#">Основное меню</a>
+			<nav class="main-menu-mobile">
+				<li class="main-menu-mobile-item"><a class="main-menu-mobile-link" href="#">О клубе</a></li>
+				<li class="main-menu-mobile-item"><a class="main-menu-mobile-link" href="#">Для мужчин</a></li>
+				<li class="main-menu-mobile-item"><a class="main-menu-mobile-link" href="#">Для девушек</a></li>
+				<li class="main-menu-mobile-item"><a class="main-menu-mobile-link" href="#">Контакты</a></li>
+				<li class="main-menu-mobile-item selection-city"><a class="main-menu-mobile-link" href="#">Выбрать город</a>
+					<!-- <ul class="city-list-mobile">
+						<a class="city-list-mobile-link" href="#">Москва</a>
+						<a class="city-list-mobile-link" href="#">Санкт-Петербург</a>
+						<a class="city-list-mobile-link" href="#">Саратов</a>
+					</ul> -->
+				</li> 
+			</nav>
+			<!-- Блок с основным меню - КОНЕЦ -->
+		</div>
+	</div>
+	<!-- MOBILE MENU - END -->
+<div class="popup popup__search" id="search">
+	<a href="#" class="popup__close"></a>
+	<div class="popup__container">
+		<div class="popup__title">Поиск</div>
+		<form>
+		<div class="input__row">
+			<div class="input__col"><input class="input__text" type="text" name="name" placeholder="Имя"></div>
+			<div class="input__col"><input class="input__text" type="text" name="number" placeholder="№"></div>
+		</div>
+		<div class="input__row">
+			<div class="input__col">
+				<label for="age_from">Возраст (лет)</label>
+				<div class="input__row">
+					<div class="input__col input__col-slider">
+						<input class="input__text" type="text" name="age_from"  id="age_from" placeholder="от 18" disabled>
+						<div class="input__bar"></div>
+						<div id="age_slider_from" class="input__slider"></div>
+					</div>
+					<div class="input__col input__col-slider">
+						<input class="input__text" type="text" name="age_to"  id="age_to" placeholder="до 40" disabled>
+						<div class="input__bar"></div>
+						<div id="age_slider_to" class="input__slider"></div>
+					</div>
+				</div>
+			</div>
+			<div class="input__col">
+				<label for="height_from">Рост (см)</label>
+				<div class="input__row">
+					<div class="input__col input__col-slider">
+						<input class="input__text" type="text" name="height_from"  id="height_from" placeholder="от 150" disabled>
+						<div class="input__bar"></div>
+						<div id="height_slider_from" class="input__slider"></div>
+					</div>
+					<div class="input__col input__col-slider">
+						<input class="input__text" type="text" name="height_to"  id="height_to" placeholder="до 190" disabled>
+						<div class="input__bar"></div>
+						<div id="height_slider_to" class="input__slider"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="input__row">
+			<div class="input__col input__col-full">
+				<select class="input__select">
+					<option>Саратов</option>
+					<option>Санкт-Петербург</option>
+					<option>Москва</option>
+				</select>
+			</div>
+		</div>
+		<div class="input__row">
+			<div class="input__col input__col">
+				<select class="input__select">
+					<option>Район</option>
+					<option>Район</option>
+					<option>Район</option>
+				</select>
+			</div>
+			<div class="input__col input__col">
+				<select class="input__select">
+					<option>Метро</option>
+					<option>Метро</option>
+					<option>Метро</option>
+				</select>
+			</div>
+		</div>
+		<div class="input__row">
+			<div class="input__col input__col">
+				<select class="input__select">
+					<option>Семейное положение</option>
+					<option>Семейное положение</option>
+					<option>Семейное положение</option>
+				</select>
+			</div>
+			<div class="input__col input__col">
+				<select class="input__select">
+					<option>Блондинка</option>
+					<option>Блондинка</option>
+					<option>Блондинка</option>
+				</select>
+			</div>
+		</div>
+		<div class="input__row input__row-small">
+			<div class="input__col-full">
+				<label for="cbx" class="label-cbx">
+				  <input id="cbx" type="checkbox" class="invisible">
+				  <div class="checkbox">
+					<svg width="34px" height="34px" viewBox="0 0 34 34">
+					  <polyline points="6.8 18.7 13.6 25.5 27.2 10.2"></polyline>
+					</svg>
+				  </div>
+				  <span>Дети</span>
+				</label>
+			</div>
+		</div>
+		<div class="input__row input__row-small">
+			<div class="input__col-full"><input class="input__submit" type="submit" value="Найти" name="submit"></div>
+		</div>
+		</form>
+	</div>
+</div>
+</body>
+</html>
