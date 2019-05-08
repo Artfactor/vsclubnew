@@ -67,6 +67,10 @@ $(document).ready(function() {
 		});
 	};
 	
+	$("a.menu-mobile-link").click(function(e){
+		$(".close-menu-mobile").click();
+	})
+	
 	$(".open-menu").click(function(e){
 		e.preventDefault();
 		$(".menu-mobile-bg").fadeIn(300);
@@ -150,12 +154,14 @@ $(document).ready(function() {
 	if($('#fullpage').length > 0) {
 		$('#fullpage').fullpage({
 			anchors: ['section1', 'section2', 'section3', 'section4', 'section5'],
-			responsiveHeight: 600
+			responsiveHeight: 400
 		});
 	}
 	
+	alert($(window).width()+" "+$(window).height());
+	
 	$('[data-fancybox="gallery"]').fancybox({
-		toolbar: false,
+		toolbar: true,
 		infobar: false,
 		btnTpl: {
 			arrowLeft:
@@ -203,9 +209,11 @@ $(document).ready(function() {
 			  if ($text.hasClass("active")) {
 				newHeight = 52;
 				$text.removeClass("active");
+				$(this).text("Читать далее");
 			  } else {
 				newHeight = textHeight;
 				$text.addClass("active");
+				$(this).text("Свернуть");
 			  }
 			  $text.animate({
 				"max-height": newHeight

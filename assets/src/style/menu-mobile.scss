@@ -333,6 +333,60 @@
 	}
 }
 
+.menu-mobile-item-parent {
+	position: relative;
+	.menu-mobile-ul {
+		height: 0;
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+		transition: all 500ms;
+		li {
+			display: block;
+			padding: 6px 0;
+			padding-left: 15px;
+			a {
+				display: block;
+				text-decoration: none;
+				font-family: Gotham Pro;
+				line-height: normal;
+				font-size: 16px;
+				color: #314A5D;
+				font-weight: 500;
+			}
+		}
+	}
+}
+.menu-mobile-item-parent:hover {
+	.menu-mobile-ul {
+		height: auto;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	span:before {
+		transform: rotate(180deg);
+	}
+}
+span.menu-mobile-link {
+	position: relative;
+}
+.menu-mobile-item-parent span.menu-mobile-link:before {
+    content: "";
+    position: absolute;
+    background: url(../img/arrow-main-menu.svg) no-repeat;
+    width: 11px;
+    height: 7px;
+    top: 7px;
+    right: -30px;
+	display: block;
+	transition: all 300ms;
+}
+.city-phone:first-child:before {
+    background: url(../img/moscow.svg) no-repeat;
+    width: 31px;
+    height: 31px;
+	background-size: cover;
+}
 @media only screen and (max-width : 1024px) {
 	.menu-mobile {
 		display: block;

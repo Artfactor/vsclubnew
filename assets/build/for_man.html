@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Главная страница</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/page.css">
 	<!-- <link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/read-more.css">
 	<link rel="stylesheet" href="css/login.css">
@@ -36,7 +37,37 @@
 	<script src="js/main.js"></script>
 </head>
 <body>      
-
+  <header class="header-inner">   
+			<div class="container"> 
+				<div class="logo-inner">
+				<div class="burger open-menu">
+					<a class="burger-img" href="#"></a>
+				</div>
+				<a class="header-logo-inner" href="index.html"></a>
+				<div class="header-inner-text">Клуб знакомств с 2002 года!</div>
+				</div> 
+				<nav class="header-inner-menu">
+				<li	class="header-inner-menu-item"><a class="header-inner-menu-link" href="index.html#section4">О клубе</a></li>
+				<li	class="header-inner-menu-item selection-city"><a class="header-inner-menu-link" href="#">Для мужчин</a><ul class="city-list-inner man-list-inner">
+						<a class="city-list-inner-link" href="target.html">Цели знакомств</a>
+						<a class="city-list-inner-link" href="target.html">Как стать участником</a>
+					</ul></li>
+				<li	class="header-inner-menu-item selection-city"><a class="header-inner-menu-link" href="#">Для девушек</a><ul class="city-list-inner man-list-inner">
+						<a class="city-list-inner-link" href="target.html">Цели знакомств</a>
+						<a class="city-list-inner-link" href="target.html">Как стать участником</a>
+					</ul></li>
+				<li	class="header-inner-menu-item"><a class="header-inner-menu-link" href="index.html#section5">Контакты</a></li>
+				<li	class="header-inner-menu-item selection-city"><a class="header-inner-menu-link" href="#">Выбрать город</a>
+					<ul class="city-list-inner">
+						<a class="city-list-inner-link" href="#">Москва</a>
+						<a class="city-list-inner-link" href="#">Санкт-Петербург</a>
+						<a class="city-list-inner-link" href="#">Саратов</a>
+					</ul>
+				</li>
+				</nav> 
+				<a class="login-inner" href="#">Выход</a>    
+			</div>
+	</header>
 <div class="row">
 	<div class="side side-left">
 		<div class="forman__title">Для мужчин</div>
@@ -48,7 +79,7 @@
 			<li><a href="#">Как стать участником</a></li>
 		</ul>
 		
-		<a href="#" class="button button__beclient button__beclient-man button__beclient-forman">Стать клиентом Клуба</a>
+		<a href="beclient.html" class="button button__beclient button__beclient-man button__beclient-forman">Стать клиентом Клуба</a>
 	</div>
 	<div class="side side-right">
 		<div class="side__title">Добрового времени суток</div>
@@ -65,6 +96,102 @@
 		</ul>
 	</div>
 </div>
+<!-- MOBILE-MENU - START (display: none в menu-mobile.scss)-->
+	<div class="menu-mobile-bg"></div>
+	<div class="menu-mobile">
+		<div class="menu-mobile-wrapper">
+			<a href="#" class="close-menu-mobile">
+				<img src="img/close-menu-mobile.svg" alt="">
+			</a>
+			<ul class="menu-mobile-list">
+				<li	class="menu-mobile-item"><a href="favorites.html" class="menu-mobile-link">Избранное</a></li>
+				<li	class="menu-mobile-item"><a href="archive.html" class="menu-mobile-link">Архив</a></li>
+				<li	class="menu-mobile-item"><a href="personal.html" class="menu-mobile-link">Персональные предложения</a></li>
+				<li	class="menu-mobile-item"><a href="message.html" class="menu-mobile-link">Сообщения</a></li>
+				<li	class="menu-mobile-item"><a href="#search" class="menu-mobile-link open-popup">Поиск</a></li>
+				<li	class="menu-mobile-item"><a href="private.html" class="menu-mobile-link">Личный кабинет</a></li>
+			</ul>
+			<a href="#" class="exit-personal">Выход</a>
+			
+			<!-- Блок с телефонами городов - НАЧАЛО -->
+			<div class="block-connection">
+				<div class="city-phone">
+					<div class="connection-text">
+						<span class="city-phone-number-title">Москва</span>
+						<a class="city-phone-number-link" href="tel:+79543711916">+7 954 371 19 16</a>	
+					</div>
+					<div class="connection-button">
+						<a class="connection-button-link" href="tel:+79543711916">позвонить</a>
+					</div>
+				</div>
+				<div class="city-phone">
+					<div class="connection-text">
+						<span class="city-phone-number-title">Санкт-Петербург</span>
+						<a class="city-phone-number-link" href="tel:+79543711916">+7 954 371 19 16</a>	
+					</div>
+					<div class="connection-button">
+						<a class="connection-button-link" href="tel:+79543711916">позвонить</a>
+					</div>
+				</div>
+				<div class="city-phone">
+					<div class="connection-text">
+						<span class="city-phone-number-title">Саратов</span>
+						<a class="city-phone-number-link" href="tel:+79543711916">+7 954 371 19 16</a>	
+					</div>
+					<div class="connection-button">
+						<a class="connection-button-link" href="tel:+79543711916">позвонить</a>
+					</div>
+				</div>
+			</div>
+			<!-- Блок с телефонами городов - КОНЕЦ -->
 
+			<!-- Блок с соц.сетями - НАЧАЛО -->
+			<div class="block-connection">
+				<div class="social-write">
+					<div class="connection-text">
+					<span class="social-write-title-text">WhatsApp</span>
+					</div>
+					<div class="connection-button">
+						<a class="social-button-link" href="#">написать</a>
+					</div>
+				</div>
+				<div class="social-write">
+					<div class="connection-text">
+						<span class="social-write-title-text">Viber</span>
+					</div>
+					<div class="connection-button">
+						<a class="social-button-link" href="#">написать</a>
+					</div>
+				</div>
+				<div class="social-write">
+					<div class="connection-text">
+						<span class="social-write-title-text">Telegram</span>
+					</div>
+					<div class="connection-button">
+						<a class="social-button-link" href="#">написать</a>
+					</div>
+				</div>
+			</div>
+			<!-- Блок с соц.сетями - КОНЕЦ -->
+
+			<!-- Блок с основным меню - НАЧАЛО -->
+			<a class="button-main-menu-mobile" href="#">Основное меню</a>
+			<nav class="main-menu-mobile">
+				<li class="main-menu-mobile-item"><a class="main-menu-mobile-link" href="#">О клубе</a></li>
+				<li class="main-menu-mobile-item"><a class="main-menu-mobile-link" href="#">Для мужчин</a></li>
+				<li class="main-menu-mobile-item"><a class="main-menu-mobile-link" href="#">Для девушек</a></li>
+				<li class="main-menu-mobile-item"><a class="main-menu-mobile-link" href="#">Контакты</a></li>
+				<li class="main-menu-mobile-item selection-city"><a class="main-menu-mobile-link" href="#">Выбрать город</a>
+					<!-- <ul class="city-list-mobile">
+						<a class="city-list-mobile-link" href="#">Москва</a>
+						<a class="city-list-mobile-link" href="#">Санкт-Петербург</a>
+						<a class="city-list-mobile-link" href="#">Саратов</a>
+					</ul> -->
+				</li> 
+			</nav>
+			<!-- Блок с основным меню - КОНЕЦ -->
+		</div>
+	</div>
+	<!-- MOBILE MENU - END -->
 </body>
 </html>

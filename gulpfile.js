@@ -6,8 +6,8 @@ var autoprefixerList = [
     'Firefox ESR',
     'Edge >= 12',
     'Explorer >= 10',
-    'iOS >= 9',
-    'Safari >= 9',
+    'iOS >= 8',
+    'Safari >= 8',
     'Android >= 4.4',
     'Opera >= 30'
 ];

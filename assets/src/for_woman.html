@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Главная страница</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/page.css">
 	<!-- <link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/read-more.css">
 	<link rel="stylesheet" href="css/login.css">
@@ -36,7 +37,37 @@
 	<script src="js/main.js"></script>
 </head>
 <body>      
-
+  <header class="header-inner">   
+			<div class="container"> 
+				<div class="logo-inner">
+				<div class="burger open-menu">
+					<a class="burger-img" href="#"></a>
+				</div>
+				<a class="header-logo-inner" href="index.html"></a>
+				<div class="header-inner-text">Клуб знакомств с 2002 года!</div>
+				</div> 
+				<nav class="header-inner-menu">
+				<li	class="header-inner-menu-item"><a class="header-inner-menu-link" href="index.html#section4">О клубе</a></li>
+				<li	class="header-inner-menu-item selection-city"><a class="header-inner-menu-link" href="#">Для мужчин</a><ul class="city-list-inner man-list-inner">
+						<a class="city-list-inner-link" href="target.html">Цели знакомств</a>
+						<a class="city-list-inner-link" href="target.html">Как стать участником</a>
+					</ul></li>
+				<li	class="header-inner-menu-item selection-city"><a class="header-inner-menu-link" href="#">Для девушек</a><ul class="city-list-inner man-list-inner">
+						<a class="city-list-inner-link" href="target.html">Цели знакомств</a>
+						<a class="city-list-inner-link" href="target.html">Как стать участником</a>
+					</ul></li>
+				<li	class="header-inner-menu-item"><a class="header-inner-menu-link" href="index.html#section5">Контакты</a></li>
+				<li	class="header-inner-menu-item selection-city"><a class="header-inner-menu-link" href="#">Выбрать город</a>
+					<ul class="city-list-inner">
+						<a class="city-list-inner-link" href="#">Москва</a>
+						<a class="city-list-inner-link" href="#">Санкт-Петербург</a>
+						<a class="city-list-inner-link" href="#">Саратов</a>
+					</ul>
+				</li>
+				</nav> 
+				<a class="login-inner" href="#">Выход</a>    
+			</div>
+	</header>
 <div class="row">
 	<div class="side side-left side-woman">
 		<div class="forman__title">Для девушек</div>
@@ -48,7 +79,7 @@
 			<li><a href="#">Как стать участником</a></li>
 		</ul>
 		
-		<a href="#" class="button button__beclient button__beclient-woman button__beclient-forman">Стать клиенткой Клуба</a>
+		<a href="beclient.html" class="button button__beclient button__beclient-woman button__beclient-forman">Стать клиенткой Клуба</a>
 	</div>
 	<div class="side side-right">
 		<div class="side__title">Добрового времени суток</div>
@@ -64,6 +95,6 @@
 		</ul>
 	</div>
 </div>
-
+//= template/menu-mobile.html
 </body>
 </html>
