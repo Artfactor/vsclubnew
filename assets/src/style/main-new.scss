@@ -741,6 +741,12 @@
 	.main__grid-cell:before {
 		display: none;
 	}
+	.main__grid-col:nth-child(1) .main__grid-cell + .main__grid-cell, .main__grid-col:nth-child(2) .main__grid-cell + .main__grid-cell, .main__grid-col:nth-child(3) .main__grid-cell + .main__grid-cell, .main__grid-col .main__grid-cell + .main__grid-cell {
+		border: 0;
+	}
+	.main__grid-cell > a {
+		/*display: block*/
+	}
 }
 @media only screen and (max-width : 768px) {
 	.popup__main {
@@ -762,6 +768,10 @@
 		right: 10px;
 		width: 20px;
 		height: 20px;
+	}
+	
+	.main__desc-wrapper > div {
+		height: 500px;
 	}
 }
 @media only screen and (max-width : 480px) and (max-height : 700px) and (min-height: 400px) {
@@ -845,6 +855,15 @@
 	.main__contacts-item {
 		padding: 14px 0;
 	}
+	
+	.main__beclient {
+		.button__beclient, .beclient__title {
+			display: none;
+		}
+	}
+	.beclient__links {
+		display: block;
+	}
 }
 @media only screen and (max-width : 320px) and (max-height : 454px) {
 	.hero__banner {
@@ -875,7 +894,7 @@
 		display: none;
 	}
 }
-@media only screen and (max-width : 600px) and (max-height : 400px) {
+@media only screen and (max-width : 660px) and (max-height : 400px) {
 	.hero {
 		height: 300px;
 	}
@@ -893,5 +912,19 @@
 		height: 330px;
 		background-size: auto 100%;
 		background-position-y: 100px;
+	}
+	.main__beclient {
+		.button__beclient, .beclient__title {
+			display: none;
+		}
+	}
+	.section__third {
+		height: 320px!important;
+		.fp-tableCell {
+			height: 320px!important;
+		}
+	}
+	.main__beclient {
+		height: 160px;
 	}
 }

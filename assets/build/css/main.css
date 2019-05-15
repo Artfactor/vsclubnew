@@ -1528,7 +1528,8 @@ span.menu-mobile-link {
 
 @media only screen and (max-width: 1024px) {
   .menu-mobile {
-    display: block; } }
+    display: block;
+    height: 100%; } }
 
 @media only screen and (max-width: 480px) {
   .menu-mobile {
@@ -4140,7 +4141,14 @@ a.button__border {
     width: 30px;
     height: 30px; }
   .main__grid-cell:before {
-    display: none; } }
+    display: none; }
+  .main__grid-col:nth-child(1) .main__grid-cell + .main__grid-cell,
+  .main__grid-col:nth-child(2) .main__grid-cell + .main__grid-cell,
+  .main__grid-col:nth-child(3) .main__grid-cell + .main__grid-cell,
+  .main__grid-col .main__grid-cell + .main__grid-cell {
+    border: 0; }
+  .main__grid-cell > a {
+    /*display: block*/ } }
 
 @media only screen and (max-width: 768px) {
   .popup__main {
@@ -4157,7 +4165,9 @@ a.button__border {
     top: 15px;
     right: 10px;
     width: 20px;
-    height: 20px; } }
+    height: 20px; }
+  .main__desc-wrapper > div {
+    height: 500px; } }
 
 @media only screen and (max-width: 480px) and (max-height: 700px) and (min-height: 400px) {
   .hero__banner {
@@ -4214,7 +4224,11 @@ a.button__border {
     line-height: 20px;
     font-size: 20px; }
   .main__contacts-item {
-    padding: 14px 0; } }
+    padding: 14px 0; }
+  .main__beclient .button__beclient, .main__beclient .beclient__title {
+    display: none; }
+  .beclient__links {
+    display: block; } }
 
 @media only screen and (max-width: 320px) and (max-height: 454px) {
   .hero__banner {
@@ -4237,7 +4251,7 @@ a.button__border {
   .hero__sidebar-list {
     display: none; } }
 
-@media only screen and (max-width: 600px) and (max-height: 400px) {
+@media only screen and (max-width: 660px) and (max-height: 400px) {
   .hero {
     height: 300px; }
   .section__first .fp-tableCell, .section__first {
@@ -4250,4 +4264,12 @@ a.button__border {
   .hero__banner {
     height: 330px;
     background-size: auto 100%;
-    background-position-y: 100px; } }
+    background-position-y: 100px; }
+  .main__beclient .button__beclient, .main__beclient .beclient__title {
+    display: none; }
+  .section__third {
+    height: 320px !important; }
+    .section__third .fp-tableCell {
+      height: 320px !important; }
+  .main__beclient {
+    height: 160px; } }

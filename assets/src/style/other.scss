@@ -1063,6 +1063,42 @@ body {
 	height: 31px;
 	background-size: cover;
 }
+.detail__photos-video a {
+	position: relative;
+	display: block;
+}
+.detail__photos-video a:after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 35px;
+	height: 35px;
+	background: url("../img/detail_video.svg") no-repeat;
+	background-size: cover;
+	transform: translateX(-50%) translateY(-50%);
+	transition: transform 300ms ease-in;
+}
+.detail__photos-video a:before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #000;
+	opacity: .5;
+	transition: opacity 300ms ease-in;
+}
+
+.detail__photos-video a:hover:after {
+	transform: translateX(-50%) translateY(-50%) scale(1.2);
+}
+.detail__photos-video a:hover:before {
+	opacity: .6;
+}
 
 
 @media only screen and (max-width : 1366px) {
