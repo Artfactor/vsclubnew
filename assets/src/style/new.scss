@@ -750,9 +750,52 @@ a.button__border {
 		}
 		.header__logo-city {
 			display: block;
+			
+			span {
+				display: none;
+			}
+			span.city-1 {
+				display: inline;
+			}
 		}
 	}
 }
+.fp-viewing-section21 {
+	.header__fix {
+		.header__logo {
+			display: none;
+		}
+		.header__logo-city {
+			display: block;
+			
+			span {
+				display: none;
+			}
+			span.city-2 {
+				display: inline;
+			}
+		}
+	}
+}
+.fp-viewing-section22 {
+	.header__fix {
+		.header__logo {
+			display: none;
+		}
+		.header__logo-city {
+			display: block;
+			
+			span {
+				display: none;
+			}
+			span.city-3 {
+				display: inline;
+				font-size: 28px;
+			}
+		}
+	}
+}
+
 .fp-viewing-section1 {
 	.header__fix {
 		opacity: 0;

@@ -2256,6 +2256,31 @@ a.button__border {
 
 .fp-viewing-section2 .header__fix .header__logo-city {
   display: block; }
+  .fp-viewing-section2 .header__fix .header__logo-city span {
+    display: none; }
+  .fp-viewing-section2 .header__fix .header__logo-city span.city-1 {
+    display: inline; }
+
+.fp-viewing-section21 .header__fix .header__logo {
+  display: none; }
+
+.fp-viewing-section21 .header__fix .header__logo-city {
+  display: block; }
+  .fp-viewing-section21 .header__fix .header__logo-city span {
+    display: none; }
+  .fp-viewing-section21 .header__fix .header__logo-city span.city-2 {
+    display: inline; }
+
+.fp-viewing-section22 .header__fix .header__logo {
+  display: none; }
+
+.fp-viewing-section22 .header__fix .header__logo-city {
+  display: block; }
+  .fp-viewing-section22 .header__fix .header__logo-city span {
+    display: none; }
+  .fp-viewing-section22 .header__fix .header__logo-city span.city-3 {
+    display: inline;
+    font-size: 28px; }
 
 .fp-viewing-section1 .header__fix {
   opacity: 0;
