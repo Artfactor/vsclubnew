@@ -171,10 +171,12 @@ $(document).ready(function() {
 			var val_to = parseInt(slider_to.noUiSlider.get());
 			
 			$("#"+input_to).val("от "+val_from);
+			console.log($("#"+input_to).val());
 			if(val_to <= val_from) {
 				slider_to.noUiSlider.set(val_from + 1);
 			}
 			sliderRangeBarUpdate($("#"+slider_from_id).parent().find(".input__bar"), min, max, val_from);
+			//$("#"+slider_from_id).parent().find(".input__text").val()
 		});
 
 		slider_to.noUiSlider.on('update', function (values, handle) {
@@ -183,6 +185,7 @@ $(document).ready(function() {
 			var val_to = parseInt(values[handle]);
 			
 			$("#"+input_from).val("до "+val_to);
+			console.log($("#"+input_from).val());
 			if(val_from >= val_to) {
 				slider_from.noUiSlider.set(val_to - 1);
 			}
