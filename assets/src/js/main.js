@@ -1,6 +1,17 @@
 //SLICK-SLIDER
 $(document).ready(function() {
 	
+	var img = document.getElementsByTagName('img');
+
+	for(var i in img)
+	{
+		img[i].oncontextmenu = function()
+		{
+			return false;
+		}
+	}
+	document.getElementsByTagName('img').ondragstart = function() { return false; };
+	
 	if($("select").length > 0) {
 		$('select').niceSelect();
 	}
@@ -214,6 +225,18 @@ $(document).ready(function() {
 	$('[data-fancybox="gallery"]').fancybox({
 		toolbar: true,
 		infobar: false,
+		afterShow: function( instance, current ) {
+			var img = document.getElementsByTagName('img');
+
+			for(var i in img)
+			{
+				img[i].oncontextmenu = function()
+				{
+					return false;
+				}
+			}
+			document.getElementsByTagName('img').ondragstart = function() { return false; };
+		},
 		btnTpl: {
 			arrowLeft:
 			  '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left gallery__button" title="{{PREV}}">' +
