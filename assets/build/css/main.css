@@ -2282,6 +2282,10 @@ a.button__border {
     display: inline;
     font-size: 28px; }
 
+span.city-3 {
+  display: inline;
+  font-size: 28px; }
+
 .fp-viewing-section1 .header__fix {
   opacity: 0;
   z-index: -1; }

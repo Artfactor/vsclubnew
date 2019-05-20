@@ -2282,6 +2282,10 @@ a.button__border {
     display: inline;
     font-size: 28px; }
 
+span.city-3 {
+  display: inline;
+  font-size: 28px; }
+
 .fp-viewing-section1 .header__fix {
   opacity: 0;
   z-index: -1; }
@@ -5572,7 +5576,7 @@ body {
               transform: translateX(-50%); }
 
 .detail__main {
-  width: 50%; }
+  width: 60%; }
   .detail__main .detail__main-city {
     margin-bottom: 7px; }
   .detail__main .detail__main-name {
@@ -5606,7 +5610,7 @@ body {
       color: #314A5D; }
 
 .detail__links {
-  width: 50%;
+  width: 40%;
   text-align: right; }
   .detail__links a {
     display: block;
