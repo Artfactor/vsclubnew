@@ -525,6 +525,14 @@
 	.main__beclient:first-child {
 		right: 0;
 	}
+	
+	.main__grid-col:nth-child(1) .main__grid-cell, .main__grid-col:nth-child(2) .main__grid-cell, .main__grid-col:nth-child(3) .main__grid-cell, .main__grid-col .main__grid-cell {
+		border: 0px solid #fff;
+	}
+	
+	.fp-viewing-section22 .header__fix .header__logo-city span.city-3 {
+		font-size: 15px;
+	}
 }
 @media only screen and (max-width : 767px) and (max-height: 1200px){
 	.hero__banner {
