@@ -720,6 +720,16 @@ a.button__border {
 	font-size: 30px;
 	margin-bottom: 12px;
 }
+.main__grid-img {
+	text-align: center;
+	width: 60px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	img {
+		width: 100%;
+		display: inline;
+	}
+}
 .main__grid-id {
 	border-top: 1px solid $white;
 	padding-top: 5px;
@@ -751,10 +761,13 @@ a.button__border {
 		.header__logo-city {
 			display: block;
 			
-			span {
+			img, span {
 				display: none;
 			}
 			span.city-1 {
+				display: inline;
+			}
+			img.logo-1 {
 				display: inline;
 			}
 		}
@@ -768,10 +781,13 @@ a.button__border {
 		.header__logo-city {
 			display: block;
 			
-			span {
+			img, span {
 				display: none;
 			}
 			span.city-2 {
+				display: inline;
+			}
+			img.logo-2 {
 				display: inline;
 			}
 		}
@@ -785,12 +801,15 @@ a.button__border {
 		.header__logo-city {
 			display: block;
 			
-			span {
+			img, span {
 				display: none;
 			}
 			span.city-3 {
 				display: inline;
 				font-size: 28px;
+			}
+			img.logo-3 {
+				display: inline;
 			}
 		}
 	}

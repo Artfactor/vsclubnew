@@ -74,15 +74,14 @@ $(document).ready(function() {
 	  resizeWindow();
 
 	  function resizeWindow(){
-		let windowWidth;
 
-		windowWidth = getWindowWidthForSlider();
+		var windowWidth = getWindowWidthForSlider();
 
 		changeSliderImages(windowWidth);
 	  }
 
 	  function getWindowWidthForSlider(){
-		let windowWidth = $(window).width();
+		var windowWidth = $(window).width();
 
 	  if(windowWidth > 1400)
 		  return 1600
