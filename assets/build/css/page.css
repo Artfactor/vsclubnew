@@ -2501,7 +2501,10 @@ span.city-3 {
   .selection-city .city-list.man-list .city-list-item-link:nth-child(2),
   .selection-city .city-list.man-list .city-list-item-link:nth-child(3),
   .selection-city .city-list.man-list .city-list-item-link:nth-child(4) {
-    margin-top: 0px; } }
+    margin-top: 0px; }
+  .header__logo-city span {
+    line-height: 34px;
+    font-size: 29px; } }
 
 @media only screen and (max-width: 1366px) and (max-height: 768px) {
   .side-panel .navigation-city .city {
@@ -2563,7 +2566,7 @@ span.city-3 {
   .beclient__links {
     margin-bottom: 67px; }
   .section__fourth {
-    background-size: 892px;
+    background-size: 940px;
     background-position-x: -65px;
     background-position-y: 0px; }
   .main__contacts-title {
